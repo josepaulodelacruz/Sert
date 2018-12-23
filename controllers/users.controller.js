@@ -1,4 +1,4 @@
-const Product = require('../models/product.model');
+const Product = require('../models/users.model');
 
 //Simple version, without validation or sanitation
 exports.test = function (req, res) {
@@ -7,11 +7,19 @@ exports.test = function (req, res) {
 
 
 // controllers/products.js
-exports.product_create = function (req, res) {
+exports.user_create = function (req, res) {
     let product = new Product(
         {
-            name: req.body.name,
-            price: req.body.price
+            fName: req.body.fName,
+            mName: req.body.mName,
+            lName: req.body.lName,
+            contact: req.body.contact,
+            eMail: req.body.eMail,
+            blk: req.body.blk,
+            lot: req.body.lot,
+            ph: req.body.ph,
+            userName: req.body.userName,
+            password: req.body.password
         }
     );
 

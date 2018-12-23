@@ -2,7 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const product = require('./routes/products.route'); // Imports routes for the products
+const user = require('./routes/users.route'); // Imports routes for the products
 const app = express();
 
 const socket = require('socket.io');
@@ -34,7 +34,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-app.use('/products', product);
+app.use('/users', user);
 
 
 let port = 5000;

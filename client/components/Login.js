@@ -32,9 +32,8 @@ export default class Login extends Component {
   	};
 
   	handleSubmit = () => {
-  		const { firstInput } = this.state;
-  		const { passInput } = this.state;
-  		console.log(firstInput, passInput);
+  		this.props.navigation.navigate('ClientScreen')
+  		console.log('CCLIck');
   	}
 
 	render(){
@@ -64,13 +63,14 @@ export default class Login extends Component {
 				type='password'
  				style={{height: 40, width: 300, backgroundColor: '#f2f2f2', borderColor: 'gray', borderWidth: 2, borderRadius: 20, textAlign: 'center'}}/>
  				<View style={{flex: 1, margin: 30}}>
- 					<Button title="Login" onPress={this.handleSubmit}/>
+ 					<Button title="Login" onPress={this.handleSubmit.bind(this)}/>
  					<Text style={{textAlign: 'center', fontSize: 22, fontStyle: 'italic', marginTop: 10}}>Forgot Password?</Text>
  					<Text style={styles.textStyle}>Don't have an Account? </Text>
  					<Text style={styles.textStyle} onPress={() => this.props.navigation.navigate('SignUp')}>Sign Up Here</Text>
  				</View>
  				<Text style={{textAlign: 'center'}}>Sert Application Developed by the students of CITI Global College &copy; 2019</Text>
-			</View>
+			</View>		
+
 		);
 	}
 }

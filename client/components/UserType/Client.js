@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { View, Text, StyleSheet, TextInput, Picker, ScrollView, Button} from 'react-native';
 
 export default class Client extends Component {
@@ -33,13 +34,26 @@ export default class Client extends Component {
 	}
 
 	// Submit form
+	// handleSubmit = () => {
+	// 	const { firstName, middleName, lastName, contact, eMail, blk,lot,phase,username,password } = this.state;
+	// 	console.log(firstName, middleName, lastName, contact, eMail, blk,lot,phase,username,password, );
+	// 	if(firstName === '' && middleName === '' && lastName === '' && contact === '' && eMail === '' && blk === ''&& lot === '' && phase === ''&& username === '' && password === ''){
+	// 		alert('Please answer all the remaint text box');
+	// 	}
+	// }
+
+
+	// note in the database only to category is accepted change the category designated to number of category
 	handleSubmit = () => {
+		var request = new XMLHttpRequest();
 		const { firstName, middleName, lastName, contact, eMail, blk,lot,phase,username,password } = this.state;
-		console.log(firstName, middleName, lastName, contact, eMail, blk,lot,phase,username,password, );
-		if(firstName === '' && middleName === '' && lastName === '' && contact === '' && eMail === '' && blk === ''&& lot === '' && phase === ''&& username === '' && password === ''){
-			alert('Please answer all the remaint text box');
-		}
+		request.open('POST', 'http://192.168.0.15:5000/users/user', true);
+		let formdata = new FormData();
+		formdata.append(firstName, middleName, lastName, contact, eMail, blk,lot,phase,username,password)
+		request.send(formdata);
+		console.log(formdata);
 	}
+
 	render(){
 		const phases = this.props.Phases.map(ph => {
 			return(

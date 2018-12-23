@@ -1,22 +1,25 @@
 import React from 'react';
 import io from 'socket.io-client/dist/socket.io';
-import { StyleSheet, Text, View,Button } from 'react-native';
+import { StyleSheet, Text, View,Button, SafeAreaView, ScrollView, Dimensions } from 'react-native';
 import Front from './components/Front';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Client from './components/UserType/Client';
 import Dispatcher from './components/UserType/Dispatcher';
-import { createStackNavigator } from 'react-navigation';
+import ClientScreen from './components/UserType/ClientScreen';
+import DispatcherScreen from './components/UserType/DispatcherScreen';
+import DrawerComponent from './components/DrawerComponent';
+import { createStackNavigator, createDrawerNavigator, DrawerItems } from 'react-navigation';
 
 export default class App extends React.Component {
   constructor(){
     super();
     this.state = {
       response: [],
-      endpoint: 'http://192.168.0.14:5000',
+      endpoint: 'http://192.168.0.15:5000',
       con: '',
       msg: 'sent',
-      socket: io('http://192.168.0.14:5000', {jsonp: false})
+      socket: io('http://192.168.0.15:5000', {jsonp: false})
     };
   }
 
@@ -27,7 +30,7 @@ export default class App extends React.Component {
   }
   // retrieving data from the back-end server from port 5000
   callApi = async () => {
-    const response = await fetch('http://192.168.0.14:5000/products/test');
+    const response = await fetch('http://192.168.0.15:5000/products/test');
     const body = await response.json();
     if(response.status !== 200) throw Error(body.message);
 
@@ -52,7 +55,14 @@ const Screens = createStackNavigator({
   Login: { screen: Login},
   SignUp: { screen: SignUp},
   Client: { screen: Client},
-  Dispatcher: { screen: Dispatcher }
+  Dispatcher: { screen: Dispatcher },
+  ClientScreen: { screen: ClientScreen},
+  // ClientScreen: { screen: ClientScreen,
+  //   screen: createDrawerNavigator({
+  //     Home: DrawerComponent
+  //   })
+  // },
+  DispatcherScreen: { screen: DispatcherScreen}
 },
   {
     initialRouteName: 'Home',
