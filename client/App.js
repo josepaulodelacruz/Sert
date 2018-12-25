@@ -8,7 +8,6 @@ import Client from './components/UserType/Client';
 import Dispatcher from './components/UserType/Dispatcher';
 import ClientScreen from './components/UserType/ClientScreen';
 import DispatcherScreen from './components/UserType/DispatcherScreen';
-import DrawerComponent from './components/DrawerComponent';
 import { createStackNavigator, createDrawerNavigator, DrawerItems } from 'react-navigation';
 
 export default class App extends React.Component {

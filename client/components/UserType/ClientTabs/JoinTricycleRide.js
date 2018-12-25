@@ -5,14 +5,14 @@ import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 
 
 
-export default class DashBoardClient extends React.Component {
+export default class JoinTricycleRide extends React.Component {
 	constructor(){
 		super();
 		this.state = {
 			active: true
 		};
 	}
-
+	
 	bookRide = () => {
 		alert('Book A Ride?');
 	}
@@ -28,7 +28,7 @@ export default class DashBoardClient extends React.Component {
 						<Icon name="menu" onPress={() => this.props.navigation.openDrawer()}/>
 					</Left>
 					<Body>
-						<Text>Single Ride</Text>
+						<Text>Join Ride</Text>
 					</Body>
 					<Right/>
 				</Header>
@@ -57,4 +57,3 @@ const styles = StyleSheet.create({
 		flex: 1
 	}
 })
-
