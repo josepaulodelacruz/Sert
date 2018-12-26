@@ -1,24 +1,60 @@
-import React, { Component } from 'react';
-import { View, Text, StyleSheet, SafeAreaView, ScrollView, Image } from 'react-native';
-import { createDrawerNavigator, DrawerItems, createBottomTabNavigator, createAppContainer } from 'react-navigation';
-import DashBoardClient from './ClientTabs/DashBoardClient';
-import Profile from './ClientTabs/Profile';
-import Messages from './ClientTabs/Messages';
-import TricycleRide from './ClientTabs/TricycleRide';
-import JoinTricycleRide from './ClientTabs/JoinTricycleRide';
-import { Ionicons } from '@expo/vector-icons';
-import { Icon } from 'native-base';
+import React from 'react';
+import { View, Text, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar } from 'react-native';
+import { createDrawerNavigator, DrawerItems, createBottomTabNavigator } from 'react-navigation';
+import { Header, Left, Body, Right, Icon, Fab, Button } from 'native-base';
+import Locator from './ClientTabs/Maps/Locator';
 // https://www.youtube.com/watch?v=7uhJN4kVS6g
 
-class ClientScreen extends Component {
-	static navigationOptions= {
-		title: 'Client',
-		header: null
+export default class ClientScreen extends React.Component {
+	constructor(){
+		super();
+		this.state = {
+			active: true
+		};
 	}
+
+	bookRide = () => {
+		alert('Book A Ride?');
+	}
+
+	static navigationOptions = {
+          drawerIcon: ({ tintColor }) =>{
+            return(
+              <Icon name="home" style={{fontSize: 24, color: "blue"}}/>
+            );
+        }
+    } 
+
 	render(){
 		const { navigate } = this.props.navigation;
 		return(
-			<AppNavigator/>	
+			// <AppNavigator/>
+			<View style={styles.container}>
+			<View style={{paddingTop: 22, backgroundColor: '#111'}}>
+				<StatusBar translucent={true} backgroundColor={'transparent'}/>
+			</View>
+				<Header style={{backgroundColor: '#3073FA'}}>
+					<Left>
+						<Icon name="menu" onPress={() => this.props.navigation.openDrawer()}/>
+					</Left>
+					<Body>
+						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Single Ride</Text>
+					</Body>
+					<Right/>
+				</Header>
+				<View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+					<Locator/>
+				</View>
+		          <Fab
+		            active={this.state.active}
+		            direction="up"
+		            containerStyle={{ }}
+		            style={{ backgroundColor: '#5067FF' }}
+		            position="bottomRight"
+		            onPress={this.bookRide.bind(this)}>
+		             <Text>+</Text>
+		          </Fab>
+			</View>	
 		)
 	}
 }
@@ -36,91 +72,10 @@ const CustomDrawerComponent = (props) => {
 	)
 }
 
-
-const AppNavigator = createDrawerNavigator({
-	Home: { screen: DashBoardClient,
-			screen: createBottomTabNavigator({
-				Single: { screen: DashBoardClient},
-				Join: { screen: JoinTricycleRide}
-			})
-		,navigationOptions: {
-			drawerIcon: ({ tintColor }) =>{
-				return(
-					<Icon name="home" style={{fontSize: 24, color: "blue"}}/>
-				);
-			}
-		} 
-	},
-	Profile: { screen: Profile},
-	Messages: { screen: Messages}
-}, {
-	contentComponent: CustomDrawerComponent,
-	contentOptions: {
-		activeTintColor: 'blue'
-	}
-})
-
-// const BottomDrawer = createBottomTabNavigator({
-// 	SingleRide: { screen: DashBoardClient,
-// 		screen: createDrawerNavigator({
-// 			Home: { screen: DashBoardClient},
-// 			Profile: { screen: Profile},
-// 			Messages: { screen: Messages}
-// 		}, {
-// 			contentComponent: CustomDrawerComponent,
-// 			contentOptions: {
-// 				activeTintColor: 'blue'
-// 			}
-// 		})
-// 	},
-// 	JoinRide: { screen: JoinTricycleRide}
-// }, {
-// 	defaultNavigationOptions: ({ navigation }) => ({
-// 		tabBarIcon: ({ focused, tintColor }) => {
-// 			const { routeName } = navigation.state;
-// 			let iconName;
-// 			if (routeName === "SingleRide") {
-// 				 iconName = `bicycle${focused ? '' : '-outline'}`;
-// 			} else if (routeName === 'JoinRide') {
-// 				 iconName = `md-people${focused ? '' : '-outline'}`;
-// 			}
-// 			return <Icon name={iconName} size={25} color={tintColor} />;
-// 		}
-// 	}),
-// 	tabBarOptions: {
-//       activeTintColor: 'tomato',
-//       inactiveTintColor: 'gray',
-//     },
-//   })
-
-// Home: { screen: DashBoardClient, 
-	// 		screen: createBottomTabNavigator({
-	// 			Home: { screen: DashBoardClient},
-	// 			Single: { screen: TricycleRide},
-	// 			Join: { screen: JoinTricycleRide}
-	// 		})
-	// },
-
-
-	// DashBoardClient: {
-	// 	screen: createBottomTabNavigator({
-	// 		Single: { screen: TricycleRide },
-	// 		Joined: { screen: JoinTricycleRide}
-	// 	})
-	// },
-
-
-
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 1
   },
 });
 
-
-
-export default ClientScreen;
 

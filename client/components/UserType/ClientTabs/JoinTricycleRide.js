@@ -23,12 +23,12 @@ export default class JoinTricycleRide extends React.Component {
 			<View style={{paddingTop: 22, backgroundColor: '#111'}}>
 				<StatusBar translucent={true} backgroundColor={'transparent'}/>
 			</View>	
-				<Header>
+				<Header style={{backgroundColor: '#3073FA'}}>
 					<Left>
 						<Icon name="menu" onPress={() => this.props.navigation.openDrawer()}/>
 					</Left>
 					<Body>
-						<Text>Join Ride</Text>
+						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Join Ride</Text>
 					</Body>
 					<Right/>
 				</Header>

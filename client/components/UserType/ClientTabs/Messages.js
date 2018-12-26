@@ -18,12 +18,12 @@ class Messages extends Component {
 			<View style={{paddingTop: 22, backgroundColor: '#111'}}>
 				<StatusBar translucent={true} backgroundColor={'transparent'}/>
 			</View>	
-				<Header>
+				<Header style={{backgroundColor: '#3073FA'}}>
 					<Left>
 						<Icon name="menu" onPress={() => this.props.navigation.openDrawer()}/>
 					</Left>
 					<Body>
-						<Text>Messages</Text>
+						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Messages</Text>
 					</Body>
 					<Right/>
 				</Header>
