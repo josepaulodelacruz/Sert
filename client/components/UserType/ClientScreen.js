@@ -2,10 +2,14 @@ import React from 'react';
 import { View, Text, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar } from 'react-native';
 import { createDrawerNavigator, DrawerItems, createBottomTabNavigator } from 'react-navigation';
 import { Header, Left, Body, Right, Icon, Fab, Button } from 'native-base';
-import Locator from './ClientTabs/Maps/Locator';
+import Mapbox from '@mapbox/react-native-mapbox-gl';
+
+Mapbox.setAccessToken('pk.eyJ1IjoiamV5cGkiLCJhIjoiY2psOWIzMzhhMW1rcTNycWttcDIwYzU3aCJ9.mRXngxERf-Zth8ABFhNgag');
+
+
 // https://www.youtube.com/watch?v=7uhJN4kVS6g
 
-export default class ClientScreen extends React.Component {
+export default class ClientScreen extends React.Component<{}> {
 	constructor(){
 		super();
 		this.state = {
@@ -42,10 +46,15 @@ export default class ClientScreen extends React.Component {
 					</Body>
 					<Right/>
 				</Header>
-				<View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-					<Locator/>
-				</View>
-		          <Fab
+		          <View style={styles.container}>
+			        <Mapbox.MapView
+			            styleURL={Mapbox.StyleURL.Street}
+			            zoomLevel={13}
+			            centerCoordinate={[121.1167,14.2871]}
+			            style={styles.container}>
+			        </Mapbox.MapView>
+			      </View>
+			      <Fab
 		            active={this.state.active}
 		            direction="up"
 		            containerStyle={{ }}
@@ -58,6 +67,8 @@ export default class ClientScreen extends React.Component {
 		)
 	}
 }
+
+// centerCoordinate={[14.2871, 121.1167]}
 
 const CustomDrawerComponent = (props) => {
 	return(

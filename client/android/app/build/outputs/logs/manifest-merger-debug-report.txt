@@ -1,0 +1,275 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\bef1edf3b4b9bdab2a578568bfd4de16\AndroidManifest.xml:2:1-15:12
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:2:1-14:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-localization:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-localization-0.1.0.aar\c1f0d7b28efe222e3b7f7fb02d3dcd31\AndroidManifest.xml:2:1-10:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-locationlayer-0.3.0.aar\41fa5e8701ecfa117adbbeacffcbddcd\AndroidManifest.xml:2:1-10:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:2:1-31:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-telemetry-2.2.9.aar\0247e498923db3f7190060e7046ccec3\AndroidManifest.xml:2:1-13:12
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:2:1-34:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a9c3a054546b0cb04e72e3975029cd52\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\3064357bce406175c0ca6fe3764b61c8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9e8dfb585c49e5add51507398b48a794\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\35c2ea1295fed7dbd0421a2acf318d4d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b2d712fbbe98936159fed09c9efbdd53\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\00b9035c96b71ea1a9e6b13a30627837\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\ab205576c1fc0fb62308ea87afd4e6d2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\a03304023f23591c4be4afdebc513385\AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\7c0932aea6ca9df9f59438cdfb2fdfd0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\8698206679f85dc001078aa9e0a7163e\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\f1971a10e59e43072f093b28cafedbfa\AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\9371a0a275245ea0f2569e298b9067e5\AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\32263a96571ff7f2ee81da8b5ec2f916\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\a167bf16c9bb5faedcd81b96c3b39e09\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\f9d83b3e76e860d3a805290311b053b9\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\5cadf7e29e318e0313126480890d1249\AndroidManifest.xml:2:1-9:12
+MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\3f18446cba19c6bd0d3039cb2aac91cc\AndroidManifest.xml:2:1-10:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\1c68e92d57a097e4da0e06ad99b4aad6\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\9dfe1bef4d2deb5ae4147c7d7ee49144\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\968b4ad4972642b24e63b76c984a69ff\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8345b3745e90e112d15df8b8d7cf96eb\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12
+	package
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:2:5-36
+		INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-67
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:12:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:12:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:21:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\bef1edf3b4b9bdab2a578568bfd4de16\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\bef1edf3b4b9bdab2a578568bfd4de16\AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:5:22-75
+application
+ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:7:5-24:19
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\bef1edf3b4b9bdab2a578568bfd4de16\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\bef1edf3b4b9bdab2a578568bfd4de16\AndroidManifest.xml:13:5-20
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:25:5-29:19
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:25:5-29:19
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:21:5-32:19
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:21:5-32:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\f1971a10e59e43072f093b28cafedbfa\AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\f1971a10e59e43072f093b28cafedbfa\AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\9371a0a275245ea0f2569e298b9067e5\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\9371a0a275245ea0f2569e298b9067e5\AndroidManifest.xml:2:3-17
+MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\3f18446cba19c6bd0d3039cb2aac91cc\AndroidManifest.xml:8:5-20
+MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\3f18446cba19c6bd0d3039cb2aac91cc\AndroidManifest.xml:8:5-20
+	android:label
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:9:7-39
+	android:icon
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:8:7-38
+activity#com.sertapplicationv7.MainActivity
+ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\bef1edf3b4b9bdab2a578568bfd4de16\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\bef1edf3b4b9bdab2a578568bfd4de16\AndroidManifest.xml:7:5-9:41
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-localization:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-localization-0.1.0.aar\c1f0d7b28efe222e3b7f7fb02d3dcd31\AndroidManifest.xml:6:5-8:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-localization:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-localization-0.1.0.aar\c1f0d7b28efe222e3b7f7fb02d3dcd31\AndroidManifest.xml:6:5-8:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-locationlayer-0.3.0.aar\41fa5e8701ecfa117adbbeacffcbddcd\AndroidManifest.xml:6:5-8:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-locationlayer-0.3.0.aar\41fa5e8701ecfa117adbbeacffcbddcd\AndroidManifest.xml:6:5-8:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:6:5-9:51
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:6:5-9:51
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-telemetry-2.2.9.aar\0247e498923db3f7190060e7046ccec3\AndroidManifest.xml:8:5-11:51
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-telemetry-2.2.9.aar\0247e498923db3f7190060e7046ccec3\AndroidManifest.xml:8:5-11:51
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a9c3a054546b0cb04e72e3975029cd52\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a9c3a054546b0cb04e72e3975029cd52\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\3064357bce406175c0ca6fe3764b61c8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\3064357bce406175c0ca6fe3764b61c8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9e8dfb585c49e5add51507398b48a794\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9e8dfb585c49e5add51507398b48a794\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\35c2ea1295fed7dbd0421a2acf318d4d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\35c2ea1295fed7dbd0421a2acf318d4d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b2d712fbbe98936159fed09c9efbdd53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b2d712fbbe98936159fed09c9efbdd53\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\00b9035c96b71ea1a9e6b13a30627837\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\00b9035c96b71ea1a9e6b13a30627837\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\ab205576c1fc0fb62308ea87afd4e6d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\ab205576c1fc0fb62308ea87afd4e6d2\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\a03304023f23591c4be4afdebc513385\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\a03304023f23591c4be4afdebc513385\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\7c0932aea6ca9df9f59438cdfb2fdfd0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\7c0932aea6ca9df9f59438cdfb2fdfd0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\8698206679f85dc001078aa9e0a7163e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\8698206679f85dc001078aa9e0a7163e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\f1971a10e59e43072f093b28cafedbfa\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\f1971a10e59e43072f093b28cafedbfa\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\32263a96571ff7f2ee81da8b5ec2f916\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\32263a96571ff7f2ee81da8b5ec2f916\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\a167bf16c9bb5faedcd81b96c3b39e09\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\a167bf16c9bb5faedcd81b96c3b39e09\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\f9d83b3e76e860d3a805290311b053b9\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\f9d83b3e76e860d3a805290311b053b9\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\5cadf7e29e318e0313126480890d1249\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\5cadf7e29e318e0313126480890d1249\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\3f18446cba19c6bd0d3039cb2aac91cc\AndroidManifest.xml:6:5-43
+MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\3f18446cba19c6bd0d3039cb2aac91cc\AndroidManifest.xml:6:5-43
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\1c68e92d57a097e4da0e06ad99b4aad6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\1c68e92d57a097e4da0e06ad99b4aad6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\9dfe1bef4d2deb5ae4147c7d7ee49144\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\9dfe1bef4d2deb5ae4147c7d7ee49144\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\968b4ad4972642b24e63b76c984a69ff\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\968b4ad4972642b24e63b76c984a69ff\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8345b3745e90e112d15df8b8d7cf96eb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8345b3745e90e112d15df8b8d7cf96eb\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:9:9-48
+	android:targetSdkVersion
+		INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:11:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:22-78
+uses-feature#0x00020000
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:11:5-13:35
+	android:glEsVersion
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:12:9-41
+	android:required
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:13:9-32
+uses-feature#android.hardware.wifi
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:14:5-16:36
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:19:5-58
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:19:5-58
+	android:required
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:16:9-33
+		MERGED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:14:5-16:36
+	android:name
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:15:9-45
+uses-feature#android.hardware.location.gps
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:17:5-19:36
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:13:5-15:36
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:13:5-15:36
+	android:required
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:19:9-33
+	android:name
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:18:9-53
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:22:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:23:5-76
+	android:name
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:23:22-73
+service#com.mapbox.services.android.telemetry.service.TelemetryService
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:28:9-98
+	android:name
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:28:18-95
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:9:5-11:36
+	android:required
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:11:9-33
+	android:name
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:10:9-61
+uses-feature#android.hardware.location
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:12:5-62
+	android:name
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:12:19-59
+uses-feature#android.hardware.telephony
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:16:5-18:36
+	android:required
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:18:9-33
+	android:name
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:17:9-50
+service#com.mapzen.android.lost.internal.FusedLocationProviderService
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:22:9-24:39
+	android:process
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:24:13-36
+	android:name
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:23:13-89
+service#com.mapzen.android.lost.internal.GeofencingIntentService
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:25:9-29:19
+	android:name
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:25:18-89
+intent-filter#action:name:com.mapzen.lost.action.ACTION_GEOFENCING_SERVICE
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:26:13-28:29
+action#com.mapzen.lost.action.ACTION_GEOFENCING_SERVICE
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:27:17-91
+	android:name
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:27:25-88
+service#com.mapzen.android.lost.internal.DwellIntentService
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:30:9-31:19
+	android:name
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:30:18-84
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from C:\Users\jollo.delacruz\Desktop\THESIS PROPOSAL\react-native\Sert-Application-v7\client\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
