@@ -16,6 +16,8 @@
     "native-base": "^2.8.2",
     "react": "16.5.0",
     "react-native": "^0.55.4",
+    "react-native-android-location-services-dialog-box": "^2.7.0",
+    "react-native-geolocation-service": "^1.1.0",
     "react-navigation": "^2.18.2",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",

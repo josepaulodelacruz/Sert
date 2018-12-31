@@ -15,9 +15,6 @@ class Messages extends Component {
 	render(){
 		return(
 			<View style={styles.container}>
-			<View style={{paddingTop: 22, backgroundColor: '#111'}}>
-				<StatusBar translucent={true} backgroundColor={'transparent'}/>
-			</View>	
 				<Header style={{backgroundColor: '#3073FA'}}>
 					<Left>
 						<Icon name="menu" onPress={() => this.props.navigation.openDrawer()}/>

@@ -3,12 +3,18 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  YellowBox 
 } from 'react-native';
 
 import App from './App';
 
+// Hide the deprecated warning
+YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
+
 export default class SertApplicationV7 extends Component {
+
+
   render() {
     return (
       <View style={styles.container}>
