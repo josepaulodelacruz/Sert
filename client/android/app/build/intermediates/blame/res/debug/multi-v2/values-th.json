@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jollo.delacruz\\Desktop\\THESIS PROPOSAL\\react-native\\Sert-Application-v7\\client\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
+            "outputFile": "C:\\Users\\jollo.delacruz\\Desktop\\Sert\\client\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
             "map": [
                 {
                     "source": "C:\\Users\\jollo.delacruz\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\a9c3a054546b0cb04e72e3975029cd52\\res\\values-th\\values-th.xml",

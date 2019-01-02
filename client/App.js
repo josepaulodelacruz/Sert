@@ -153,7 +153,7 @@ const Screens = createStackNavigator({
   DispatcherScreen: { screen: DispatcherScreen}
 },
   {
-    initialRouteName: 'ClientScreen',
+    initialRouteName: 'Home',
     navigationOptions: {
       headerStyle: {
         backgroundColor: '#3073FA',

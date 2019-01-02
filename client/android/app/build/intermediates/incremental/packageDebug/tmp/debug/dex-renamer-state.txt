@@ -1,4 +1,4 @@
-#Sun Dec 30 20:17:37 SGT 2018
-base.0=C\:\\Users\\jollo.delacruz\\Desktop\\THESIS PROPOSAL\\react-native\\Sert-Application-v7\\client\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Tue Jan 01 09:16:14 SGT 2019
+base.0=C\:\\Users\\jollo.delacruz\\Desktop\\Sert\\client\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

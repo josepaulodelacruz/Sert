@@ -4,6 +4,8 @@ import { createDrawerNavigator, DrawerItems, createBottomTabNavigator } from 're
 import { Header, Left, Body, Right, Icon, Fab, Button, Container, Content, CardItem, Card } from 'native-base';
 import Mapbox from '@mapbox/react-native-mapbox-gl';
 import Geolocation from 'react-native-geolocation-service';
+import uuid from 'react-native-uuid';
+import ExampleLogo from '../Assets/logo.jpg';
 Mapbox.setAccessToken('pk.eyJ1IjoiamV5cGkiLCJhIjoiY2psOWIzMzhhMW1rcTNycWttcDIwYzU3aCJ9.mRXngxERf-Zth8ABFhNgag');
 
 
@@ -15,16 +17,28 @@ export default class ClientScreen extends React.Component {
 		this.state = {
 			active: true,
 			latitude: 0,
-	      longitude: 0,
-	      timestamp: null,
-	      location: null,
-	    	permission: true,
-	    	coords: []
+	     	longitude: 0,
+	     	desLongitude: 0,
+	     	desLatitude: 0,
+	      	timestamp: null,
+	      	location: null,
+	    	error: null,
+	    	featureCollection: Mapbox.geoUtils.makeFeatureCollection(),
+	    	desiredDestination: false,
 		};
 	}
 
-	 componentDidMount() {
-    navigator.geolocation.getCurrentPosition(
+	static navigationOptions = {
+          drawerIcon: ({ tintColor }) =>{
+            return(
+              <Icon name="home" style={{fontSize: 24, color: "blue"}}/>
+            );
+        }
+    } 
+
+
+	 componentWillMount() {
+    Geolocation.getCurrentPosition(
       (position) => {
         this.setState({
           latitude: position.coords.latitude,
@@ -42,13 +56,7 @@ export default class ClientScreen extends React.Component {
 		alert(this.state.longitude, this.state.latitude);
 	}
 
-	static navigationOptions = {
-          drawerIcon: ({ tintColor }) =>{
-            return(
-              <Icon name="home" style={{fontSize: 24, color: "blue"}}/>
-            );
-        }
-    } 
+	
 
     renderAnnotations () {
     return (
@@ -60,19 +68,52 @@ export default class ClientScreen extends React.Component {
         <View style={styles.annotationContainer}>
           <View style={styles.annotationFill} />
         </View>
-        <Mapbox.Callout title='Look! An annotation!' />
+        <Mapbox.Callout title='Your Current Location!' />
       </Mapbox.PointAnnotation>
     )
   }
 
   // Click events
-  HandleDestination = () => {
-  	alert('click');
+
+  async onPress(e) {
+  	// if(this.state.desiredDestination === false){
+  		let feature = Mapbox.geoUtils.makeFeature(e.geometry);
+	    feature.id = uuid.v4()
+	    this.setState({
+	      featureCollection: 
+	      	Mapbox.geoUtils.addToFeatureCollection(
+	        this.state.featureCollection,
+	        feature,
+	      ),
+	      desiredDestination: true,
+	      desLongitude: feature.geometry.coordinates[0],
+	      desLatitude: feature.geometry.coordinates[1]
+	    });	
+  	// }else{
+  	// 	alert(`Remove that you've click`);
+  	// } 
   }
 
+ //   onSourceLayerPress(e) {
+	// const feature = e.nativeEvent.payload;
+	// console.log('You pressed a layer here is your feature', feature); // eslint-disable-line 
+ //  }
+
+  bookRide = () => {
+  	alert('Book');
+  }	
 
 	render(){
-		const { navigate } = this.props.navigation;
+			let pointerDestination =  <Mapbox.PointAnnotation
+			        key='pointDestinationAnnotation'
+			        id='pointDestinationAnnotation'
+			        coordinate={[this.state.desLongitude, this.state.desLatitude]}>
+
+			        <View style={styles.annotationDestinationContainer}>
+			          <View style={styles.annotationDestinationFill} />
+			        </View>
+			        <Mapbox.Callout title='Your Destination' />
+			      </Mapbox.PointAnnotation>
 		return(
 			<View style={styles.container}>
 				<Header style={{backgroundColor: '#3073FA'}}>
@@ -94,26 +135,26 @@ export default class ClientScreen extends React.Component {
 		                   {this.state.longitude}
 		                </Text>
 		              </Body>
-		              <Body>
+		              <Body style={{flex: 1, flexDirection: 'column'}}>
 		              	<Text style={{fontWeight: 'bold', fontSize: 15}}>
 		              		Destination
 		              	</Text>
-		                <Text> 
-		                   None
-		                </Text>
+	              		<Text> 
+                   			None
+                		</Text>
 		              </Body>
 		            </CardItem>
 		          </Card>
 		          <View style={styles.container}>
 			        <Mapbox.MapView
+			        	ref={(c) => (this._map = c)}
+			        	onPress={this.onPress.bind(this)}
 			            styleURL={Mapbox.StyleURL.Street}
 			            zoomLevel={12}
 			            centerCoordinate={[121.1167,14.2871]}
 			            style={styles.container}>
 			            {this.renderAnnotations()}
-			            <Mapbox.ShapeSource
-			            onPress={this.HandleDestination}>
-			          </Mapbox.ShapeSource>
+			            {pointerDestination}
 			        </Mapbox.MapView>
 			      </View>
 			      <Fab
@@ -163,5 +204,29 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     backgroundColor: 'orange',
     transform: [{ scale: 0.6 }],
+  },
+  annotationDestinationContainer: {
+    width: 30,
+    height: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'white',
+    borderRadius: 15,
+  },
+  annotationDestinationFill: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    backgroundColor: 'blue',
+    transform: [{ scale: 0.6 }],
   }
+});
+
+
+const stylesMap = Mapbox.StyleSheet.create({
+  icon: {
+    iconImage: ExampleLogo,
+    iconAllowOverlap: true,
+    iconSize: 0.5,
+  },
 });
