@@ -6,6 +6,8 @@ import Mapbox from '@mapbox/react-native-mapbox-gl';
 import Geolocation from 'react-native-geolocation-service';
 import uuid from 'react-native-uuid';
 import ExampleLogo from '../Assets/logo.jpg';
+import CurrentLocation from './Locations/CurrentLocation';
+import Local from './Locations/local.json';
 Mapbox.setAccessToken('pk.eyJ1IjoiamV5cGkiLCJhIjoiY2psOWIzMzhhMW1rcTNycWttcDIwYzU3aCJ9.mRXngxERf-Zth8ABFhNgag');
 
 
@@ -49,14 +51,7 @@ export default class ClientScreen extends React.Component {
       (error) => this.setState({ error: error.message }),
       { enableHighAccuracy: false, timeout: 20000, maximumAge: 1000 },
     );
-  }
-
-
-	bookRide = () => {
-		alert(this.state.longitude, this.state.latitude);
-	}
-
-	
+  }	
 
     renderAnnotations () {
     return (
@@ -100,7 +95,7 @@ export default class ClientScreen extends React.Component {
  //  }
 
   bookRide = () => {
-  	alert('Book');
+  	console.log(Local.features[0].geometry.coordinates);
   }	
 
 	render(){
@@ -122,7 +117,7 @@ export default class ClientScreen extends React.Component {
 					</Left>
 					<Body>
 						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Single Ride</Text>
-					</Body>
+					</Body>		
 					<Right/>
 				</Header>
 					<Card>
@@ -131,9 +126,11 @@ export default class ClientScreen extends React.Component {
 		              	<Text style={{fontWeight: 'bold', fontSize: 15}}>
 		              		Current Location
 		              	</Text>
-		                <Text> 
-		                   {this.state.longitude}
-		                </Text>
+		               {/*Curren Location*/}
+	                   <CurrentLocation 
+	                   currentLongitude={this.state.longitude} 
+	                   currentLatitude={this.state.latitude}/>
+
 		              </Body>
 		              <Body style={{flex: 1, flexDirection: 'column'}}>
 		              	<Text style={{fontWeight: 'bold', fontSize: 15}}>
