@@ -5,64 +5,27 @@ import { Header, Left, Body, Right, Icon, Fab, Button, Container, Content, CardI
 import Mapbox from '@mapbox/react-native-mapbox-gl';
 import Geolocation from 'react-native-geolocation-service';
 import uuid from 'react-native-uuid';
-import geolib from 'geolib';
 import ExampleLogo from '../Assets/logo.jpg';
-import CurrentLocation from './Locations/CurrentLocation';
-import Destinations from './Locations/Destination';
-import Local from './Locations/local.json';
-import StoreLocatorKit from '@mapbox/store-locator-react-native';
-import PropTypes from 'prop-types';
-import Direction from './Locations/Direction';
-
+import DisplayPlaces from './Locations/DisplayPlaces';
 Mapbox.setAccessToken('pk.eyJ1IjoiamV5cGkiLCJhIjoiY2psOWIzMzhhMW1rcTNycWttcDIwYzU3aCJ9.mRXngxERf-Zth8ABFhNgag');
 
 const mbxDirections = require('@mapbox/mapbox-sdk/services/directions/');
 const directionsClient = mbxDirections({ accessToken: 'pk.eyJ1IjoiamV5cGkiLCJhIjoiY2psOWIzMzhhMW1rcTNycWttcDIwYzU3aCJ9.mRXngxERf-Zth8ABFhNgag' })
 
 
-// https://www.youtube.com/watch?v=7uhJN4kVS6g
-
 export default class ClientScreen extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
 			active: true,
-			latitude: 0,
-	     	longitude: 0,
+			latitude: 14.2848435,
+	     	longitude: 121.1384163,
 	     	desLongitude: 121.11175658485149,
 	     	desLatitude: 14.281682671778967,
 	      	timestamp: null,
-	      	location: null,
 	    	error: null,
 	    	featureCollection: Mapbox.geoUtils.makeFeatureCollection(),
-	    	desiredDestination: false,
-	    	coords: [],
 	    	directions: {},
-	    	routes: {
-			      "type": "Feature",
-			      "properties": {},
-			      "geometry": {
-			        "type": "LineString",
-			        "coordinates": [
-			          [
-			            121.13825798034667,
-			            14.284762355894784
-			          ],
-			          [
-			            121.1033248901367,
-			            14.28218385652444
-			          ],
-			          [
-			            121.10341072082518,
-			            14.281851144776413
-			          ],
-			          [
-			            121.10907554626465,
-			            14.27819128309056
-			          ]
-			        ]
-			      }
-			    }
 		};
 	}
 
@@ -104,7 +67,7 @@ export default class ClientScreen extends React.Component {
       <Mapbox.PointAnnotation
         key='pointAnnotation'
         id='pointAnnotation'
-        coordinate={[this.state.longitude, this.state.latitude]}>
+        coordinate={[121.1384163, 14.2848435]}>
 
         <View style={styles.annotationContainer}>
           <View style={styles.annotationFill} />
@@ -133,7 +96,7 @@ export default class ClientScreen extends React.Component {
 	directionsClient.getDirections({
 	    waypoints: [
 	      {
-	        coordinates: [this.state.longitude, this.state.latitude],
+	        coordinates: [121.1384163, 14.2848435],
 	        approach: 'unrestricted'
 	      },
 	      {
@@ -144,11 +107,8 @@ export default class ClientScreen extends React.Component {
 	  })
 	  .send()
 	  .then(response => {
-	    // directions = response.body;
-	    console.log(response)
-	    	console.log(response.body);
     		const geometry = response.body.routes[0].geometry;
-    		console.log(geometry);
+    		const path = response.body.routes[0];
     		this.setState({directions: {
     			"type": "Feature",
 		      	"properties": {},
@@ -162,7 +122,6 @@ export default class ClientScreen extends React.Component {
   }
 
 	render(){
-			console.log(this.state.directions);
 			let pointerDestination = <Mapbox.PointAnnotation
 	        key='pointDestinationAnnotation'
 	        id='pointDestinationAnnotation'
@@ -184,28 +143,10 @@ export default class ClientScreen extends React.Component {
 					</Body>		
 					<Right/>
 				</Header>
-					<Card>
-		            <CardItem>
-		              <Body>
-		              	<Text style={{fontWeight: 'bold', fontSize: 15}}>
-		              		Current Location
-		              	</Text>
-		               {/*Curren Location*/}
-	                   <CurrentLocation 
-	                   currentLongitude={this.state.longitude} 
-	                   currentLatitude={this.state.latitude}
-	                   desLatitude={this.state.desLatitude}
-	                   desLongitude={this.state.desLongitude}
-	                  />
-		              </Body>
-		              <Body style={{flex: 1, flexDirection: 'column'}}>
-		              	<Text style={{fontWeight: 'bold', fontSize: 15}}>
-		              		Destination
-		              	</Text>
-	              		<Destinations/>
-		              </Body>
-		            </CardItem>
-		          </Card>
+				<DisplayPlaces currentLongitude={this.state.longitude}
+								currentLatitude={this.state.latitude}
+								destinationLongitude={this.state.desLongitude}
+								destinationLatitude={this.state.desLatitude}/>	
 		          <View style={styles.container}>
 			        <Mapbox.MapView
 			        	ref={(c) => (this._map = c)}
