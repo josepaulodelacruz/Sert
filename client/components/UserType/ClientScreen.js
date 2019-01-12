@@ -5,10 +5,19 @@ import { Header, Left, Body, Right, Icon, Fab, Button, Container, Content, CardI
 import Mapbox from '@mapbox/react-native-mapbox-gl';
 import Geolocation from 'react-native-geolocation-service';
 import uuid from 'react-native-uuid';
+import geolib from 'geolib';
 import ExampleLogo from '../Assets/logo.jpg';
 import CurrentLocation from './Locations/CurrentLocation';
+import Destinations from './Locations/Destination';
 import Local from './Locations/local.json';
+import StoreLocatorKit from '@mapbox/store-locator-react-native';
+import PropTypes from 'prop-types';
+import Direction from './Locations/Direction';
+
 Mapbox.setAccessToken('pk.eyJ1IjoiamV5cGkiLCJhIjoiY2psOWIzMzhhMW1rcTNycWttcDIwYzU3aCJ9.mRXngxERf-Zth8ABFhNgag');
+
+const mbxDirections = require('@mapbox/mapbox-sdk/services/directions/');
+const directionsClient = mbxDirections({ accessToken: 'pk.eyJ1IjoiamV5cGkiLCJhIjoiY2psOWIzMzhhMW1rcTNycWttcDIwYzU3aCJ9.mRXngxERf-Zth8ABFhNgag' })
 
 
 // https://www.youtube.com/watch?v=7uhJN4kVS6g
@@ -20,16 +29,47 @@ export default class ClientScreen extends React.Component {
 			active: true,
 			latitude: 0,
 	     	longitude: 0,
-	     	desLongitude: 0,
-	     	desLatitude: 0,
+	     	desLongitude: 121.11175658485149,
+	     	desLatitude: 14.281682671778967,
 	      	timestamp: null,
 	      	location: null,
 	    	error: null,
 	    	featureCollection: Mapbox.geoUtils.makeFeatureCollection(),
 	    	desiredDestination: false,
+	    	coords: [],
+	    	directions: {},
+	    	routes: {
+			      "type": "Feature",
+			      "properties": {},
+			      "geometry": {
+			        "type": "LineString",
+			        "coordinates": [
+			          [
+			            121.13825798034667,
+			            14.284762355894784
+			          ],
+			          [
+			            121.1033248901367,
+			            14.28218385652444
+			          ],
+			          [
+			            121.10341072082518,
+			            14.281851144776413
+			          ],
+			          [
+			            121.10907554626465,
+			            14.27819128309056
+			          ]
+			        ]
+			      }
+			    }
 		};
 	}
 
+	
+	
+
+	// Icon
 	static navigationOptions = {
           drawerIcon: ({ tintColor }) =>{
             return(
@@ -38,10 +78,11 @@ export default class ClientScreen extends React.Component {
         }
     } 
 
-
+    // Track users location
 	 componentWillMount() {
     Geolocation.getCurrentPosition(
       (position) => {
+      	console.log(position.coords);
         this.setState({
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
@@ -49,10 +90,15 @@ export default class ClientScreen extends React.Component {
         });
       },
       (error) => this.setState({ error: error.message }),
-      { enableHighAccuracy: false, timeout: 20000, maximumAge: 1000 },
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
     );
-  }	
+  }
 
+
+ 
+
+
+  // Display current location marker
     renderAnnotations () {
     return (
       <Mapbox.PointAnnotation
@@ -71,44 +117,62 @@ export default class ClientScreen extends React.Component {
   // Click events
 
   async onPress(e) {
-  	// if(this.state.desiredDestination === false){
-  		let feature = Mapbox.geoUtils.makeFeature(e.geometry);
-	    feature.id = uuid.v4()
-	    this.setState({
-	      featureCollection: 
-	      	Mapbox.geoUtils.addToFeatureCollection(
-	        this.state.featureCollection,
-	        feature,
-	      ),
-	      desiredDestination: true,
-	      desLongitude: feature.geometry.coordinates[0],
-	      desLatitude: feature.geometry.coordinates[1]
-	    });	
-  	// }else{
-  	// 	alert(`Remove that you've click`);
-  	// } 
-  }
 
- //   onSourceLayerPress(e) {
-	// const feature = e.nativeEvent.payload;
-	// console.log('You pressed a layer here is your feature', feature); // eslint-disable-line 
- //  }
+		let feature = Mapbox.geoUtils.makeFeature(e.geometry);
+    feature.id = uuid.v4()
+    this.setState({
+      featureCollection: 
+      	Mapbox.geoUtils.addToFeatureCollection(
+        this.state.featureCollection,
+        feature,
+      ),
+      desiredDestination: true,
+      desLongitude: feature.geometry.coordinates[0],
+      desLatitude: feature.geometry.coordinates[1]
+    });
+	directionsClient.getDirections({
+	    waypoints: [
+	      {
+	        coordinates: [this.state.longitude, this.state.latitude],
+	        approach: 'unrestricted'
+	      },
+	      {
+	        coordinates: [feature.geometry.coordinates[0], feature.geometry.coordinates[1]],
+	        bearing: [100, 60]
+	      }
+	    ]
+	  })
+	  .send()
+	  .then(response => {
+	    // directions = response.body;
+	    console.log(response)
+	    	console.log(response.body);
+    		const geometry = response.body.routes[0].geometry;
+    		console.log(geometry);
+    		this.setState({directions: {
+    			"type": "Feature",
+		      	"properties": {},
+		      	geometry
+    		}})
+	  });
+  }
 
   bookRide = () => {
   	console.log(Local.features[0].geometry.coordinates);
-  }	
+  }
 
 	render(){
-			let pointerDestination =  <Mapbox.PointAnnotation
-			        key='pointDestinationAnnotation'
-			        id='pointDestinationAnnotation'
-			        coordinate={[this.state.desLongitude, this.state.desLatitude]}>
+			console.log(this.state.directions);
+			let pointerDestination = <Mapbox.PointAnnotation
+	        key='pointDestinationAnnotation'
+	        id='pointDestinationAnnotation'
+	        coordinate={[this.state.desLongitude, this.state.desLatitude]}>
 
-			        <View style={styles.annotationDestinationContainer}>
-			          <View style={styles.annotationDestinationFill} />
-			        </View>
-			        <Mapbox.Callout title='Your Destination' />
-			      </Mapbox.PointAnnotation>
+	        <View style={styles.annotationDestinationContainer}>
+	          <View style={styles.annotationDestinationFill} />
+	        </View>
+	        <Mapbox.Callout title='Your Destination' />
+	      </Mapbox.PointAnnotation>;	      
 		return(
 			<View style={styles.container}>
 				<Header style={{backgroundColor: '#3073FA'}}>
@@ -129,16 +193,16 @@ export default class ClientScreen extends React.Component {
 		               {/*Curren Location*/}
 	                   <CurrentLocation 
 	                   currentLongitude={this.state.longitude} 
-	                   currentLatitude={this.state.latitude}/>
-
+	                   currentLatitude={this.state.latitude}
+	                   desLatitude={this.state.desLatitude}
+	                   desLongitude={this.state.desLongitude}
+	                  />
 		              </Body>
 		              <Body style={{flex: 1, flexDirection: 'column'}}>
 		              	<Text style={{fontWeight: 'bold', fontSize: 15}}>
 		              		Destination
 		              	</Text>
-	              		<Text> 
-                   			None
-                		</Text>
+	              		<Destinations/>
 		              </Body>
 		            </CardItem>
 		          </Card>
@@ -152,6 +216,11 @@ export default class ClientScreen extends React.Component {
 			            style={styles.container}>
 			            {this.renderAnnotations()}
 			            {pointerDestination}
+	              		<Mapbox.ShapeSource id='mapbox-directions-source' shape={this.state.directions}>
+				        <Mapbox.LineLayer
+				          id='mapbox-directions-line'
+				          style={stylesMap.directionsLine} />
+				      </Mapbox.ShapeSource>
 			        </Mapbox.MapView>
 			      </View>
 			      <Fab
@@ -167,8 +236,6 @@ export default class ClientScreen extends React.Component {
 		)
 	}
 }
-
-// centerCoordinate={[14.2871, 121.1167]}
 
 const CustomDrawerComponent = (props) => {
 	return(
@@ -221,9 +288,10 @@ const styles = StyleSheet.create({
 
 
 const stylesMap = Mapbox.StyleSheet.create({
-  icon: {
-    iconImage: ExampleLogo,
-    iconAllowOverlap: true,
-    iconSize: 0.5,
+   directionsLine: {
+    lineWidth: 3,
+    lineCap: Mapbox.LineCap.Round,
+    lineJoin: Mapbox.LineJoin.Round,
+    lineColor: 'blue'
   },
 });

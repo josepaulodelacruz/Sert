@@ -22,10 +22,10 @@ export default class App extends React.Component {
     super();
     this.state = {
       response: [],
-      endpoint: 'http://192.168.0.15:5000',
+      endpoint: 'http://192.168.0.10:5000',
       con: '',
       msg: 'sent',
-      socket: io('http://192.168.0.15:5000', {jsonp: false}),
+      socket: io('http://192.168.0.10:5000', {jsonp: false}),
       permission: false
     };
   }
@@ -90,8 +90,6 @@ export default class App extends React.Component {
   }
 
   render() {
-     
-
     return(
       <Screens/>
     )
