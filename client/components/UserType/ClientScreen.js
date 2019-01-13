@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar, PermissionsAndroid, Alert  } from 'react-native';
+import { TouchableOpacity, View, Text, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar, PermissionsAndroid, Alert  } from 'react-native';
 import { createDrawerNavigator, DrawerItems, createBottomTabNavigator } from 'react-navigation';
 import { Header, Left, Body, Right, Icon, Fab, Button, Container, Content, CardItem, Card } from 'native-base';
 import Mapbox from '@mapbox/react-native-mapbox-gl';
@@ -7,10 +7,12 @@ import Geolocation from 'react-native-geolocation-service';
 import uuid from 'react-native-uuid';
 import ExampleLogo from '../Assets/logo.jpg';
 import DisplayPlaces from './Locations/DisplayPlaces';
-Mapbox.setAccessToken('pk.eyJ1IjoiamV5cGkiLCJhIjoiY2psOWIzMzhhMW1rcTNycWttcDIwYzU3aCJ9.mRXngxERf-Zth8ABFhNgag');
+import Modal from "react-native-modal";
+
+Mapbox.setAccessToken('pk.eyJ1Ijoid2hvc2VlcG93bHUiLCJhIjoiY2pxdWI3dWxjMGlyOTQzb2M1bjBmMjhrdSJ9._zfJuW0TJRGYl_JNFG37aw');
 
 const mbxDirections = require('@mapbox/mapbox-sdk/services/directions/');
-const directionsClient = mbxDirections({ accessToken: 'pk.eyJ1IjoiamV5cGkiLCJhIjoiY2psOWIzMzhhMW1rcTNycWttcDIwYzU3aCJ9.mRXngxERf-Zth8ABFhNgag' })
+const directionsClient = mbxDirections({ accessToken: 'pk.eyJ1Ijoid2hvc2VlcG93bHUiLCJhIjoiY2pxdWI3dWxjMGlyOTQzb2M1bjBmMjhrdSJ9._zfJuW0TJRGYl_JNFG37aw' })
 
 
 export default class ClientScreen extends React.Component {
@@ -18,14 +20,15 @@ export default class ClientScreen extends React.Component {
 		super(props);
 		this.state = {
 			active: true,
-			latitude: 14.2848435,
-	     	longitude: 121.1384163,
+			latitude: 0,
+	     	longitude: 0,
 	     	desLongitude: 121.11175658485149,
 	     	desLatitude: 14.281682671778967,
 	      	timestamp: null,
 	    	error: null,
 	    	featureCollection: Mapbox.geoUtils.makeFeatureCollection(),
 	    	directions: {},
+	    	isModalVisible: false
 		};
 	}
 
@@ -67,7 +70,7 @@ export default class ClientScreen extends React.Component {
       <Mapbox.PointAnnotation
         key='pointAnnotation'
         id='pointAnnotation'
-        coordinate={[121.1384163, 14.2848435]}>
+        coordinate={[this.state.longitude, this.state.latitude]}>
 
         <View style={styles.annotationContainer}>
           <View style={styles.annotationFill} />
@@ -96,7 +99,7 @@ export default class ClientScreen extends React.Component {
 	directionsClient.getDirections({
 	    waypoints: [
 	      {
-	        coordinates: [121.1384163, 14.2848435],
+	        coordinates: [this.state.longitude, this.state.latitude],
 	        approach: 'unrestricted'
 	      },
 	      {
@@ -117,9 +120,10 @@ export default class ClientScreen extends React.Component {
 	  });
   }
 
-  bookRide = () => {
-  	console.log(Local.features[0].geometry.coordinates);
-  }
+  _toggleModal = () =>
+    this.setState({ isModalVisible: !this.state.isModalVisible });
+
+
 
 	render(){
 			let pointerDestination = <Mapbox.PointAnnotation
@@ -146,7 +150,8 @@ export default class ClientScreen extends React.Component {
 				<DisplayPlaces currentLongitude={this.state.longitude}
 								currentLatitude={this.state.latitude}
 								destinationLongitude={this.state.desLongitude}
-								destinationLatitude={this.state.desLatitude}/>	
+								destinationLatitude={this.state.desLatitude}/>
+
 		          <View style={styles.container}>
 			        <Mapbox.MapView
 			        	ref={(c) => (this._map = c)}
@@ -163,16 +168,26 @@ export default class ClientScreen extends React.Component {
 				          style={stylesMap.directionsLine} />
 				      </Mapbox.ShapeSource>
 			        </Mapbox.MapView>
+
 			      </View>
-			      <Fab
+		      		<Fab
 		            active={this.state.active}
 		            direction="up"
 		            containerStyle={{ }}
 		            style={{ backgroundColor: '#5067FF' }}
 		            position="bottomRight"
-		            onPress={this.bookRide.bind(this)}>
-		             <Text>+</Text>
-		          </Fab>
+		            onPress={this._toggleModal}>		            
+	             <Text>+</Text>
+	          	</Fab>
+	          	<Modal isVisible={this.state.isModalVisible}
+          			 	onBackdropPress={() => this.setState({visibleModal: false})}>
+			          <View style={styles.modal}>
+			            <Text>Payment Matrix</Text>
+			            <TouchableOpacity onPress={this._toggleModal}>
+			              <Text>Close</Text>
+			            </TouchableOpacity>
+			          </View>
+			        </Modal>
 			</View>	
 		)
 	}
@@ -194,6 +209,14 @@ const CustomDrawerComponent = (props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  modal: {
+  	backgroundColor: "white",
+    padding: 22,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 4,
+    borderColor: "rgba(0, 0, 0, 0.1)"
   },
   annotationContainer: {
     width: 30,

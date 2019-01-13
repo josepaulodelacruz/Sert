@@ -5,56 +5,59 @@ import { Card,
 		 Body } from 'native-base';
 
 const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding/');
-const geocodingClient = mbxGeocoding({ accessToken: 'pk.eyJ1IjoiamV5cGkiLCJhIjoiY2psOWIzMzhhMW1rcTNycWttcDIwYzU3aCJ9.mRXngxERf-Zth8ABFhNgag' })
+const geocodingClient = mbxGeocoding({ accessToken: 'pk.eyJ1Ijoid2hvc2VlcG93bHUiLCJhIjoiY2pxdWI3dWxjMGlyOTQzb2M1bjBmMjhrdSJ9._zfJuW0TJRGYl_JNFG37aw' })
 
 
 class DisplayPlaces extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			latitude: this.props.currentLatitude,
-			longitude: this.props.currentLongitude,
-			location: "Not Found",
-			destination: 'Dita'
+			location: 'Not Found',
+			destination: '7-Eleven Dita'
 		}
 	}
 
-	componentDidMount(){
+
+	componentDidUpdate(prevProps){
+		if(this.props.destinationLongitude !== prevProps.destinationLongitude){
+			 geocodingClient.reverseGeocode({
+			  query: [this.props.destinationLongitude, this.props.destinationLatitude],
+			  limit: 2
+			})
+			  .send()
+			  .then(response => {
+			    // GeoJSON document with geocoding matches
+			    const match = response.body;
+			    this.setState({destination: match.features[0].text})
+			    console.log(this.state.destination)
+			  })
+			  .catch(function(error) {
+			  	console.log("Problem" + error.message);
+			  	throw error;
+			  })
+		}
+		if(this.props.currentLongitude !== prevProps.currentLongitude){
 		geocodingClient.reverseGeocode({
-		  query: [this.state.longitude, this.state.latitude],
-		  limit: 9
+		  query: [this.props.currentLongitude, this.props.currentLatitude],
+		  limit: 2
 		})
 		  .send()
 		  .then(response => {
 		    // GeoJSON document with geocoding matches
 		    const match = response.body;
-		    console.log(match.features[0]);
-		    this.setState({location: match.features[0].place_name})
-		  })
+		    this.setState({location: match.features[0].text})
+		    console.log(this.state.location)
+
+	  	})
 		  .catch(function(error) {
 		  	console.log("Problem" + error.message);
 		  	throw error;
 		  })
+		}
 	}
 
 	render(){
-		let long = this.props.destinationLongitude;
-		let lat = this.props.destinationLatitude
-		let destinationName = geocodingClient.reverseGeocode({
-		  query: [long, lat],
-		  limit: 9
-		})
-		  .send()
-		  .then(response => {
-		    // GeoJSON document with geocoding matches
-		    const match = response.body;
-		    console.log(match.features[0]);
-		    this.setState({destination: match.features[0].place_name})
-		  })
-		  .catch(function(error) {
-		  	console.log("Problem" + error.message);
-		  	throw error;
-		  })
+
 		return (
 			<Card>
 	            <CardItem>
