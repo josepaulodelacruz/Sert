@@ -137,7 +137,7 @@ const Screens = createStackNavigator({
       Profile: { screen: Profile },
       Messages: { screen: Messages },
     }, {
-      // effects of drawer
+      // effects of Side drawer
       contentComponent: CustomDrawerComponent,
       contentOptions: {
         activeTintColor: 'blue'
@@ -151,6 +151,7 @@ const Screens = createStackNavigator({
   DispatcherScreen: { screen: DispatcherScreen}
 },
   {
+    // Starting Page
     initialRouteName: 'Home',
     navigationOptions: {
       headerStyle: {

@@ -8,7 +8,8 @@ import uuid from 'react-native-uuid';
 import ExampleLogo from '../Assets/logo.jpg';
 import DisplayPlaces from './Locations/DisplayPlaces';
 import Modal from "react-native-modal";
-
+import FairMatrix from './Locations/FairMatrix';
+import PropTypes from 'prop-types';
 Mapbox.setAccessToken('pk.eyJ1Ijoid2hvc2VlcG93bHUiLCJhIjoiY2pxdWI3dWxjMGlyOTQzb2M1bjBmMjhrdSJ9._zfJuW0TJRGYl_JNFG37aw');
 
 const mbxDirections = require('@mapbox/mapbox-sdk/services/directions/');
@@ -25,6 +26,8 @@ export default class ClientScreen extends React.Component {
 	     	desLongitude: 121.11175658485149,
 	     	desLatitude: 14.281682671778967,
 	      	timestamp: null,
+	      	distance: null,
+	      	kilometer: null,
 	    	error: null,
 	    	featureCollection: Mapbox.geoUtils.makeFeatureCollection(),
 	    	directions: {},
@@ -83,8 +86,7 @@ export default class ClientScreen extends React.Component {
   // Click events
 
   async onPress(e) {
-
-		let feature = Mapbox.geoUtils.makeFeature(e.geometry);
+	let feature = Mapbox.geoUtils.makeFeature(e.geometry);
     feature.id = uuid.v4()
     this.setState({
       featureCollection: 
@@ -95,7 +97,10 @@ export default class ClientScreen extends React.Component {
       desiredDestination: true,
       desLongitude: feature.geometry.coordinates[0],
       desLatitude: feature.geometry.coordinates[1]
+
     });
+    console.log(this.state.desLongitude, this.state.desLatitude);
+    // API fetch Route
 	directionsClient.getDirections({
 	    waypoints: [
 	      {
@@ -111,17 +116,21 @@ export default class ClientScreen extends React.Component {
 	  .send()
 	  .then(response => {
     		const geometry = response.body.routes[0].geometry;
-    		const path = response.body.routes[0];
+    		const path = response.body.routes[0].legs;
     		this.setState({directions: {
     			"type": "Feature",
 		      	"properties": {},
 		      	geometry
     		}})
+    		this.setState({ distance: path[0].distance })
 	  });
   }
 
-  _toggleModal = () =>
-    this.setState({ isModalVisible: !this.state.isModalVisible });
+  _toggleModal = () => {
+  	 let total = parseInt(this.state.distance/1000)
+  	this.setState({ kilometer: total})
+  	this.setState({ isModalVisible: !this.state.isModalVisible })
+  }
 
 
 
@@ -179,15 +188,19 @@ export default class ClientScreen extends React.Component {
 		            onPress={this._toggleModal}>		            
 	             <Text>+</Text>
 	          	</Fab>
-	          	<Modal isVisible={this.state.isModalVisible}
+          	<Modal isVisible={this.state.isModalVisible}
           			 	onBackdropPress={() => this.setState({visibleModal: false})}>
-			          <View style={styles.modal}>
+  					<View style={styles.modal}>
 			            <Text>Payment Matrix</Text>
-			            <TouchableOpacity onPress={this._toggleModal}>
-			              <Text>Close</Text>
+			            <FairMatrix distance={this.state.kilometer}/>
+			            <TouchableOpacity style={{position: 'absolute', top: 5, right: 10}} onPress={this._toggleModal}>
+			              <Text style={{fontSize: 24}}>X</Text>
 			            </TouchableOpacity>
-			          </View>
-			        </Modal>
+			            <TouchableOpacity style={styles.button} onPress={this._toggleModal}>
+			              <Text style={{fontSize: 14, color: 'white'}}>Book a Ride</Text>
+			            </TouchableOpacity>
+		          	</View>	 	
+	        </Modal>
 			</View>	
 		)
 	}
@@ -247,7 +260,16 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     backgroundColor: 'blue',
     transform: [{ scale: 0.6 }],
-  }
+  },
+  button: {
+    backgroundColor: '#3073FA',
+    padding: 12,
+    margin: 13,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 4,
+    borderColor: "rgba(0, 0, 0, 0.1)"
+  },
 });
 
 
