@@ -20,12 +20,12 @@ class Messages extends Component {
 						<Icon name="menu" onPress={() => this.props.navigation.openDrawer()}/>
 					</Left>
 					<Body>
-						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Messages</Text>
+						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Records</Text>
 					</Body>
 					<Right/>
 				</Header>
 				<View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-					<Text>Messages</Text>
+					<Text>Display Records of all transactions of the client</Text>
 				</View>
 			</View>
 		)

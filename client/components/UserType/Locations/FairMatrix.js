@@ -16,13 +16,13 @@ class FairMatrix extends Component {
         };
       }
 
+      // Within 2 kilometers doesn't add to payment
       componentDidMount(){
       	if(this.props.distance > 2){
-      		// this.setState({ distance: 0})
       		let value = this.props.distance - 2;
       		this.setState({ distance: value});
       	}else{
-      		console.log('false')
+      		return false;
       	}
       }
 

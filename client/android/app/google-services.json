@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1092666124580",
+    "firebase_url": "https://sert-app-project.firebaseio.com",
+    "project_id": "sert-app-project",
+    "storage_bucket": "sert-app-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092666124580:android:2db2c66b40704dc1",
+        "android_client_info": {
+          "package_name": "com.sertapplicationv7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092666124580-655j2cc4fa7dde9r0nj72fa8oeg2t6ao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdyaOvycg4QyUYybMtZVVsd1fJGYNa91o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

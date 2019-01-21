@@ -126,6 +126,7 @@ export default class ClientScreen extends React.Component {
 	  });
   }
 
+  // Modal on/off event
   _toggleModal = () => {
   	 let total = parseInt(this.state.distance/1000)
   	this.setState({ kilometer: total})
@@ -135,6 +136,7 @@ export default class ClientScreen extends React.Component {
 
 
 	render(){
+			// Display desired location by press event on the map
 			let pointerDestination = <Mapbox.PointAnnotation
 	        key='pointDestinationAnnotation'
 	        id='pointDestinationAnnotation'
@@ -219,6 +221,7 @@ const CustomDrawerComponent = (props) => {
 	)
 }
 
+// Styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,

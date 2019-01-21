@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Button, TextInput, Image, Animated, Easing} from 'react-native';
+import { View, Text, StyleSheet, Button, TextInput, Image, Animated, Easing, TouchableOpacity} from 'react-native';
 
 export default class Login extends Component {
 	constructor(){
@@ -66,7 +66,9 @@ export default class Login extends Component {
  					<Button title="Login" onPress={this.handleSubmit.bind(this)}/>
  					<Text style={{textAlign: 'center', fontSize: 22, fontStyle: 'italic', marginTop: 10}}>Forgot Password?</Text>
  					<Text style={styles.textStyle}>Don't have an Account? </Text>
- 					<Text style={styles.textStyle} onPress={() => this.props.navigation.navigate('SignUp')}>Sign Up Here</Text>
+ 					<TouchableOpacity onPress={() => this.props.navigation.navigate('SignUp')}>
+ 						<Text style={styles.textStyle}>Sign Up Here</Text>
+ 					</TouchableOpacity>
  				</View>
  				<Text style={{textAlign: 'center'}}>Sert Application Developed by the students of CITI Global College &copy; 2019</Text>
 			</View>		

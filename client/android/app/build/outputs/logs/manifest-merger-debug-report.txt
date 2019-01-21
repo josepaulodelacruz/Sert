@@ -4,43 +4,58 @@ ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\Andr
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:1:1-27:12
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:1:1-27:12
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:1:1-27:12
-MERGED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-12:12
-MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-14:12
-MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\d53fba485d2fc5fb220b99b51a3ad167\AndroidManifest.xml:2:1-15:12
-MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:2:1-14:12
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-localization:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-localization-0.1.0.aar\c1f0d7b28efe222e3b7f7fb02d3dcd31\AndroidManifest.xml:2:1-10:12
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-locationlayer-0.3.0.aar\41fa5e8701ecfa117adbbeacffcbddcd\AndroidManifest.xml:2:1-10:12
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:2:1-31:12
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-telemetry-2.2.9.aar\0247e498923db3f7190060e7046ccec3\AndroidManifest.xml:2:1-13:12
-MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:2:1-34:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a9c3a054546b0cb04e72e3975029cd52\AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\8698206679f85dc001078aa9e0a7163e\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-location:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.0.aar\3b60dda26931d47eaff0ad98e078d02f\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\302cf362673aa1b871079efdb03037fc\AndroidManifest.xml:16:1-21:12
-MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.0.aar\3b8a7dad8ad8f79721aa91e0948cfb92\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\418d99cb63bc5bbb05d3b7d3c36ce6f9\AndroidManifest.xml:16:1-23:12
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\7109a767726549b6c70e09fc30907ddb\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\59b6b476dcf8ae5643e5b2c3974f220e\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\3064357bce406175c0ca6fe3764b61c8\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\00b9035c96b71ea1a9e6b13a30627837\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9e8dfb585c49e5add51507398b48a794\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\35c2ea1295fed7dbd0421a2acf318d4d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b2d712fbbe98936159fed09c9efbdd53\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\ab205576c1fc0fb62308ea87afd4e6d2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\a03304023f23591c4be4afdebc513385\AndroidManifest.xml:10:1-18:12
-MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\7c0932aea6ca9df9f59438cdfb2fdfd0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\f1971a10e59e43072f093b28cafedbfa\AndroidManifest.xml:1:1-4:12
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\9371a0a275245ea0f2569e298b9067e5\AndroidManifest.xml:1:1-3:12
-MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\32263a96571ff7f2ee81da8b5ec2f916\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\a167bf16c9bb5faedcd81b96c3b39e09\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\f9d83b3e76e860d3a805290311b053b9\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\5cadf7e29e318e0313126480890d1249\AndroidManifest.xml:2:1-9:12
-MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\3f18446cba19c6bd0d3039cb2aac91cc\AndroidManifest.xml:2:1-10:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\1c68e92d57a097e4da0e06ad99b4aad6\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\9dfe1bef4d2deb5ae4147c7d7ee49144\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\968b4ad4972642b24e63b76c984a69ff\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8345b3745e90e112d15df8b8d7cf96eb\AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-firebase] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-15:12
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\a0fcdb4232102e6ff6d6842f294331d1\AndroidManifest.xml:2:1-15:12
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-15:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\8397cdc7b15dc5eeb39053c59e7427ff\AndroidManifest.xml:2:1-14:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-localization:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-localization-0.1.0.aar\65a0d54ead04db2227bc5f05103b314e\AndroidManifest.xml:2:1-10:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-locationlayer-0.3.0.aar\e4e2e645571e5c4f1f30aa655cace254\AndroidManifest.xml:2:1-10:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:2:1-31:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-telemetry-2.2.9.aar\d7da9180388d297958386e8a135e69dc\AndroidManifest.xml:2:1-13:12
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:2:1-34:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\4b7c7d5ed4a68624ecc19d77ebc32b07\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\776562ccb5e25ea6bf5aba8546408ad3\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\8d7bd0fdd8d46df56743656dc8703ff1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-core:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.6.aar\a1b9d090e5d2e6b651dede3f7f7fe1ed\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.0.4.aar\5565e0fcbe12a2b5cb67b2213df03ae8\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\c9d593ed7b6910a91948b17e33566cec\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\e89f34d3d8cf0083b3e1e69b289c86b5\AndroidManifest.xml:17:1-29:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\dad3fe5abc819e6ded3e2a002a889fa0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\d7734bde0617c34b645f3691d064016d\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\4e9e67d709fe453c488b74d8df2db209\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.5] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.5.aar\a187458f9df276cef889c31caef42a3a\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\31d68d46cd98952f9dbf59ef3104159d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\269d499d21ede8cdeba9b431dd193f03\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\8b0d97d07075d51f8dc92c1bd6dae6c5\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\94b691111975d0dafd0572cb57525bab\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\0c382ed1b6d53c1aeea0f3d1a9b3e440\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\15106308f5a09db249a8240bbf3c91a1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9671a73a733356b1ced0385284525e45\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\228f9f6cc096d43a587159935b94f4f8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\22bba8553ed8780583af886f2221c3ff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\d037bbf609bebfaa1944a2a2e6dc9077\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\188124601bdfd14d50dab0547fddc308\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b72e277648c30649e3db120492bb1cf3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\96dc7ce339ebfdb56fcd308871f5458b\AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\cea7c1ff5f54bbfcba09edcb856a28cb\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\3142da4c131eb42b6d229a0a65f3af72\AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\e95a40824ddbde81793db04070b54978\AndroidManifest.xml:1:1-3:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\4719f089e96ca1e493b2859a756c8205\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\78bdea0b7e40caf06ad26f2fe908b252\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\506b8f61e3f6a38c2f43923a353ee3bc\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\465de89862844e14b719606cbe031d00\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\79cb4eafd5060ece066cbf09e6f704b1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\cebaae33ef12983bc8b0b8f704a5aeb4\AndroidManifest.xml:2:1-10:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\7883c44b0179c403988f6a43880ddc96\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\dcb72ff6bff06e54fafb7cd5c18fe3c2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c26019c49d014c4ac835b82c18a5ccd4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\095990a5b8ebca0b8e465eb472e67986\AndroidManifest.xml:17:1-22:12
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:1:1-27:12
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:1:1-27:12
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:1:1-27:12
@@ -60,60 +75,92 @@ INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\A
 		ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-67
-MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-67
-MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-67
-MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-67
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:12:5-67
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:12:5-67
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:21:5-67
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:21:5-67
+MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:5-67
+MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:5-67
+MERGED from [:react-native-firebase] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\8397cdc7b15dc5eeb39053c59e7427ff\AndroidManifest.xml:12:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\8397cdc7b15dc5eeb39053c59e7427ff\AndroidManifest.xml:12:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:21:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\d53fba485d2fc5fb220b99b51a3ad167\AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\d53fba485d2fc5fb220b99b51a3ad167\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\a0fcdb4232102e6ff6d6842f294331d1\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\a0fcdb4232102e6ff6d6842f294331d1\AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:5:22-75
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:6:5-79
-MERGED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:10:5-79
-MERGED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:10:5-79
-MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-79
-MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-79
-MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-79
-MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:11:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:11:5-79
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:10:5-79
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:10:5-79
+MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:5-79
+MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:5-79
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:5-79
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\8397cdc7b15dc5eeb39053c59e7427ff\AndroidManifest.xml:11:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\8397cdc7b15dc5eeb39053c59e7427ff\AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:6:22-76
 application
 ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:8:5-25:19
-MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\d53fba485d2fc5fb220b99b51a3ad167\AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\d53fba485d2fc5fb220b99b51a3ad167\AndroidManifest.xml:13:5-20
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:25:5-29:19
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:25:5-29:19
-MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:21:5-32:19
-MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:21:5-32:19
-MERGED from [com.google.android.gms:play-services-location:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.0.aar\3b60dda26931d47eaff0ad98e078d02f\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-location:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.0.aar\3b60dda26931d47eaff0ad98e078d02f\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\302cf362673aa1b871079efdb03037fc\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\302cf362673aa1b871079efdb03037fc\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.0.aar\3b8a7dad8ad8f79721aa91e0948cfb92\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.0.aar\3b8a7dad8ad8f79721aa91e0948cfb92\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\418d99cb63bc5bbb05d3b7d3c36ce6f9\AndroidManifest.xml:19:5-21:19
-MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\418d99cb63bc5bbb05d3b7d3c36ce6f9\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\7109a767726549b6c70e09fc30907ddb\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\7109a767726549b6c70e09fc30907ddb\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\59b6b476dcf8ae5643e5b2c3974f220e\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\59b6b476dcf8ae5643e5b2c3974f220e\AndroidManifest.xml:25:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\f1971a10e59e43072f093b28cafedbfa\AndroidManifest.xml:3:3-17
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\f1971a10e59e43072f093b28cafedbfa\AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\9371a0a275245ea0f2569e298b9067e5\AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\9371a0a275245ea0f2569e298b9067e5\AndroidManifest.xml:2:3-17
-MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\3f18446cba19c6bd0d3039cb2aac91cc\AndroidManifest.xml:8:5-20
-MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\3f18446cba19c6bd0d3039cb2aac91cc\AndroidManifest.xml:8:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\a0fcdb4232102e6ff6d6842f294331d1\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\a0fcdb4232102e6ff6d6842f294331d1\AndroidManifest.xml:13:5-20
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:25:5-29:19
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:25:5-29:19
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:21:5-32:19
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:21:5-32:19
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\8d7bd0fdd8d46df56743656dc8703ff1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\8d7bd0fdd8d46df56743656dc8703ff1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.6.aar\a1b9d090e5d2e6b651dede3f7f7fe1ed\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.6.aar\a1b9d090e5d2e6b651dede3f7f7fe1ed\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.0.4.aar\5565e0fcbe12a2b5cb67b2213df03ae8\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.0.4.aar\5565e0fcbe12a2b5cb67b2213df03ae8\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\c9d593ed7b6910a91948b17e33566cec\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\c9d593ed7b6910a91948b17e33566cec\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\e89f34d3d8cf0083b3e1e69b289c86b5\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\e89f34d3d8cf0083b3e1e69b289c86b5\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\d7734bde0617c34b645f3691d064016d\AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\d7734bde0617c34b645f3691d064016d\AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\4e9e67d709fe453c488b74d8df2db209\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\4e9e67d709fe453c488b74d8df2db209\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.5] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.5.aar\a187458f9df276cef889c31caef42a3a\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.5] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.5.aar\a187458f9df276cef889c31caef42a3a\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\31d68d46cd98952f9dbf59ef3104159d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\31d68d46cd98952f9dbf59ef3104159d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\269d499d21ede8cdeba9b431dd193f03\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\269d499d21ede8cdeba9b431dd193f03\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\8b0d97d07075d51f8dc92c1bd6dae6c5\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\8b0d97d07075d51f8dc92c1bd6dae6c5\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\94b691111975d0dafd0572cb57525bab\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\94b691111975d0dafd0572cb57525bab\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\0c382ed1b6d53c1aeea0f3d1a9b3e440\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\0c382ed1b6d53c1aeea0f3d1a9b3e440\AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\3142da4c131eb42b6d229a0a65f3af72\AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\3142da4c131eb42b6d229a0a65f3af72\AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\e95a40824ddbde81793db04070b54978\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\e95a40824ddbde81793db04070b54978\AndroidManifest.xml:2:3-17
+MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\cebaae33ef12983bc8b0b8f704a5aeb4\AndroidManifest.xml:8:5-20
+MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\cebaae33ef12983bc8b0b8f704a5aeb4\AndroidManifest.xml:8:5-20
 	android:label
 		ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:10:7-39
 	android:icon
@@ -152,82 +199,112 @@ uses-sdk
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml
-MERGED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\d53fba485d2fc5fb220b99b51a3ad167\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\d53fba485d2fc5fb220b99b51a3ad167\AndroidManifest.xml:7:5-9:41
-MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:7:5-9:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\3b583d94e75b1d91216b2079218e0d0a\AndroidManifest.xml:7:5-9:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-localization:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-localization-0.1.0.aar\c1f0d7b28efe222e3b7f7fb02d3dcd31\AndroidManifest.xml:6:5-8:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-localization:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-localization-0.1.0.aar\c1f0d7b28efe222e3b7f7fb02d3dcd31\AndroidManifest.xml:6:5-8:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-locationlayer-0.3.0.aar\41fa5e8701ecfa117adbbeacffcbddcd\AndroidManifest.xml:6:5-8:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-locationlayer-0.3.0.aar\41fa5e8701ecfa117adbbeacffcbddcd\AndroidManifest.xml:6:5-8:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:6:5-9:51
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:6:5-9:51
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-telemetry-2.2.9.aar\0247e498923db3f7190060e7046ccec3\AndroidManifest.xml:8:5-11:51
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-telemetry-2.2.9.aar\0247e498923db3f7190060e7046ccec3\AndroidManifest.xml:8:5-11:51
-MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:5:5-7:41
-MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a9c3a054546b0cb04e72e3975029cd52\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\a9c3a054546b0cb04e72e3975029cd52\AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\8698206679f85dc001078aa9e0a7163e\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\8698206679f85dc001078aa9e0a7163e\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-location:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.0.aar\3b60dda26931d47eaff0ad98e078d02f\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-location:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.0.aar\3b60dda26931d47eaff0ad98e078d02f\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\302cf362673aa1b871079efdb03037fc\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\302cf362673aa1b871079efdb03037fc\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.0.aar\3b8a7dad8ad8f79721aa91e0948cfb92\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.0.aar\3b8a7dad8ad8f79721aa91e0948cfb92\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\418d99cb63bc5bbb05d3b7d3c36ce6f9\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\418d99cb63bc5bbb05d3b7d3c36ce6f9\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\7109a767726549b6c70e09fc30907ddb\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\7109a767726549b6c70e09fc30907ddb\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\59b6b476dcf8ae5643e5b2c3974f220e\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\59b6b476dcf8ae5643e5b2c3974f220e\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\3064357bce406175c0ca6fe3764b61c8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\3064357bce406175c0ca6fe3764b61c8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\00b9035c96b71ea1a9e6b13a30627837\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\00b9035c96b71ea1a9e6b13a30627837\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9e8dfb585c49e5add51507398b48a794\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9e8dfb585c49e5add51507398b48a794\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\35c2ea1295fed7dbd0421a2acf318d4d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\35c2ea1295fed7dbd0421a2acf318d4d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b2d712fbbe98936159fed09c9efbdd53\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\b2d712fbbe98936159fed09c9efbdd53\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\ab205576c1fc0fb62308ea87afd4e6d2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\ab205576c1fc0fb62308ea87afd4e6d2\AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\a03304023f23591c4be4afdebc513385\AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\a03304023f23591c4be4afdebc513385\AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\7c0932aea6ca9df9f59438cdfb2fdfd0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\7c0932aea6ca9df9f59438cdfb2fdfd0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\f1971a10e59e43072f093b28cafedbfa\AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\f1971a10e59e43072f093b28cafedbfa\AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\32263a96571ff7f2ee81da8b5ec2f916\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\32263a96571ff7f2ee81da8b5ec2f916\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\a167bf16c9bb5faedcd81b96c3b39e09\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\a167bf16c9bb5faedcd81b96c3b39e09\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\f9d83b3e76e860d3a805290311b053b9\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\f9d83b3e76e860d3a805290311b053b9\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\5cadf7e29e318e0313126480890d1249\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\5cadf7e29e318e0313126480890d1249\AndroidManifest.xml:5:5-7:41
-MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\3f18446cba19c6bd0d3039cb2aac91cc\AndroidManifest.xml:6:5-43
-MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\3f18446cba19c6bd0d3039cb2aac91cc\AndroidManifest.xml:6:5-43
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\1c68e92d57a097e4da0e06ad99b4aad6\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\1c68e92d57a097e4da0e06ad99b4aad6\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\9dfe1bef4d2deb5ae4147c7d7ee49144\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\9dfe1bef4d2deb5ae4147c7d7ee49144\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\968b4ad4972642b24e63b76c984a69ff\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\968b4ad4972642b24e63b76c984a69ff\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8345b3745e90e112d15df8b8d7cf96eb\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8345b3745e90e112d15df8b8d7cf96eb\AndroidManifest.xml:20:5-44
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-firebase] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\a0fcdb4232102e6ff6d6842f294331d1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\a0fcdb4232102e6ff6d6842f294331d1\AndroidManifest.xml:7:5-9:41
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\8397cdc7b15dc5eeb39053c59e7427ff\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-services:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-services-2.2.9.aar\8397cdc7b15dc5eeb39053c59e7427ff\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-localization:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-localization-0.1.0.aar\65a0d54ead04db2227bc5f05103b314e\AndroidManifest.xml:6:5-8:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-localization:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-localization-0.1.0.aar\65a0d54ead04db2227bc5f05103b314e\AndroidManifest.xml:6:5-8:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-locationlayer-0.3.0.aar\e4e2e645571e5c4f1f30aa655cace254\AndroidManifest.xml:6:5-8:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-plugin-locationlayer-0.3.0.aar\e4e2e645571e5c4f1f30aa655cace254\AndroidManifest.xml:6:5-8:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:6:5-9:51
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:6:5-9:51
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-telemetry-2.2.9.aar\d7da9180388d297958386e8a135e69dc\AndroidManifest.xml:8:5-11:51
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:2.2.9] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-telemetry-2.2.9.aar\d7da9180388d297958386e8a135e69dc\AndroidManifest.xml:8:5-11:51
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\4b7c7d5ed4a68624ecc19d77ebc32b07\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\4b7c7d5ed4a68624ecc19d77ebc32b07\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\776562ccb5e25ea6bf5aba8546408ad3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\776562ccb5e25ea6bf5aba8546408ad3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\8d7bd0fdd8d46df56743656dc8703ff1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-location-16.0.0.aar\8d7bd0fdd8d46df56743656dc8703ff1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.6.aar\a1b9d090e5d2e6b651dede3f7f7fe1ed\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.6.aar\a1b9d090e5d2e6b651dede3f7f7fe1ed\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.0.4.aar\5565e0fcbe12a2b5cb67b2213df03ae8\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-api-16.0.4.aar\5565e0fcbe12a2b5cb67b2213df03ae8\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\c9d593ed7b6910a91948b17e33566cec\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-interop-16.0.1.aar\c9d593ed7b6910a91948b17e33566cec\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\e89f34d3d8cf0083b3e1e69b289c86b5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\e89f34d3d8cf0083b3e1e69b289c86b5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\dad3fe5abc819e6ded3e2a002a889fa0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\dad3fe5abc819e6ded3e2a002a889fa0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\d7734bde0617c34b645f3691d064016d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\d7734bde0617c34b645f3691d064016d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\4e9e67d709fe453c488b74d8df2db209\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\4e9e67d709fe453c488b74d8df2db209\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.5] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.5.aar\a187458f9df276cef889c31caef42a3a\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.5] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-16.0.5.aar\a187458f9df276cef889c31caef42a3a\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\31d68d46cd98952f9dbf59ef3104159d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-stats-16.0.1.aar\31d68d46cd98952f9dbf59ef3104159d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\269d499d21ede8cdeba9b431dd193f03\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-17.0.1.aar\269d499d21ede8cdeba9b431dd193f03\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\8b0d97d07075d51f8dc92c1bd6dae6c5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-ads-identifier-16.0.0.aar\8b0d97d07075d51f8dc92c1bd6dae6c5\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\94b691111975d0dafd0572cb57525bab\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-places-placereport-16.0.0.aar\94b691111975d0dafd0572cb57525bab\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\0c382ed1b6d53c1aeea0f3d1a9b3e440\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\0c382ed1b6d53c1aeea0f3d1a9b3e440\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\15106308f5a09db249a8240bbf3c91a1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\15106308f5a09db249a8240bbf3c91a1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9671a73a733356b1ced0385284525e45\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9671a73a733356b1ced0385284525e45\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\228f9f6cc096d43a587159935b94f4f8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\228f9f6cc096d43a587159935b94f4f8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\22bba8553ed8780583af886f2221c3ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\22bba8553ed8780583af886f2221c3ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\d037bbf609bebfaa1944a2a2e6dc9077\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\d037bbf609bebfaa1944a2a2e6dc9077\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\188124601bdfd14d50dab0547fddc308\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\188124601bdfd14d50dab0547fddc308\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b72e277648c30649e3db120492bb1cf3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b72e277648c30649e3db120492bb1cf3\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\96dc7ce339ebfdb56fcd308871f5458b\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\96dc7ce339ebfdb56fcd308871f5458b\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\cea7c1ff5f54bbfcba09edcb856a28cb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\cea7c1ff5f54bbfcba09edcb856a28cb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\3142da4c131eb42b6d229a0a65f3af72\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\3142da4c131eb42b6d229a0a65f3af72\AndroidManifest.xml:2:3-70
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\4719f089e96ca1e493b2859a756c8205\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\4719f089e96ca1e493b2859a756c8205\AndroidManifest.xml:20:5-43
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\78bdea0b7e40caf06ad26f2fe908b252\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\78bdea0b7e40caf06ad26f2fe908b252\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\506b8f61e3f6a38c2f43923a353ee3bc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\506b8f61e3f6a38c2f43923a353ee3bc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\465de89862844e14b719606cbe031d00\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\465de89862844e14b719606cbe031d00\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\79cb4eafd5060ece066cbf09e6f704b1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\79cb4eafd5060ece066cbf09e6f704b1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\cebaae33ef12983bc8b0b8f704a5aeb4\AndroidManifest.xml:6:5-43
+MERGED from [com.jakewharton.timber:timber:4.6.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\timber-4.6.0.aar\cebaae33ef12983bc8b0b8f704a5aeb4\AndroidManifest.xml:6:5-43
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\7883c44b0179c403988f6a43880ddc96\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\7883c44b0179c403988f6a43880ddc96\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\dcb72ff6bff06e54fafb7cd5c18fe3c2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\dcb72ff6bff06e54fafb7cd5c18fe3c2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c26019c49d014c4ac835b82c18a5ccd4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c26019c49d014c4ac835b82c18a5ccd4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\095990a5b8ebca0b8e465eb472e67986\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\095990a5b8ebca0b8e465eb472e67986\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:9:9-48
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:9:9-48
 	android:targetSdkVersion
 		INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml
@@ -237,100 +314,234 @@ INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\A
 		ADDED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:5-81
-MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-81
-MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-81
-MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-81
-MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\manifests\full\debug\AndroidManifest.xml:13:5-81
+ADDED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:5-81
+MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-81
+MERGED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-81
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-81
+MERGED from [:mapbox-react-native-mapbox-gl] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\@mapbox\react-native-mapbox-gl\android\rctmgl\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:9:22-78
+		ADDED from [:react-native-android-location-services-dialog-box] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:10:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:22:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:22:5-79
+ADDED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:10:5-79
+MERGED from [:react-native-firebase] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-79
+MERGED from [:react-native-firebase] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:22:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:10:22-76
+		ADDED from [:react-native-geolocation-service] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:react-native-firebase] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [:react-native-firebase] C:\Users\jollo.delacruz\Desktop\Sert\client\node_modules\react-native-firebase\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:22-65
 uses-feature#0x00020000
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:11:5-13:35
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:11:5-13:35
 	android:glEsVersion
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:12:9-41
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:12:9-41
 	android:required
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:13:9-32
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:13:9-32
 uses-feature#android.hardware.wifi
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:14:5-16:36
-MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:19:5-58
-MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:19:5-58
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:14:5-16:36
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:19:5-58
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:19:5-58
 	android:required
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:16:9-33
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:16:9-33
 		MERGED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:14:5-16:36
 	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:15:9-45
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:15:9-45
 uses-feature#android.hardware.location.gps
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:17:5-19:36
-MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:13:5-15:36
-MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:13:5-15:36
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:17:5-19:36
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:13:5-15:36
+MERGED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:13:5-15:36
 	android:required
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:19:9-33
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:19:9-33
 	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:18:9-53
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:18:9-53
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:23:5-76
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:23:5-76
 	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:23:22-73
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:23:22-73
 service#com.mapbox.services.android.telemetry.service.TelemetryService
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:28:9-98
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:28:9-98
 	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\c09897dc5aa2d82379d09507eb298d74\AndroidManifest.xml:28:18-95
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:5.4.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\mapbox-android-sdk-5.4.1.aar\00be75d3392b03b37968aaca3b671271\AndroidManifest.xml:28:18-95
 uses-feature#android.hardware.sensor.accelerometer
-ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:9:5-11:36
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:9:5-11:36
 	android:required
-		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:11:9-33
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:11:9-33
 	android:name
-		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:10:9-61
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:10:9-61
 uses-feature#android.hardware.location
-ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:12:5-62
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:12:5-62
 	android:name
-		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:12:19-59
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:12:19-59
 uses-feature#android.hardware.telephony
-ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:16:5-18:36
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:16:5-18:36
 	android:required
-		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:18:9-33
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:18:9-33
 	android:name
-		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:17:9-50
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:17:9-50
 service#com.mapzen.android.lost.internal.FusedLocationProviderService
-ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:22:9-24:39
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:22:9-24:39
 	android:process
-		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:24:13-36
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:24:13-36
 	android:name
-		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:23:13-89
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:23:13-89
 service#com.mapzen.android.lost.internal.GeofencingIntentService
-ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:25:9-29:19
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:25:9-29:19
 	android:name
-		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:25:18-89
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:25:18-89
 intent-filter#action:name:com.mapzen.lost.action.ACTION_GEOFENCING_SERVICE
-ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:26:13-28:29
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:26:13-28:29
 action#com.mapzen.lost.action.ACTION_GEOFENCING_SERVICE
-ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:27:17-91
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:27:17-91
 	android:name
-		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:27:25-88
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:27:25-88
 service#com.mapzen.android.lost.internal.DwellIntentService
-ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:30:9-31:19
+ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:30:9-31:19
 	android:name
-		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\9e5fcd780f36a1b58d72e34a9c3be5e5\AndroidManifest.xml:30:18-84
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\302cf362673aa1b871079efdb03037fc\AndroidManifest.xml:19:9-172
+		ADDED from [com.mapzen.android:lost:3.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\lost-3.0.4.aar\60e2c6f3bc4df2a575320ab18182ce1e\AndroidManifest.xml:30:18-84
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:29:9-35:19
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\302cf362673aa1b871079efdb03037fc\AndroidManifest.xml:19:146-170
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\302cf362673aa1b871079efdb03037fc\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\302cf362673aa1b871079efdb03037fc\AndroidManifest.xml:19:19-85
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\418d99cb63bc5bbb05d3b7d3c36ce6f9\AndroidManifest.xml:20:9-121
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:27:18-89
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:28:13-30:85
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\418d99cb63bc5bbb05d3b7d3c36ce6f9\AndroidManifest.xml:20:66-119
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:30:17-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\418d99cb63bc5bbb05d3b7d3c36ce6f9\AndroidManifest.xml:20:20-65
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-measurement-connector-impl-17.0.4.aar\10d5186e86545bd894fb4c3ba3b91302\AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.4] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-16.2.4.aar\9c32e1c41ee91a63b6ffd87fa8a484e7\AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.6] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-analytics-16.0.6.aar\ed4d6ce966c488b8cfe6ce1fa8de131e\AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-iid-17.0.3.aar\5e8142bfdf7a68180cd0a8a303bc3eb6\AndroidManifest.xml:54:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\e89f34d3d8cf0083b3e1e69b289c86b5\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\e89f34d3d8cf0083b3e1e69b289c86b5\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\e89f34d3d8cf0083b3e1e69b289c86b5\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\e89f34d3d8cf0083b3e1e69b289c86b5\AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\d7734bde0617c34b645f3691d064016d\AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\d7734bde0617c34b645f3691d064016d\AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\d7734bde0617c34b645f3691d064016d\AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\d7734bde0617c34b645f3691d064016d\AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.3] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\firebase-common-16.0.3.aar\d7734bde0617c34b645f3691d064016d\AndroidManifest.xml:11:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\0c382ed1b6d53c1aeea0f3d1a9b3e440\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\0c382ed1b6d53c1aeea0f3d1a9b3e440\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\jollo.delacruz\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\0c382ed1b6d53c1aeea0f3d1a9b3e440\AndroidManifest.xml:24:13-58
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\src\main\AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE

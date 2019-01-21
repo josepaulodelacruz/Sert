@@ -15,7 +15,9 @@ import JoinTricycleRide from './components/UserType/ClientTabs/JoinTricycleRide'
 import { Icon } from 'native-base';
 import { createStackNavigator, createDrawerNavigator, DrawerItems, createBottomTabNavigator } from 'react-navigation';
 
-  
+/*Parent Element of all child Component
+  routing and fetch thru API
+*/  
 
 export default class App extends React.Component {
   constructor(){
@@ -34,6 +36,7 @@ export default class App extends React.Component {
 
 
   componentDidMount(){
+    // Access Permission
     async function requestCameraPermission() {
     try {
         const granted = await PermissionsAndroid.request(
@@ -55,7 +58,7 @@ export default class App extends React.Component {
     }
   }
 
-
+  // Back end Server Fetch
   componentDidMount(){
     this.callApi()
       .then(res => this.setState({ response: res.express}))
@@ -71,6 +74,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount(){
+    // Turning on the Geolocation of the phone
      LocationServicesDialogBox.checkLocationServicesIsEnabled({
     message: "<h2 style='color: #0af13e'>Use Location ?</h2>This app wants to change your device settings:<br/><br/>Use GPS, Wi-Fi, and cell network for location<br/><br/><a href='#'>Learn more</a>",
     ok: "YES",
@@ -91,12 +95,13 @@ export default class App extends React.Component {
 
   render() {
     return(
+      // Display pages
       <Screens/>
     )
   }
 }
 
-
+// Side drawer
 const CustomDrawerComponent = (props) => {
   return(
     <SafeAreaView style={{flex: 1}}>
@@ -135,7 +140,7 @@ const Screens = createStackNavigator({
         } 
       },
       Profile: { screen: Profile },
-      Messages: { screen: Messages },
+      Reports: { screen: Messages },
     }, {
       // effects of Side drawer
       contentComponent: CustomDrawerComponent,
@@ -151,7 +156,7 @@ const Screens = createStackNavigator({
   DispatcherScreen: { screen: DispatcherScreen}
 },
   {
-    // Starting Page
+    // Starting Page, edit the bottom line of the initialRoute to change the page 
     initialRouteName: 'Home',
     navigationOptions: {
       headerStyle: {
