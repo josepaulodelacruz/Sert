@@ -5,6 +5,8 @@ import android.app.Application;
 import com.facebook.react.ReactApplication;
 import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.database.RNFirebaseDatabasePackage;
+import io.invertase.firebase.auth.RNFirebaseAuthPackage;
+import io.invertase.firebase.firestore.RNFirebaseFirestorePackage;
 
 import com.showlocationservicesdialogbox.LocationServicesDialogBoxPackage;
 
@@ -35,7 +37,9 @@ public class MainApplication extends Application implements ReactApplication {
             new RNFirebaseDatabasePackage(),
             new LocationServicesDialogBoxPackage(),
             new RCTMGLPackage(),
-            new RNFusedLocationPackage()
+            new RNFusedLocationPackage(),
+            new RNFirebaseAuthPackage(),
+            new RNFirebaseFirestorePackage()
       );
     }
 

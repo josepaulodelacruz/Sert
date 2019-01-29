@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, View, Text, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar, PermissionsAndroid, Alert  } from 'react-native';
+import { BackHandler, TouchableOpacity, View, Text, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar, PermissionsAndroid, Alert  } from 'react-native';
 import { createDrawerNavigator, DrawerItems, createBottomTabNavigator } from 'react-navigation';
 import { Header, Left, Body, Right, Icon, Fab, Button, Container, Content, CardItem, Card } from 'native-base';
 import Mapbox from '@mapbox/react-native-mapbox-gl';
@@ -17,8 +17,10 @@ const directionsClient = mbxDirections({ accessToken: 'pk.eyJ1Ijoid2hvc2VlcG93bH
 
 
 export default class ClientScreen extends React.Component {
+
 	constructor(props){
 		super(props);
+    
 		this.state = {
 			active: true,
 			latitude: 0,
@@ -35,8 +37,36 @@ export default class ClientScreen extends React.Component {
 		};
 	}
 
-	
-	
+	onButtonPress = () => {
+  BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
+  // then navigate
+  navigate('ClientScreen');
+}
+
+handleBackButton = () => {
+ Alert.alert(
+     'Exit App',
+     'Exiting the application?', [{
+         text: 'Cancel',
+         onPress: () => console.log('Cancel Pressed'),
+         style: 'cancel'
+     }, {
+         text: 'OK',
+         onPress: () => BackHandler.exitApp()
+     }, ], {
+         cancelable: false
+     }
+  )
+  return true;
+} 
+
+componentDidMount(){
+  BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
+}
+
+componentWillUnmount(){
+  BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
+}
 
 	// Icon
 	static navigationOptions = {
@@ -45,6 +75,7 @@ export default class ClientScreen extends React.Component {
               <Icon name="home" style={{fontSize: 24, color: "blue"}}/>
             );
         }
+        
     } 
 
     // Track users location
@@ -212,7 +243,7 @@ const CustomDrawerComponent = (props) => {
 	return(
 		<SafeAreaView style={{flex: 1}}>
 			<View style={{height: 150, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center'}}>
-				<Image source={require('../Assets/defaultPic.jpg')} style={{height: 120, width: 120, borderRadius: 120}}/>
+				<Image source={require('../Assets/SertLogo.jpg')} style={{height: 120, width: 120, borderRadius: 120}}/>
 			</View>
 	      <ScrollView>
 	        <DrawerItems {...props} />

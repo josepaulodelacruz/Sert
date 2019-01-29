@@ -8,17 +8,23 @@ import {
 import { Container, Header, Content, Form, Item, Input, Label, Radio, ListItem, Left, Icon } from 'native-base';
 
 import Swiper from 'react-native-swiper';
+import firebase from 'react-native-firebase';
+import uuid from 'react-native-uuid';
+
 
 export default class Client extends Component {
   constructor(){
     super();
-    this.state = {
+    this.state = { 
+      errorMessage: null,
+        isLoading: false,
        fName: null,
        lName: null,
        address: null,
        ContactNumber: null,
-       Male: false,
-       Female: false,
+       gender: null,
+       male: null,
+       female: null,
        username: null,
        password: null,
        confirmatoryPassword: null,
@@ -30,26 +36,41 @@ export default class Client extends Component {
     title: 'Client Registration'
   }
 
-
-  handleMaleReg = () => {
-    this.setState({
-      Male: true,
-      Female: false
-    })
-  }
-
-  handleFemaleReg = () => {
-    this.setState({
-      Female: true,
-      Male: false
-    })
-  }
-
   /*Submit event, Check for unfill up textbox, comparison check, validation*/
   handleSubmit = () => {
-    const { navigate } = this.props.navigation;
-    this.props.navigation.navigate('Login')
+    if(!this.state.fName && !this.state.lName && !this.state.address && !this.state.ContactNumber && !this.state.gender && !this.state.username && !this.state.password && !this.state.email){
+      alert(`Don't Leave a unfilled info`)
+    }else if(this.state.password !== this.state.confirmatoryPassword){
+      alert("Password didn't match") 
+     }else{
+         firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
+            .then((success) => {
+                  if (firebase.auth().currentUser) {
+                    userId = firebase.auth().currentUser.uid;
+                    if (userId) {
+                        firebase.database().ref('Clients/' + userId).set({
+                             fName: this.state.fName,
+                              lName: this.state.lName,
+                              address: this.state.address,
+                              contactNumber: this.state.ContactNumber,
+                              gender: this.state.gender,
+                              username: this.state.username,
+                              rating: 0,
+                              feedback: "",
+                              transactions: {}
+                        }).then((data) => {
+                            alert("Sucessfully Registered")
+                        }).catch((error) => {
+                            alert(error)
+                        })
+                    }
+                }
+            }).catch((error) => {
+              alert(error)
+            })     
+    }
   }
+  
 
   render(){
     let icon;
@@ -68,7 +89,7 @@ export default class Client extends Component {
           <View style={{flex: 1, alignItems: 'center', marginTop: 20}}>
             <Text style={{fontSize: 14}}>Step 1. Fill up First all Personal Information</Text>
           </View>          
-          <Form>
+          <Form onSubmit={this.handleSubmit}>
             <Item floatingLabel>
               <Label>First Name</Label>
               <Input onChangeText={(fName) => this.setState({fName: fName})}/>
@@ -85,14 +106,14 @@ export default class Client extends Component {
               <Label>Contact Number</Label>
               <Input onChangeText={(number) => this.setState({ContactNumber: number})}/>
             </Item>
-            <ListItem onPress={this.handleMaleReg}>
-                <Radio style={{paddingRight: 10}} selected={this.state.Male} onPress={this.handleMaleReg}/>
+            <ListItem onPress={() => this.setState({gender: 'Male', male: true, female: false})}>
+                <Radio style={{paddingRight: 10}} selected={this.state.male} onPress={() => this.setState({gender: 'Male', male: true, female: false})}/>
                 <TouchableOpacity >
                   <Text>Male</Text>  
                 </TouchableOpacity>
             </ListItem>
-            <ListItem onPress={this.handleFemaleReg}>
-                <Radio style={{paddingRight: 10}} selected={this.state.Female} onPress={this.handleFemaleReg} />
+            <ListItem onPress={() => this.setState({gender: 'Female', female: true, male: false})}>
+                <Radio style={{paddingRight: 10}} selected={this.state.female} onPress={() => this.setState({gender: 'Male', male: true, female: false})} />
                 <TouchableOpacity >
                   <Text>Female</Text>  
                 </TouchableOpacity>

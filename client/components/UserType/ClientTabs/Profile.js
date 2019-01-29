@@ -5,13 +5,26 @@ import {
   View,
   Image,
   TouchableOpacity,
-  ScrollView
+  ScrollView,
+  Alert
 } from 'react-native';
 import StarRating from './Profile/StartRating';
 import DataTransaction from './DataRecords/DataTransaction';
-import { Header, Left, Body, Right, Icon } from 'native-base';
+import { Container, Header, Content, Form, Item, Input, Label, Icon, Left, Body, Right} from 'native-base';
+import firebase from 'react-native-firebase';
 
 class Profile extends Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			userInfo: [],
+			update: false,
+			firs: null,
+			last: null,
+			number: null,
+			locAddress: null
+		}
+	}
 	static navigationOptions = {
 		// Drawer Icon
 		drawerIcon: ({tintColor}) => {
@@ -21,7 +34,68 @@ class Profile extends Component {
 		}
 	}
 
+	componentDidMount(){
+		let uid = firebase.auth().currentUser.uid;
+		firebase.database().ref('Clients/' + uid ).on('value', snapshot => {
+			this.setState({userInfo: snapshot.val()})
+		})
+		console.log(this.state.userInfo)
+	}
+
+	handleUpdate = () => {
+		this.setState({update: true})
+	}
+
+	handleSubmit = () => {
+		Alert.alert(
+                'Update',
+                'Personal Information?',
+                [
+                  {text: 'Cancel', onPress: () => {return null}},
+                  {text: 'Confirm', onPress: () => {
+                    this.setState({update: false})
+                    	let uid = firebase.auth().currentUser.uid;
+							let info = firebase.database().ref('Clients/' + uid )
+							info.update({ fName: this.state.first, lName: this.state.last, contactNumber: this.state.number, email: this.state.email})
+                  }}, 	
+                ],
+                { cancelable: false }
+              )
+	}
+
+
 	render(){
+		let user;
+		let button;
+		if(this.state.update === true){
+			user = 	<View style={{flex: 1, marginTop: 20, justifyContent: 'center' }}>
+						<Item >
+			              <Input placeholder={this.state.userInfo.fName} onChangeText={(firstName) => this.setState({first: firstName})}/>
+			            </Item>
+			            <Item >
+			               <Input placeholder={this.state.userInfo.lName} onChangeText={(lastName) => this.setState({last: lastName})}/>
+			            </Item>
+			            <Item >
+			              <Input placeholder={this.state.userInfo.contactNumber} onChangeText={(email) => this.setState({email: email})}/>
+			            </Item>
+			            <Item >
+			              <Input placeholder={this.state.userInfo.address} onChangeText={(email) => this.setState({email: email})}/>
+			            </Item>
+					</View>;
+
+            button = <TouchableOpacity style={styles.button} onPress={this.handleSubmit}>
+	            		<Text>Submit</Text>
+	            	</TouchableOpacity>;
+		}else{
+			user = <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+						<Text style={styles.name}>{this.state.userInfo.fName} {this.state.userInfo.lName}</Text>
+						<Text style={{fontSize: 18}}>Contact Number</Text>
+						<Text style={styles.info}>{this.state.userInfo.contactNumber}</Text>
+						<Text style={{fontSize: 18}}>Address</Text>
+						<Text style={styles.description}>{this.state.userInfo.address}</Text>			
+					</View>
+				
+		}
 		return(
 		<ScrollView>
 			<View style={styles.container}>
@@ -33,7 +107,7 @@ class Profile extends Component {
 						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Profile</Text>
 					</Body>
 					<Right>
-						<TouchableOpacity style={styles.button}>
+						<TouchableOpacity onPress={this.handleUpdate} style={styles.button}>
 							<Text style={{color: 'white'}}>Update</Text>
 						</TouchableOpacity>
 					</Right>
@@ -42,11 +116,8 @@ class Profile extends Component {
 	          <Image style={styles.avatar} source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
 	          <View style={styles.body}>
 	          <StarRating/>
-	            <View style={styles.bodyContent}>
-	              <Text style={styles.name}>Jose Paulo Dela Cruz</Text>
-	              <Text style={styles.info}>Contact Number: </Text>
-	              <Text style={styles.description}>Blk 24 Lot 18 Ph 2 Agartha</Text>
-	            </View>
+	          	{user}
+	            {button}
 	            <DataTransaction/>
 	        </View>
 	      </View>
@@ -86,7 +157,6 @@ const styles = StyleSheet.create({
 	    marginTop:40,
 	  },
 	  bodyContent: {
-	    flex: 1,
 	    alignItems: 'center',
 	  },
 	  name:{
@@ -100,7 +170,7 @@ const styles = StyleSheet.create({
 	    marginTop:10
 	  },
 	  description:{
-	    fontSize:16,
+	    fontSize: 20,
 	    color: "#696969",
 	    marginTop:10,
 	    textAlign: 'center'

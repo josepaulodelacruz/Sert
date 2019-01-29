@@ -1,25 +1,30 @@
 import React from 'react';
 import io from 'socket.io-client/dist/socket.io';
 import LocationServicesDialogBox from "react-native-android-location-services-dialog-box";
-import { BackHandler, DeviceEventEmitter, StyleSheet, Text, View,Button, SafeAreaView, ScrollView, Dimensions, Image, PermissionsAndroid, Platform  } from 'react-native';
+import { TouchableOpacity, Alert, BackHandler, DeviceEventEmitter, StyleSheet, Text, View,Button, SafeAreaView, ScrollView, Dimensions, Image, PermissionsAndroid, Platform  } from 'react-native';
 import Front from './components/Front';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import Loading from './components/Loading';
 import Client from './components/UserType/Client';
 import Dispatcher from './components/UserType/Dispatcher';
 import ClientScreen from './components/UserType/ClientScreen';
 import DispatcherScreen from './components/UserType/DispatcherScreen';
+import Logout from './components/UserType/ClientTabs/Logout';
 import Profile from './components/UserType/ClientTabs/Profile';
 import Messages from './components/UserType/ClientTabs/Messages';
-import JoinTricycleRide from './components/UserType/ClientTabs/JoinTricycleRide';
+import Request from './components/UserType/ClientTabs/JoinTricycleRide';
 import { Icon } from 'native-base';
-import { createStackNavigator, createDrawerNavigator, DrawerItems, createBottomTabNavigator } from 'react-navigation';
+
+import firebase from 'react-native-firebase';
+
+import { NavigationActions , createStackNavigator, createDrawerNavigator, DrawerItems, createBottomTabNavigator } from 'react-navigation';
 
 /*Parent Element of all child Component
   routing and fetch thru API
-*/  
+*/
 
-export default class App extends React.Component {
+class App extends React.Component {
   constructor(){
     super();
     this.state = {
@@ -28,9 +33,12 @@ export default class App extends React.Component {
       con: '',
       msg: 'sent',
       socket: io('http://192.168.0.10:5000', {jsonp: false}),
-      permission: false
+      permission: false,
+      logout: []
     };
   }
+
+  /*Google Firebase API key*/
 
 
 
@@ -59,19 +67,7 @@ export default class App extends React.Component {
   }
 
   // Back end Server Fetch
-  componentDidMount(){
-    this.callApi()
-      .then(res => this.setState({ response: res.express}))
-      .catch(err => console.log(err));
-  }
-  // retrieving data from the back-end server from port 5000
-  callApi = async () => {
-    const response = await fetch('http://192.168.0.15:5000/products/test');
-    const body = await response.json();
-    if(response.status !== 200) throw Error(body.message);
-
-    return body;
-  }
+  
 
   componentDidMount(){
     // Turning on the Geolocation of the phone
@@ -100,28 +96,15 @@ export default class App extends React.Component {
     )
   }
 }
-
-// Side drawer
-const CustomDrawerComponent = (props) => {
-  return(
-    <SafeAreaView style={{flex: 1}}>
-      <View style={{height: 150, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center'}}>
-        <Image source={require('./components/Assets/defaultPic.jpg')} style={{height: 120, width: 120, borderRadius: 120}}/>
-      </View>
-        <ScrollView>
-          <DrawerItems {...props} />
-        </ScrollView>
-    </SafeAreaView>
-  )
-}
-
+ 
 
 const Screens = createStackNavigator({
-  Home: { screen: Front},
+  Home: {screen: Front},
   Login: { screen: Login},
   SignUp: { screen: SignUp},
   Client: { screen: Client},
   Dispatcher: { screen: Dispatcher },
+  Loading: { screen: Loading },
   ClientScreen: { screen: ClientScreen,
    // Client screen drawer navigation
     screen: createDrawerNavigator({
@@ -129,7 +112,7 @@ const Screens = createStackNavigator({
         // client screen bottom tab navigator
         screen: createBottomTabNavigator({
           Single: { screen: ClientScreen},
-          Join: { screen: JoinTricycleRide}
+          Request: { screen: Request}
         })
         ,navigationOptions: {
           drawerIcon: ({ tintColor }) =>{
@@ -140,10 +123,40 @@ const Screens = createStackNavigator({
         } 
       },
       Profile: { screen: Profile },
-      Reports: { screen: Messages },
+      Reports: { screen: Messages }
     }, {
       // effects of Side drawer
-      contentComponent: CustomDrawerComponent,
+      contentComponent: (props) => (
+        <SafeAreaView style={{flex: 1}}>
+          <ScrollView>
+            <View style={{height: 250, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center'}}>
+              <Image source={require('./components/Assets/SertLogo.jpg')} style={{height: 200, width: 200}}/>
+                </View>
+                  <DrawerItems {...props}/>
+            <View style={{flex: 1}}>
+              <TouchableOpacity onPress={()=>
+              Alert.alert(
+                'Log out',
+                'Do you want to logout?',
+                [
+                  {text: 'Cancel', onPress: () => {return null}},
+                  {text: 'Confirm', onPress: () => {
+                    firebase.auth().signOut().then(sucess => {
+                      props.navigation.navigate('Login')
+                    }).catch((err) => {
+                      alert(err)
+                    })
+                  }},
+                ],
+                { cancelable: false }
+              )  
+            }>
+              <Text style={{margin: 16,fontWeight: 'bold'}}>Logout</Text>
+            </TouchableOpacity>
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+        ),
       contentOptions: {
         activeTintColor: 'blue'
       }
@@ -157,7 +170,7 @@ const Screens = createStackNavigator({
 },
   {
     // Starting Page, edit the bottom line of the initialRoute to change the page 
-    initialRouteName: 'Home',
+    initialRouteName: 'Loading',
     navigationOptions: {
       headerStyle: {
         backgroundColor: '#3073FA',
@@ -170,3 +183,30 @@ const Screens = createStackNavigator({
   }
 );
 
+
+
+export default App;
+
+/*const androidConfig = {
+      clientId: '1092666124580-655j2cc4fa7dde9r0nj72fa8oeg2t6ao.apps.googleusercontent.com',
+      appId: '1:1092666124580:android:2db2c66b40704dc1',
+      apiKey: 'AIzaSyCdyaOvycg4QyUYybMtZVVsd1fJGYNa91o',
+      databaseURL: 'https://sert-app-project.firebaseio.com/',
+      storageBucket: 'sert-app-project.appspot.com',
+      messagingSenderId: '1092666124580',
+      projectId: 'sert-app-project',
+
+      // enable persistence by adding the below flag
+      persistence: true,
+    };
+
+    const SertApp = firebase.initializeApp(androidConfig,'sert-app-project');
+
+    SertApp.onReady().then((app) => {
+      // --ready--
+      firebase.app('sert-app-project').auth().signInAnonymously().then((user) => {
+        console.log("Sert App User =>", user.toJSON())
+        console.log(user)
+      })
+
+    })*/

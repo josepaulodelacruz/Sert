@@ -1,0 +1,2 @@
+# Referenced at C:\Users\jollo.delacruz\Desktop\Sert\client\android\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:44
+-keep class com.sertapplicationv7.MainApplication { <init>(...); }

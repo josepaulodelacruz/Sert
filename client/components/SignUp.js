@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { View, StyleSheet, Image, Button, TouchableOpacity } from 'react-native';
 import { Container, Header, Content, ListItem, Text, Radio, Right, Left,Body } from 'native-base';
 import { createStackNavigator } from 'react-navigation';
-
+import firebase from 'react-native-firebase';
 
 export default class SignUp extends Component {
 	constructor(){
 		super();
+		
 		this.state = {
 			dispatcher: false,
 			client: false
@@ -45,35 +46,36 @@ export default class SignUp extends Component {
 
 	render(){
 		const { navigate } = this.props.navigation;
+		
 		return(
-				 <Container>
-			        <Content>
-			        <View style={styles.container}>
-			        	<Text style={styles.fontStyle}>Select which type of User are you?</Text>
-			        </View>
-			          <ListItem onPress={this.handleClientRegistration.bind(this)}>
-			            <Left>
-			              <Text>Client Registration</Text>
-			            </Left>
-			            <Right>
-			              <Radio onPress={this.handleClientRegistration.bind(this)} selected={this.state.client} />
-			            </Right>
-			          </ListItem>
-			          <ListItem onPress={this.handleDispatcherRegistration.bind(this)}>
-			            <Left>
-			              <Text>Dispatcher Registration</Text>
-			            </Left>
-			            <Right>
-			              <Radio onPress={this.handleDispatcherRegistration.bind(this)} selected={this.state.dispatcher} />
-			            </Right>
-			          </ListItem>
-			          	<TouchableOpacity
-			          	 style={styles.button} 
-			          	onPress={this.handleNextPage.bind(this)}>
-			          	<Text style={{color: 'white'}}>Next</Text>
-			          	</TouchableOpacity>
-			        </Content>
-			      </Container>
+			 <Container>
+		        <Content>
+		        <View style={styles.container}>
+		        	<Text style={styles.fontStyle}>Select which type of User are you?</Text>
+		        </View>
+		          <ListItem onPress={this.handleClientRegistration.bind(this)}>
+		            <Left>
+		              <Text>Client Registration</Text>
+		            </Left>
+		            <Right>
+		              <Radio onPress={this.handleClientRegistration.bind(this)} selected={this.state.client} />
+		            </Right>
+		          </ListItem>
+		          <ListItem onPress={this.handleDispatcherRegistration.bind(this)}>
+		            <Left>
+		              <Text>Dispatcher Registration</Text>
+		            </Left>
+		            <Right>
+		              <Radio onPress={this.handleDispatcherRegistration.bind(this)} selected={this.state.dispatcher} />
+		            </Right>
+		          </ListItem>
+		          	<TouchableOpacity
+		          	 style={styles.button} 
+		          	onPress={this.handleNextPage.bind(this)}>
+		          	<Text style={{color: 'white'}}>Next</Text>
+		          	</TouchableOpacity>
+		        </Content>
+		      </Container>
 		)
 	}
 }

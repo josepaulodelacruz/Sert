@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Button, TextInput, Image, Animated, Easing, TouchableOpacity} from 'react-native';
+import firebase from 'react-native-firebase';
 
 export default class Login extends Component {
-	constructor(){
+	constructor(){	
 		super();
+		this.ref = firebase.database().ref("clients/");
+		this.user = null;
+		this.unsubscribe = null;
 		this.spinValue  = new Animated.Value(0);
 		this.state = {
-			firstInput: '',
-			passInput: '',
+			firstInput: null,
+			passInput: null,
+			users: [],
+			isLoading: true,
+			username: null,
 		}
 	}
-
-	componentDidMount(){
-		this.spin()
-	};
 
 	spin () {
 	  this.spinValue.setValue(0)
@@ -32,11 +35,34 @@ export default class Login extends Component {
   	};
 
   	handleSubmit = () => {
-  		this.props.navigation.navigate('ClientScreen')
-  		console.log('CCLIck');
-  	}
+  		if(!this.state.firstInput){
+  			alert('Enter Username or Email!')
+  		}else if(!this.state.passInput){
+  			alert('Enter Password!')
+  		}else{
+  			firebase.auth().signInWithEmailAndPassword(this.state.firstInput, this.state.passInput)
+  				.then(() => this.props.navigation.navigate('ClientScreen'))
+  				.catch(function(error) {
+				    errorCode = error.code;
+				    errorMessage = error.message;
+				  if (errorCode === 'auth/wrong-password') {
+				    console.log("Wrong password");
+				    alert('Wrong password.');
+				  }else if( errorCode === "auth/user-disabled" ){
+				  	alert('User Disable')
+				  }else if(  errorCode === "auth/user-not-found" ){
+				  	alert("User doesn't exist")
+				  }else if(errorCode === "auth/invalid-email"){
+				  	alert('Email Address Invalid')
+				  }
+				});
+  		}
+	}
+
 
 	render(){
+
+		
 		const { navigate } = this.props.navigation;
 		const spin = this.spinValue.interpolate({
 		    inputRange: [0, 1],
