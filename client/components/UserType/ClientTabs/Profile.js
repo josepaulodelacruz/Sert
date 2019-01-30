@@ -53,12 +53,15 @@ class Profile extends Component {
                 [
                   {text: 'Cancel', onPress: () => {return null}},
                   {text: 'Confirm', onPress: () => {
-                    this.setState({update: false})
-                    	let uid = firebase.auth().currentUser.uid;
+                  	if(!this.state.first && !this.state.last && !this.state.contactNumber && !this.state.locAddress){
+                  		alert('Enter all needed information')
+                  	}else{this.setState({update: false})
+                    		let uid = firebase.auth().currentUser.uid;
 							let info = firebase.database().ref('Clients/' + uid )
-							info.update({ fName: this.state.first, lName: this.state.last, contactNumber: this.state.number, email: this.state.email})
-                  }}, 	
-                ],
+							info.update({ fName: this.state.first, lName: this.state.last, contactNumber: this.state.number, address: this.state.locAddress})
+                  		}}, 
+              		}
+				],
                 { cancelable: false }
               )
 	}
@@ -76,10 +79,10 @@ class Profile extends Component {
 			               <Input placeholder={this.state.userInfo.lName} onChangeText={(lastName) => this.setState({last: lastName})}/>
 			            </Item>
 			            <Item >
-			              <Input placeholder={this.state.userInfo.contactNumber} onChangeText={(email) => this.setState({email: email})}/>
+			              <Input placeholder={this.state.userInfo.contactNumber} onChangeText={(number) => this.setState({number: number})}/>
 			            </Item>
 			            <Item >
-			              <Input placeholder={this.state.userInfo.address} onChangeText={(email) => this.setState({email: email})}/>
+			              <Input placeholder={this.state.userInfo.address} onChangeText={(address) => this.setState({locAddress: address})}/>
 			            </Item>
 					</View>;
 

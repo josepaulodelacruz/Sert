@@ -12,23 +12,12 @@ export default class Login extends Component {
 		this.state = {
 			firstInput: null,
 			passInput: null,
-			users: [],
+			userType: null,
 			isLoading: true,
 			username: null,
 		}
 	}
 
-	spin () {
-	  this.spinValue.setValue(0)
-	  Animated.timing(
-	    this.spinValue,
-	    {
-	      toValue: 1,
-	      duration: 4000,
-	      easing: Easing.linear
-	    }
-	  ).start(() => this.spin())
-	}
 
 	static navigationOptions = {
     title: 'Login',
@@ -41,7 +30,17 @@ export default class Login extends Component {
   			alert('Enter Password!')
   		}else{
   			firebase.auth().signInWithEmailAndPassword(this.state.firstInput, this.state.passInput)
-  				.then(() => this.props.navigation.navigate('ClientScreen'))
+  				.then(() => {
+  					let uid = firebase.auth().currentUser.uid;
+  					firebase.database().ref('Clients/' + uid ).on('value', snapshot => {
+						this.setState({userType: snapshot.val().role})
+						if(this.state.userType === 'Admin'){
+							this.props.navigation.navigate('Admin')
+						}else{
+							this.props.navigation.navigate('ClientScreen')
+						}
+					})
+  				})
   				.catch(function(error) {
 				    errorCode = error.code;
 				    errorMessage = error.message;
@@ -61,21 +60,14 @@ export default class Login extends Component {
 
 
 	render(){
-
-		
 		const { navigate } = this.props.navigation;
-		const spin = this.spinValue.interpolate({
-		    inputRange: [0, 1],
-		    outputRange: ['0deg', '360deg']
-		  })
 		return (
 			<View style={styles.container}>
 				{/*<Image style={{height: 100, width: 100}} source={require('./Assets/logo.jpg')}/>*/}
 				<Animated.Image
 		        style={{
 		          width: 100,
-		          height: 100,
-		          transform: [{rotate: spin}] }}
+		          height: 100}}
 		          source={require('./Assets/logo.jpg')}/>
 				<Text style={styles.textStyle}>Username/E-mail</Text>
 				<TextInput 

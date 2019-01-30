@@ -1,20 +1,22 @@
 import React from 'react';
 import { BackHandler, TouchableOpacity, View, Text, StyleSheet, SafeAreaView, ScrollView, Image, StatusBar, PermissionsAndroid, Alert  } from 'react-native';
 import { createDrawerNavigator, DrawerItems, createBottomTabNavigator } from 'react-navigation';
-import { Header, Left, Body, Right, Icon, Fab, Button, Container, Content, CardItem, Card } from 'native-base';
+import { Item, Header, Left, Body, Right, Icon, Fab, Button, Container, Content, CardItem, Card, Input, Label } from 'native-base';
 import Mapbox from '@mapbox/react-native-mapbox-gl';
 import Geolocation from 'react-native-geolocation-service';
 import uuid from 'react-native-uuid';
 import ExampleLogo from '../Assets/logo.jpg';
-import DisplayPlaces from './Locations/DisplayPlaces';
 import Modal from "react-native-modal";
 import FairMatrix from './Locations/FairMatrix';
 import PropTypes from 'prop-types';
+import Display from 'react-native-display';
+import Request from './ClientTabs/JoinTricycleRide';
 Mapbox.setAccessToken('pk.eyJ1Ijoid2hvc2VlcG93bHUiLCJhIjoiY2pxdWI3dWxjMGlyOTQzb2M1bjBmMjhrdSJ9._zfJuW0TJRGYl_JNFG37aw');
 
 const mbxDirections = require('@mapbox/mapbox-sdk/services/directions/');
 const directionsClient = mbxDirections({ accessToken: 'pk.eyJ1Ijoid2hvc2VlcG93bHUiLCJhIjoiY2pxdWI3dWxjMGlyOTQzb2M1bjBmMjhrdSJ9._zfJuW0TJRGYl_JNFG37aw' })
-
+const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding/');
+const geocodingClient = mbxGeocoding({ accessToken: 'pk.eyJ1Ijoid2hvc2VlcG93bHUiLCJhIjoiY2pxdWI3dWxjMGlyOTQzb2M1bjBmMjhrdSJ9._zfJuW0TJRGYl_JNFG37aw' })
 
 export default class ClientScreen extends React.Component {
 
@@ -22,18 +24,21 @@ export default class ClientScreen extends React.Component {
 		super(props);
     
 		this.state = {
+      location: 'Click or Search a Place',
+      destination: 'Press anywhere in the Map or Search',
+      address: null,
 			active: true,
 			latitude: 0,
-	     	longitude: 0,
-	     	desLongitude: 121.11175658485149,
-	     	desLatitude: 14.281682671778967,
-	      	timestamp: null,
-	      	distance: null,
-	      	kilometer: null,
-	    	error: null,
-	    	featureCollection: Mapbox.geoUtils.makeFeatureCollection(),
-	    	directions: {},
-	    	isModalVisible: false
+     	longitude: 0,
+     	desLongitude: 0,
+     	desLatitude: 0,
+    	timestamp: null,
+    	distance: null,
+    	kilometer: null,
+    	error: null,
+    	featureCollection: Mapbox.geoUtils.makeFeatureCollection(),
+    	directions: {},
+    	isModalVisible: false
 		};
 	}
 
@@ -82,6 +87,19 @@ componentWillUnmount(){
 	 componentWillMount() {
     Geolocation.getCurrentPosition(
       (position) => {
+        geocodingClient.reverseGeocode({
+          query: [position.coords.longitude, position.coords.latitude],
+          limit: 2
+        })
+          .send()
+          .then(response => {
+            // GeoJSON document with geocoding matches
+            const match = response.body;
+            this.setState({location: match.features[0].text})
+          })
+          .catch(function(error) {
+            alert("GPS Location is off Please Turn it On")
+          })
       	console.log(position.coords);
         this.setState({
           latitude: position.coords.latitude,
@@ -93,9 +111,6 @@ componentWillUnmount(){
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
     );
   }
-
-
- 
 
 
   // Display current location marker
@@ -129,9 +144,25 @@ componentWillUnmount(){
       desLongitude: feature.geometry.coordinates[0],
       desLatitude: feature.geometry.coordinates[1]
 
+    },function(){
+      geocodingClient.reverseGeocode({
+        query: [this.state.desLongitude, this.state.desLatitude],
+        limit: 2
+      })
+        .send()
+        .then(response => {
+          // GeoJSON document with geocoding matches
+          const match = response.body;
+          console.log(match)
+          this.setState({destination: match.features[0].text})
+        })
+        .catch(function(error) {
+          alert('Not within allowed Roads');
+        })
     });
-    console.log(this.state.desLongitude, this.state.desLatitude);
-    // API fetch Route
+    
+
+    /*Dont Edit this code, Payment Algorithm*/
 	directionsClient.getDirections({
 	    waypoints: [
 	      {
@@ -157,6 +188,7 @@ componentWillUnmount(){
 	  });
   }
 
+
   // Modal on/off event
   _toggleModal = () => {
   	 let total = parseInt(this.state.distance/1000)
@@ -164,6 +196,59 @@ componentWillUnmount(){
   	this.setState({ isModalVisible: !this.state.isModalVisible })
   }
 
+
+  /*Search Functionality one of the Recomendations*/
+  handleSearch = () => {
+    if(this.state.address !== null ){
+        geocodingClient.forwardGeocode({
+        query: `Philippines, Laguna, ${this.state.address}`,
+        countries: ['ph'],
+         bbox: [121.096458,14.243420,121.174736,14.299651]
+      })
+        .send()
+        .then(response => {
+
+          const match = response.body.features[0];
+          console.log(match.center[0], match.center[1])
+          this.setState({
+            desLongitude: match.center[0],
+            desLatitude: match.center[1] 
+          })
+
+          directionsClient.getDirections({
+      waypoints: [
+        {
+          coordinates: [this.state.longitude, this.state.latitude],
+          approach: 'unrestricted'
+        },
+        {
+          coordinates: [this.state.desLongitude, this.state.desLatitude],
+          bearing: [100, 60]
+        }
+      ]
+    })
+    .send()
+    .then(response => {
+        const geometry = response.body.routes[0].geometry;
+        const path = response.body.routes[0].legs;
+        this.setState({directions: {
+          "type": "Feature",
+            "properties": {},
+            geometry
+        }})
+        this.setState({ distance: path[0].distance })
+    });
+
+
+        }).catch((error) => {
+          alert('Locations Cant be Found');
+          console.log(error)
+        })
+         this.setState({destination: null})
+    }else{
+      alert('Enter a Specified address to Locate.')
+    }
+  }
 
 
 	render(){
@@ -187,13 +272,27 @@ componentWillUnmount(){
 					<Body>
 						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Single Ride</Text>
 					</Body>		
-					<Right/>
+					<Right/>  
 				</Header>
-				<DisplayPlaces currentLongitude={this.state.longitude}
-								currentLatitude={this.state.latitude}
-								destinationLongitude={this.state.desLongitude}
-								destinationLatitude={this.state.desLatitude}/>
-
+				<Card>
+          <CardItem header >
+            <Left>
+              <Text>Your Current Location: </Text>
+              <Label>{this.state.location}</Label>
+            </Left>
+          </CardItem>
+          <CardItem >
+            <Body>
+              <Label>Destination</Label>                    
+              <Item rounded>
+              <Input onChangeText={(address) => address ? this.setState({address: address}) : this.state.destination} placeholder={this.state.destination} />
+              <TouchableOpacity onPress={this.handleSearch}>
+                <Icon name="ios-search"/>  
+              </TouchableOpacity>
+            </Item >
+            </Body>
+          </CardItem>
+        </Card>
 		          <View style={styles.container}>
 			        <Mapbox.MapView
 			        	ref={(c) => (this._map = c)}
@@ -234,6 +333,7 @@ componentWillUnmount(){
 			            </TouchableOpacity>
 		          	</View>	 	
 	        </Modal>
+          
 			</View>	
 		)
 	}

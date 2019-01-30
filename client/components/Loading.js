@@ -6,8 +6,22 @@ import { UIActivityIndicator, DotIndicator, } from 'react-native-indicators';
 class Loading extends Component {
 	componentDidMount() {
 	    firebase.auth().onAuthStateChanged(user => {
-	      this.props.navigation.navigate(user ? 'ClientScreen' : 'Login')
-	      console.log(user)
+	      	if(!user){
+	      		this.props.navigation.navigate('Login')
+	      	}else{
+	      		firebase.database().ref('Clients/' + user.uid ).on('value', snapshot => {
+					this.setState({userType: snapshot.val().role})
+					if(this.state.userType === 'Admin'){
+						this.props.navigation.navigate('Admin')
+					}else if(this.state.userType === 'dispatcher'){
+						this.props.navigation.navigate('Dispatcher')
+					}else if(this.state.userType === 'client'){
+						this.props.navigation.navigate('ClientScreen')
+					}else{
+						this.props.navigation.navigate('Login')
+					}
+				})
+	      	}
 	    })
 	  }
 

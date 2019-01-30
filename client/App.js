@@ -9,11 +9,18 @@ import Loading from './components/Loading';
 import Client from './components/UserType/Client';
 import Dispatcher from './components/UserType/Dispatcher';
 import ClientScreen from './components/UserType/ClientScreen';
+import Admin from './components/UserType/Admin';
+import User from './components/UserType/Admin/User';
+import Driver from './components/UserType/Admin/Driver';
+import AddDispatcher from './components/UserType/Admin/AddDispatcher/AddDispatcher';
+import Report from './components/UserType/Admin/Report';
+import Feedback from './components/UserType/Admin/Feedback';
 import DispatcherScreen from './components/UserType/DispatcherScreen';
 import Logout from './components/UserType/ClientTabs/Logout';
 import Profile from './components/UserType/ClientTabs/Profile';
 import Messages from './components/UserType/ClientTabs/Messages';
 import Request from './components/UserType/ClientTabs/JoinTricycleRide';
+
 import { Icon } from 'native-base';
 
 import firebase from 'react-native-firebase';
@@ -105,6 +112,53 @@ const Screens = createStackNavigator({
   Client: { screen: Client},
   Dispatcher: { screen: Dispatcher },
   Loading: { screen: Loading },
+  AddDispatcher: { screen: AddDispatcher },
+  Admin: { screen: Admin,
+    screen: createDrawerNavigator({
+      Home: { screen: Admin },
+      Users: { screen: User },
+      Drivers: { screen: Driver },
+      Report: { screen: Report },
+      Feedback: { screen: Feedback },
+    }, {
+        contentComponent: (props) => (
+        <SafeAreaView style={{flex: 1}}>
+          <ScrollView>
+            <View style={{height: 250, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center'}}>
+              <Image source={require('./components/Assets/SertLogo.jpg')} style={{height: 200, width: 200}}/>
+                </View>
+                  <DrawerItems {...props}/>
+            <View style={{flex: 1}}>
+              <TouchableOpacity onPress={() =>
+              Alert.alert(
+                'Log out',
+                'Do you want to logout?',
+                [
+                  {text: 'Cancel', onPress: () => {return null}},
+                  {text: 'Confirm', onPress: () => {
+                    firebase.auth().signOut().then(sucess => {
+                      props.navigation.navigate('Login')
+                    }).catch((err) => {
+                      alert(err)
+                    })
+                  }},
+                ],
+                { cancelable: false }
+              )  
+            }>
+              <Text style={{margin: 16,fontWeight: 'bold'}}>Logout</Text>
+            </TouchableOpacity>
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+        ),
+        contentOptions: {
+          activeTintColor: 'blue'
+        }
+    }) ,navigationOptions: {
+      header: null
+    }
+  },
   ClientScreen: { screen: ClientScreen,
    // Client screen drawer navigation
     screen: createDrawerNavigator({
@@ -134,7 +188,7 @@ const Screens = createStackNavigator({
                 </View>
                   <DrawerItems {...props}/>
             <View style={{flex: 1}}>
-              <TouchableOpacity onPress={()=>
+              <TouchableOpacity onPress={() =>
               Alert.alert(
                 'Log out',
                 'Do you want to logout?',
@@ -170,7 +224,7 @@ const Screens = createStackNavigator({
 },
   {
     // Starting Page, edit the bottom line of the initialRoute to change the page 
-    initialRouteName: 'Loading',
+    initialRouteName: 'Admin',
     navigationOptions: {
       headerStyle: {
         backgroundColor: '#3073FA',

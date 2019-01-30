@@ -24,6 +24,7 @@
     "react": "16.5.0",
     "react-native": "^0.55.4",
     "react-native-android-location-services-dialog-box": "^2.7.0",
+    "react-native-display": "^1.0.8",
     "react-native-firebase": "^5.2.0",
     "react-native-geolocation-service": "^1.1.0",
     "react-native-indicators": "^0.13.0",

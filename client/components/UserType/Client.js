@@ -38,7 +38,7 @@ export default class Client extends Component {
 
   /*Submit event, Check for unfill up textbox, comparison check, validation*/
   handleSubmit = () => {
-    if(!this.state.fName && !this.state.lName && !this.state.address && !this.state.ContactNumber && !this.state.gender && !this.state.username && !this.state.password && !this.state.email){
+    if(!this.state.fName || !this.state.lName || !this.state.address || !this.state.ContactNumber || !this.state.gender || !this.state.username || !this.state.password || !this.state.email){
       alert(`Don't Leave a unfilled info`)
     }else if(this.state.password !== this.state.confirmatoryPassword){
       alert("Password didn't match") 
@@ -57,9 +57,18 @@ export default class Client extends Component {
                               username: this.state.username,
                               rating: 0,
                               feedback: "",
-                              transactions: {}
+                              role: "client",
+                              transactions: {
+                                time: "",
+                                destination: "",
+                                location: "",
+                                date: "",
+                                price: "",
+                                driver: "",
+                              }
                         }).then((data) => {
                             alert("Sucessfully Registered")
+                            this.props.navigation.navigate('Login')
                         }).catch((error) => {
                             alert(error)
                         })

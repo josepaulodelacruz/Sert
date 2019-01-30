@@ -1,20 +1,16 @@
 import React from 'react';
-import { View, Text, StyleSheet, StatusBar, TouchableOpacity } from 'react-native';
-import { Header, Left, Body, Right, Icon, Fab, Button } from 'native-base';
+import { View, StyleSheet, StatusBar, TouchableOpacity } from 'react-native';
+import { Item, Label, Header, Text, Left, Body, Right, Icon, Fab, Button, CardItem, Card,Container,Content, Input } from 'native-base';
 import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 
 
 
 export default class JoinTricycleRide extends React.Component {
-	constructor(){
-		super();
+	constructor(props){
+		super(props);
 		this.state = {
-			active: true
-		};
-	}
-	
-	bookRide = () => {
-		alert('Book A Ride?');
+			textRequest: 'No Available Requ'
+		}
 	}
 
 	render(){
@@ -25,22 +21,37 @@ export default class JoinTricycleRide extends React.Component {
 						<Icon name="menu" onPress={() => this.props.navigation.openDrawer()}/>
 					</Left>
 					<Body>
-						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Join Ride</Text>
+						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Request</Text>
 					</Body>
 					<Right/>
 				</Header>
-				<View>
-					<Text>Hello World</Text>
-				</View>
-		          <Fab
-		            active={this.state.active}
-		            direction="up"
-		            containerStyle={{ }}
-		            style={{ backgroundColor: '#5067FF' }}
-		            position="bottomRight"
-		            onPress={this.bookRide.bind(this)}>
-		             <Text>+</Text>
-		          </Fab>
+				<Content padder>
+		          <Card>
+		            <CardItem header >
+		              <Left>
+						<Icon name="navigate" style={styles.icon}/>
+		              	<Text>Enter Specified Address</Text>
+		              </Left>
+		            </CardItem>
+		            <CardItem >
+		              <Body>
+		              	<Label>Destination</Label>	              		
+	              		<Item rounded>
+			              <Input onChangeText={(Address) => this.setState({address: Address})} placeholder='Input Desired Destination'/>
+			            </Item >
+		              </Body>
+		            </CardItem>
+		            <CardItem>
+		            	<Left/>
+		            	<Body/>
+		            	<Right>
+	            			<TouchableOpacity style={styles.button} onPress={this.handleFind}>
+								<Text style={{color: 'white'}}>Update</Text>
+							</TouchableOpacity>
+		            	</Right>
+		            </CardItem>
+		          </Card>
+		        </Content>
 			</View>
 		)
 	}
@@ -50,5 +61,18 @@ export default class JoinTricycleRide extends React.Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1
-	}
+	},
+	icon: {
+		color: 'green'
+	},
+	button: {
+	    flexDirection: 'row',
+	    padding: 8,
+	    justifyContent: 'center',
+	    alignItems: 'center',
+	    backgroundColor: "#00BFFF",
+	    borderRadius: 10,
+	},
+	
+
 })
