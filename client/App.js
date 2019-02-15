@@ -1,5 +1,5 @@
 import React from 'react';
-import io from 'socket.io-client/dist/socket.io';
+// import io from 'socket.io-client/dist/socket.io';
 import LocationServicesDialogBox from "react-native-android-location-services-dialog-box";
 import { TouchableOpacity, Alert, BackHandler, DeviceEventEmitter, StyleSheet, Text, View,Button, SafeAreaView, ScrollView, Dimensions, Image, PermissionsAndroid, Platform  } from 'react-native';
 import Front from './components/Front';
@@ -8,11 +8,19 @@ import SignUp from './components/SignUp';
 import Loading from './components/Loading';
 import Client from './components/UserType/Client';
 import Dispatcher from './components/UserType/Dispatcher';
+import Dashboard from './components/UserType/Dispatch/DispatchDashboard';
+import ReqDriver from './components/UserType/Dispatch/ReqDriver';
+import AddDriver from './components/UserType/Dispatch/AddDriver/AddDriver';
+import Ongoing from './components/UserType/Dispatch/Ongoing';
+import UpdateDriver from './components/UserType/Dispatch/AddDriver/UpdateDriver';
+import DispatchDriver from './components/UserType/Dispatch/DispatcherMap/DispatchDriver';
+import DispatcherReports from './components/UserType/Dispatch/DispatcherReports';
+import DriverFeedback from './components/UserType/Dispatch/Feedback';
 import ClientScreen from './components/UserType/ClientScreen';
 import Admin from './components/UserType/Admin';
 import User from './components/UserType/Admin/User';
 import Driver from './components/UserType/Admin/Driver';
-import AddDispatcher from './components/UserType/Admin/AddDispatcher/AddDispatcher';
+// import AddDispatcher from './components/UserType/Admin/AddDispatcher/AddDispatcher';
 import Report from './components/UserType/Admin/Report';
 import Feedback from './components/UserType/Admin/Feedback';
 import DispatcherScreen from './components/UserType/DispatcherScreen';
@@ -39,7 +47,7 @@ class App extends React.Component {
       endpoint: 'http://192.168.0.10:5000',
       con: '',
       msg: 'sent',
-      socket: io('http://192.168.0.10:5000', {jsonp: false}),
+      // socket: io('http://192.168.0.14:5000', {jsonp: false}),
       permission: false,
       logout: []
     };
@@ -50,7 +58,7 @@ class App extends React.Component {
 
 
 
-  componentDidMount(){
+  componentWillMount(){
     // Access Permission
     async function requestCameraPermission() {
     try {
@@ -76,7 +84,7 @@ class App extends React.Component {
   // Back end Server Fetch
   
 
-  componentDidMount(){
+  componentWillMount(){
     // Turning on the Geolocation of the phone
      LocationServicesDialogBox.checkLocationServicesIsEnabled({
     message: "<h2 style='color: #0af13e'>Use Location ?</h2>This app wants to change your device settings:<br/><br/>Use GPS, Wi-Fi, and cell network for location<br/><br/><a href='#'>Learn more</a>",
@@ -112,7 +120,9 @@ const Screens = createStackNavigator({
   Client: { screen: Client},
   Dispatcher: { screen: Dispatcher },
   Loading: { screen: Loading },
-  AddDispatcher: { screen: AddDispatcher },
+  AddDriver: { screen: AddDriver },
+  UpdateDriver: { screen: UpdateDriver},
+  DispatchDriver: { screen: DispatchDriver },
   Admin: { screen: Admin,
     screen: createDrawerNavigator({
       Home: { screen: Admin },
@@ -220,11 +230,57 @@ const Screens = createStackNavigator({
       header: null
     }
   },
-  DispatcherScreen: { screen: DispatcherScreen}
+  DispatcherScreen: { screen: DispatcherScreen, 
+    screen: createDrawerNavigator({
+        Dashboard: { screen: Dashboard },
+        Drivers: { screen: ReqDriver },
+        Ongoing: { screen: Ongoing },
+        Reports: { screen: DispatcherReports },
+        Feedback: { screen: DriverFeedback }
+    }, {
+      contentComponent: (props) => (
+        <SafeAreaView style={{flex: 1}}>
+          <ScrollView>
+            <View style={{height: 250, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center'}}>
+              <Image source={require('./components/Assets/SertLogo.jpg')} style={{height: 200, width: 200}}/>
+                </View>
+                  <DrawerItems {...props}/>
+            <View style={{flex: 1}}>
+              <TouchableOpacity onPress={() =>
+              Alert.alert(
+                'Log out',
+                'Do you want to logout?',
+                [
+                  {text: 'Cancel', onPress: () => {return null}},
+                  {text: 'Confirm', onPress: () => {
+                    firebase.auth().signOut().then(sucess => {
+                      props.navigation.navigate('Login')
+                    }).catch((err) => {
+                      alert(err)
+                    })
+                  }},
+                ],
+                { cancelable: false }
+              )  
+            }>
+              <Text style={{margin: 16,fontWeight: 'bold'}}>Logout</Text>
+            </TouchableOpacity>
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+        ),
+      contentOptions: {
+        activeTintColor: 'blue'
+      }
+    })
+    ,navigationOptions: {
+      header: null
+    }
+  }
 },
   {
     // Starting Page, edit the bottom line of the initialRoute to change the page 
-    initialRouteName: 'Admin',
+    initialRouteName: 'Loading',
     navigationOptions: {
       headerStyle: {
         backgroundColor: '#3073FA',
@@ -240,27 +296,3 @@ const Screens = createStackNavigator({
 
 
 export default App;
-
-/*const androidConfig = {
-      clientId: '1092666124580-655j2cc4fa7dde9r0nj72fa8oeg2t6ao.apps.googleusercontent.com',
-      appId: '1:1092666124580:android:2db2c66b40704dc1',
-      apiKey: 'AIzaSyCdyaOvycg4QyUYybMtZVVsd1fJGYNa91o',
-      databaseURL: 'https://sert-app-project.firebaseio.com/',
-      storageBucket: 'sert-app-project.appspot.com',
-      messagingSenderId: '1092666124580',
-      projectId: 'sert-app-project',
-
-      // enable persistence by adding the below flag
-      persistence: true,
-    };
-
-    const SertApp = firebase.initializeApp(androidConfig,'sert-app-project');
-
-    SertApp.onReady().then((app) => {
-      // --ready--
-      firebase.app('sert-app-project').auth().signInAnonymously().then((user) => {
-        console.log("Sert App User =>", user.toJSON())
-        console.log(user)
-      })
-
-    })*/

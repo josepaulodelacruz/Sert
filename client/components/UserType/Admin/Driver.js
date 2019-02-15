@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Modal from "react-native-modal";
-import { Header, Left, Body, Right, Icon } from 'native-base';
+import Displaydrivers from './AddDispatcher/Displaydrivers';
+import firebase from 'react-native-firebase';
+import { Header, Left, Body, Right, Icon, Container, Item, Input } from 'native-base';
 
 class Driver extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			add: false,
+			users: [],
 			isModalVisible: false
 		}
 	}
@@ -17,6 +19,33 @@ class Driver extends Component {
               <Icon name="bicycle" style={{fontSize: 24, color: "blue"}}/>
             );
         }   
+    }
+
+    componentDidMount(){
+    	let userInfo = [];
+    	 firebase.database().ref('Clients/').once('value',(snapshot) => {
+       		snapshot.forEach((child) => {
+			    userInfo.push({
+			      id: child.key,
+			      first: child.val().fName,
+			      last: child.val().lName,
+			      contact: child.val().contactNumber,
+			      Toda: child.val().group,
+			      address: child.val().address,
+			      role: child.val().role
+			    });
+			  });
+            this.setState({users: userInfo}); 
+   		 })
+    }
+
+    handleDelete = (id) => {
+    	let del = this.state.users;
+		let index = del.findIndex(x => x.id === id);
+		del.splice(index, 1);
+		this.setState({users: del});
+		
+    	firebase.database().ref('Clients/').child('' + id).remove()
     }
 
 	render(){
@@ -29,15 +58,17 @@ class Driver extends Component {
 					<Body>
 						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Drivers</Text>
 					</Body>
-					<Right>
-						<TouchableOpacity onPress={() => this.props.navigation.navigate('AddDispatcher')} style={styles.button}>
-							<Text style={{color: 'white'}}>Add Driver</Text>
-						</TouchableOpacity>
-					</Right>
+					<Right/>
 				</Header>
-				<View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-					<Text>Add Drivers</Text>
-				</View>
+				<Container >
+				<Item >
+	              <Input onChangeText={(search) => this.setState({searching: search})} />
+	              <TouchableOpacity onPress={this.handleSearch}>
+	                <Icon name="ios-search"/>  
+	              </TouchableOpacity>
+	            </Item >
+					<Displaydrivers drivers={this.state.users} onDelete={this.handleDelete.bind(this)} search={this.state.search}/>
+				</Container>
 			</View>		
 		)
 	}

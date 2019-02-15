@@ -6,7 +6,6 @@ export default class Login extends Component {
 	constructor(){	
 		super();
 		this.ref = firebase.database().ref("clients/");
-		this.user = null;
 		this.unsubscribe = null;
 		this.spinValue  = new Animated.Value(0);
 		this.state = {
@@ -34,10 +33,13 @@ export default class Login extends Component {
   					let uid = firebase.auth().currentUser.uid;
   					firebase.database().ref('Clients/' + uid ).on('value', snapshot => {
 						this.setState({userType: snapshot.val().role})
+						console.log(snapshot.val().approved)
 						if(this.state.userType === 'Admin'){
 							this.props.navigation.navigate('Admin')
-						}else{
+						}else if(this.state.userType === 'client'){
 							this.props.navigation.navigate('ClientScreen')
+						}else{
+							this.props.navigation.navigate('DispatcherScreen');
 						}
 					})
   				})

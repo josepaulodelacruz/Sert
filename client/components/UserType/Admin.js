@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, BackHandler, Alert } from 'react-native';
 import { Header, Left, Body, Right, Icon } from 'native-base';
 class Admin extends Component {
 	static navigationOptions = {
@@ -9,6 +9,38 @@ class Admin extends Component {
             );
         }   
     }
+
+    onButtonPress = () => {
+  BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
+  // then navigate
+  navigate('Admin');
+}
+
+handleBackButton = () => {
+ Alert.alert(
+     'Exit App',
+     'Exiting the application?', [{
+         text: 'Cancel',
+         onPress: () => console.log('Cancel Pressed'),
+         style: 'cancel'
+     }, {
+         text: 'OK',
+         onPress: () => BackHandler.exitApp()
+     }, ], {
+         cancelable: false
+     }
+  )
+  return true;
+} 
+
+componentDidMount(){
+  BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
+}
+
+componentWillUnmount(){
+  BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
+}
+
 	render(){
 		return(
 			<View style={styles.container}>
@@ -22,7 +54,7 @@ class Admin extends Component {
 					<Right/>
 				</Header>
 				<View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-					<Text>Display Records of all transactions of the client</Text>
+					<Text>Display Pictures of Carlton Toda Home page</Text>
 				</View>
 			</View>
 		)

@@ -1,0 +1,49 @@
+import React, { Component } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import { Header, Left, Body, Right, Icon } from 'native-base';
+
+
+class DispatchReports extends Component {
+		static navigationOptions = {
+      drawerIcon: ({ tintColor }) =>{
+        return(
+          <Icon name="paper" style={{fontSize: 24, color: "blue"}}/>
+        );
+    }   
+}
+
+
+	render(){
+		return(
+				<View style={styles.container}>
+				<Header style={{backgroundColor: '#3073FA'}}>
+					<Left>
+						<Icon name="menu" onPress={() => this.props.navigation.openDrawer()}/>
+					</Left>
+					<Body>
+						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Reports</Text>
+					</Body>
+					<Right/>
+				</Header>
+			</View>	
+		)
+	}
+}
+
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1
+	},
+	button: {
+	    flexDirection: 'row',
+	    padding: 8,
+	    justifyContent: 'center',
+	    alignItems: 'center',
+	    backgroundColor: "#00BFFF",
+	    borderRadius: 10,
+	  },
+})
+
+
+export default DispatchReports;

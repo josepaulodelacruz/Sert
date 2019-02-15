@@ -11,6 +11,8 @@ import FairMatrix from './Locations/FairMatrix';
 import PropTypes from 'prop-types';
 import Display from 'react-native-display';
 import Request from './ClientTabs/JoinTricycleRide';
+import io from 'socket.io-client/dist/socket.io';
+import firebase from 'react-native-firebase';
 Mapbox.setAccessToken('pk.eyJ1Ijoid2hvc2VlcG93bHUiLCJhIjoiY2pxdWI3dWxjMGlyOTQzb2M1bjBmMjhrdSJ9._zfJuW0TJRGYl_JNFG37aw');
 
 const mbxDirections = require('@mapbox/mapbox-sdk/services/directions/');
@@ -26,6 +28,8 @@ export default class ClientScreen extends React.Component {
 		this.state = {
       location: 'Click or Search a Place',
       destination: 'Press anywhere in the Map or Search',
+      time: new Date().toLocaleString(),
+      price: null,
       address: null,
 			active: true,
 			latitude: 0,
@@ -38,7 +42,8 @@ export default class ClientScreen extends React.Component {
     	error: null,
     	featureCollection: Mapbox.geoUtils.makeFeatureCollection(),
     	directions: {},
-    	isModalVisible: false
+    	isModalVisible: false,
+      socket: io('http://192.168.0.14:5000', {jsonp: false}),
 		};
 	}
 
@@ -111,6 +116,10 @@ componentWillUnmount(){
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
     );
   }
+
+
+ 
+
 
 
   // Display current location marker
@@ -207,7 +216,7 @@ componentWillUnmount(){
       })
         .send()
         .then(response => {
-
+          this.setState({ destination: this.state.address })
           const match = response.body.features[0];
           console.log(match.center[0], match.center[1])
           this.setState({
@@ -250,6 +259,52 @@ componentWillUnmount(){
     }
   }
 
+  /*Request*/
+  handleSubmit = () => {
+    const { address } = this.state;
+    if(this.state.kilometer > 2){
+          let value = this.state.kilometer - 2;
+          let total = value * 7 + 40;
+          let uid = firebase.auth().currentUser.uid;
+          let sentUpdate = firebase.database().ref('Clients/' + uid )
+          sentUpdate.update({sent: true});
+          firebase.database().ref('Clients/' + uid + '/Transactions').set({
+            approved: false,
+            time: this.state.time,  
+            longitude: this.state.longitude,
+            latitude: this.state.latitude,
+            desLongitude: this.state.desLongitude,
+            desLatitude: this.state.desLatitude,
+            service: "",
+            price: total,
+            location: this.state.location,
+            destination: this.state.destination
+          })      
+        }else{
+          let uid = firebase.auth().currentUser.uid;
+          let sentUpdate = firebase.database().ref('Clients/' + uid )
+          sentUpdate.update({sent: true});
+          firebase.database().ref('Clients/' + uid + '/Transactions').set({
+            approved: false,
+            time: this.state.time,
+            longitude: this.state.longitude,
+            latitude: this.state.latitude,
+            desLongitude: this.state.desLongitude,
+            desLatitude: this.state.desLatitude,
+            service: "",
+            price: 40,
+            location: this.state.location,
+            destination: this.state.destination
+          })
+          
+    this.setState({ isModalVisible: !this.state.isModalVisible })
+          return false;
+        }
+    
+    this.setState({ isModalVisible: !this.state.isModalVisible })
+   
+  }
+
 
 	render(){
 			// Display desired location by press event on the map
@@ -270,7 +325,7 @@ componentWillUnmount(){
 						<Icon name="menu" onPress={() => this.props.navigation.openDrawer()}/>
 					</Left>
 					<Body>
-						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Single Ride</Text>
+						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Ride</Text>
 					</Body>		
 					<Right/>  
 				</Header>
@@ -323,15 +378,15 @@ componentWillUnmount(){
           	<Modal isVisible={this.state.isModalVisible}
           			 	onBackdropPress={() => this.setState({visibleModal: false})}>
   					<View style={styles.modal}>
-			            <Text>Payment Matrix</Text>
-			            <FairMatrix distance={this.state.kilometer}/>
-			            <TouchableOpacity style={{position: 'absolute', top: 5, right: 10}} onPress={this._toggleModal}>
-			              <Text style={{fontSize: 24}}>X</Text>
-			            </TouchableOpacity>
-			            <TouchableOpacity style={styles.button} onPress={this._toggleModal}>
-			              <Text style={{fontSize: 14, color: 'white'}}>Book a Ride</Text>
-			            </TouchableOpacity>
-		          	</View>	 	
+		            <Text>Payment Matrix</Text>
+		            <FairMatrix distance={this.state.kilometer} onSend={this.handleSubmit}/>
+		            <TouchableOpacity style={{position: 'absolute', top: 5, right: 10}} onPress={this._toggleModal}>
+		              <Text style={{fontSize: 24}}>X</Text>
+		            </TouchableOpacity>
+		            <TouchableOpacity style={styles.button} onPress={this.handleSubmit}>
+		              <Text style={{fontSize: 14, color: 'white'}}>Book a Ride</Text>
+		            </TouchableOpacity>
+	          	</View>	 	
 	        </Modal>
           
 			</View>	

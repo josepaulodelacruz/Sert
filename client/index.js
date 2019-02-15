@@ -8,11 +8,11 @@ import {
 } from 'react-native';
 
 import App from './App';
-import { addNavigationHelpers } from 'react-navigation';
-import { Provider, connect } from 'react-redux';
+
 
 // Hide the deprecated warning
-YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
+YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader',
+  `Warning: Can't call setState (or forceUpdate) on an unmounted component.`]);
 
 export default class SertApplicationV7 extends Component {
   render() {

@@ -13,6 +13,10 @@ export default class JoinTricycleRide extends React.Component {
 		}
 	}
 
+	handleSend = () => {
+		alert('This is free, No Hidden Charges when sending a SMS');
+	}
+
 	render(){
 		return(
 			<View style={styles.container}>
@@ -30,23 +34,25 @@ export default class JoinTricycleRide extends React.Component {
 		            <CardItem header >
 		              <Left>
 						<Icon name="navigate" style={styles.icon}/>
-		              	<Text>Enter Specified Address</Text>
+		              	<Text>No request has been Approved</Text>
 		              </Left>
 		            </CardItem>
 		            <CardItem >
 		              <Body>
 		              	<Label>Destination</Label>	              		
-	              		<Item rounded>
-			              <Input onChangeText={(Address) => this.setState({address: Address})} placeholder='Input Desired Destination'/>
-			            </Item >
+	              		<Text>Plate Number: 291</Text>
+	              		<Label>Conduction Sticker</Label>	              		
+	              		<Text>2301--sdw</Text>
+	              		<Label>Contact Number</Label>	              		
+	              		<Text>09056535707</Text>
 		              </Body>
 		            </CardItem>
 		            <CardItem>
 		            	<Left/>
 		            	<Body/>
 		            	<Right>
-	            			<TouchableOpacity style={styles.button} onPress={this.handleFind}>
-								<Text style={{color: 'white'}}>Update</Text>
+	            			<TouchableOpacity style={styles.button} onPress={this.handleSend}>
+								<Text style={{color: 'white'}}>Send a SMS</Text>
 							</TouchableOpacity>
 		            	</Right>
 		            </CardItem>

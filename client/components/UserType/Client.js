@@ -49,7 +49,8 @@ export default class Client extends Component {
                     userId = firebase.auth().currentUser.uid;
                     if (userId) {
                         firebase.database().ref('Clients/' + userId).set({
-                             fName: this.state.fName,
+                              sent: false,
+                              fName: this.state.fName,
                               lName: this.state.lName,
                               address: this.state.address,
                               contactNumber: this.state.ContactNumber,
@@ -58,17 +59,22 @@ export default class Client extends Component {
                               rating: 0,
                               feedback: "",
                               role: "client",
-                              transactions: {
-                                time: "",
-                                destination: "",
-                                location: "",
-                                date: "",
-                                price: "",
-                                driver: "",
+                              approved: false,
+                              Transactions: {
+                                  approved: false,
+                                  time: "",  
+                                  longitude: "",
+                                  latitude: "",
+                                  desLongitude: "",
+                                  desLatitude: "",
+                                  service: "",
+                                  price: "",
+                                  location: "",
+                                  destination: ""
                               }
                         }).then((data) => {
                             alert("Sucessfully Registered")
-                            this.props.navigation.navigate('Login')
+                            this.props.navigation.navigate('Login');
                         }).catch((error) => {
                             alert(error)
                         })
