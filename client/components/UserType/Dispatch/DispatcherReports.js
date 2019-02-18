@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { Header, Left, Body, Right, Icon } from 'native-base';
+import { Container, Header, Content, Card, CardItem, Body, Icon, Left, Right } from "native-base";
+import firebase from 'react-native-firebase';
+import Reports from './Reports/Reports';
 
 
 class DispatchReports extends Component {
+		constructor(){
+			super();
+			this.state = {
+				reports: []
+			}
+		}
+
 		static navigationOptions = {
       drawerIcon: ({ tintColor }) =>{
         return(
@@ -11,6 +20,37 @@ class DispatchReports extends Component {
         );
     }   
 }
+
+	componentWillMount(){
+		let reports = []
+		firebase.database().ref('Clients/Reports').once('value', (snapshot) => {
+			snapshot.forEach((child) => {
+			    	reports.push({
+			    		id: child.key,
+			    		fName: child.val().fName,
+			    		lName: child.val().lName,
+			    		driver: child.val().driver,
+			    		contact: child.val().contact,
+			    		location: child.val().location,
+			    		destination: child.val().destination,
+			    		price: child.val().price,
+			    		time: child.val().time,
+			    		rating: child.val().rating,
+			    		dRating: child.val().dRating,
+			    		time: child.val().time,
+			    		operatorName: child.val().operatorName,
+			    		operatorContactNumber: child.val().operatorContactNumber,
+			    	})	
+		    	})
+				this.setState({reports: reports})
+		    })				
+	}
+
+	handleDetail = (report, id) => {
+		this.props.navigation.navigate('ListReport', {
+			report: report
+		})
+	}
 
 
 	render(){
@@ -25,6 +65,7 @@ class DispatchReports extends Component {
 					</Body>
 					<Right/>
 				</Header>
+				<Reports reports={this.state.reports} details={this.handleDetail.bind(this)}/>
 			</View>	
 		)
 	}

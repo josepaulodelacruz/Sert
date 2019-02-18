@@ -55,11 +55,11 @@ class DispatchDashboard extends Component {
 	  BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
 	}
 
-	componentDidMount(){
+	componentWillMount(){
 		let userInfo = []
 		let request = []
 		let transaction = []	
-		firebase.database().ref('Clients/').on('value', (snapshot) => {
+		firebase.database().ref('Clients/').once('value', (snapshot) => {
 			snapshot.forEach((child) => {
 			    request.push({
 			    	id: child.key,
@@ -69,25 +69,33 @@ class DispatchDashboard extends Component {
 			    	last: child.val().lName,
 			    	approved: child.val().approved,
 			    	contact: child.val().contactNumber,
-			    	role: child.val().role
+			    	role: child.val().role,
+			    	rating: child.val().rating
 			    })
 			  });
 			this.setState({request: request})
 		})
+
 	}
+
 
 	handleCoords = (id) => {
 		this.setState({coords: id})
 	}
+
 
 	handleDispatch = (transaction, request) => {
 		this.props.navigation.navigate('DispatchDriver', {
 			transaction: transaction,
 			request: request
 		});
+
 	}
 
+	
+
 	render(){
+
 		let currentPosition = <Mapbox.PointAnnotation
 						        key='pointAnnotation'
 						        id='pointAnnotation'

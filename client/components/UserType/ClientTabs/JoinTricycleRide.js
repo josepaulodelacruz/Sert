@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, StatusBar, TouchableOpacity } from 'react-native';
-import { Item, Label, Header, Text, Left, Body, Right, Icon, Fab, Button, CardItem, Card,Container,Content, Input } from 'native-base';
+import { Container, Header, Content, Card, CardItem, Text, Body, Icon, Left, Right, Label } from "native-base";
+import firebase from 'react-native-firebase';
 import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 
 
@@ -9,7 +10,8 @@ export default class JoinTricycleRide extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			textRequest: 'No Available Requ'
+			textRequest: 'No Available Requ',
+			driver: []
 		}
 	}
 
@@ -17,7 +19,81 @@ export default class JoinTricycleRide extends React.Component {
 		alert('This is free, No Hidden Charges when sending a SMS');
 	}
 
+	componentWillMount(){
+		let uid = firebase.auth().currentUser.uid;
+		firebase.database().ref('Clients/' + uid + '/DriverInfo').on('value', (snapshot) => {
+			this.setState({driver: snapshot.val()})
+		})
+	}
+
+
+	renderDriver(){
+		if(this.state.driver){
+			return(
+				<Content padder>
+			          <Card>
+			            <CardItem header bordered>
+			            <Left>
+			            	<Icon name="navigate" style={styles.icon}/>
+			            	<Text>Dispatch Driver Information</Text>
+			            </Left>
+			            </CardItem>
+			            <CardItem  header bordered>
+			            	<Text>{this.state.driver.dName}</Text>
+			            </CardItem>
+			            <CardItem  header bordered>
+			            	<Text>Contact: {this.state.driver.contact}</Text>
+			            </CardItem>
+			            <CardItem  header bordered>
+			            	<Text>
+			            		Plate: {this.state.driver.plate}
+			            	</Text>
+			            </CardItem>
+			            <CardItem  header bordered>
+			            	<Text>
+			            		Conduction: {this.state.driver.conduction}
+			            	</Text>
+			            </CardItem >
+			            <CardItem  header bordered>
+			            	<Text>
+			            		Operator's Contact: {this.state.driver.operatorContactNumber}
+			            	</Text>
+			            </CardItem>
+			            <CardItem  header bordered>
+			            	<Text>
+			            		rating: {this.state.driver.dRating}
+			            	</Text>
+			            </CardItem>
+			            <CardItem footer bordered>
+			              <Left/>
+			              <Body/>
+			              <Right>
+			              	<TouchableOpacity style={styles.button}>
+			              		<Text style={{color: 'white'}}>Send SMS</Text>
+			              	</TouchableOpacity>
+			              </Right>
+			            </CardItem>
+			          </Card>
+			        </Content>
+			)
+		}else{
+			return(
+				<Content padder>
+	          <Card>
+	            <CardItem header bordered>
+	            <Left>
+	            	<Icon name="navigate" style={styles.icon}/>
+	            	<Text>Dispatch Driver Information</Text>
+	            </Left>
+	            </CardItem>
+	          </Card>
+	        </Content>
+			)
+		}
+	}
+
 	render(){
+		console.log(this.state.driver)
 		return(
 			<View style={styles.container}>
 				<Header style={{backgroundColor: '#3073FA'}}>
@@ -29,35 +105,9 @@ export default class JoinTricycleRide extends React.Component {
 					</Body>
 					<Right/>
 				</Header>
-				<Content padder>
-		          <Card>
-		            <CardItem header >
-		              <Left>
-						<Icon name="navigate" style={styles.icon}/>
-		              	<Text>No request has been Approved</Text>
-		              </Left>
-		            </CardItem>
-		            <CardItem >
-		              <Body>
-		              	<Label>Destination</Label>	              		
-	              		<Text>Plate Number: 291</Text>
-	              		<Label>Conduction Sticker</Label>	              		
-	              		<Text>2301--sdw</Text>
-	              		<Label>Contact Number</Label>	              		
-	              		<Text>09056535707</Text>
-		              </Body>
-		            </CardItem>
-		            <CardItem>
-		            	<Left/>
-		            	<Body/>
-		            	<Right>
-	            			<TouchableOpacity style={styles.button} onPress={this.handleSend}>
-								<Text style={{color: 'white'}}>Send a SMS</Text>
-							</TouchableOpacity>
-		            	</Right>
-		            </CardItem>
-		          </Card>
-		        </Content>
+				 <Container>
+			        {this.renderDriver()}
+			      </Container>
 			</View>
 		)
 	}
@@ -79,6 +129,8 @@ const styles = StyleSheet.create({
 	    backgroundColor: "#00BFFF",
 	    borderRadius: 10,
 	},
+
 	
 
 })
+

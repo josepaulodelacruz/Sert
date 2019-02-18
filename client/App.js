@@ -16,10 +16,12 @@ import UpdateDriver from './components/UserType/Dispatch/AddDriver/UpdateDriver'
 import DispatchDriver from './components/UserType/Dispatch/DispatcherMap/DispatchDriver';
 import DispatcherReports from './components/UserType/Dispatch/DispatcherReports';
 import DriverFeedback from './components/UserType/Dispatch/Feedback';
+import ListReport from './components/UserType/Dispatch/Reports/DetailReport';
 import ClientScreen from './components/UserType/ClientScreen';
 import Admin from './components/UserType/Admin';
 import User from './components/UserType/Admin/User';
 import Driver from './components/UserType/Admin/Driver';
+import Details from './components/UserType/Dispatch/Ongoing/Details';
 // import AddDispatcher from './components/UserType/Admin/AddDispatcher/AddDispatcher';
 import Report from './components/UserType/Admin/Report';
 import Feedback from './components/UserType/Admin/Feedback';
@@ -123,6 +125,8 @@ const Screens = createStackNavigator({
   AddDriver: { screen: AddDriver },
   UpdateDriver: { screen: UpdateDriver},
   DispatchDriver: { screen: DispatchDriver },
+  ListReport: { screen: ListReport },
+  Details: { screen: Details },
   Admin: { screen: Admin,
     screen: createDrawerNavigator({
       Home: { screen: Admin },
@@ -232,7 +236,7 @@ const Screens = createStackNavigator({
   },
   DispatcherScreen: { screen: DispatcherScreen, 
     screen: createDrawerNavigator({
-        Dashboard: { screen: Dashboard },
+       Dashboard: { screen: Dashboard },
         Drivers: { screen: ReqDriver },
         Ongoing: { screen: Ongoing },
         Reports: { screen: DispatcherReports },

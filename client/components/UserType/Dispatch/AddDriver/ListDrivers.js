@@ -13,6 +13,7 @@ class ListDrivers extends Component {
 
 	render(){
 		let drivers = this.props.drivers.map((driver) => {
+			console.log(driver);
 			return(
 				<Card key={driver.id} id={driver.id}>
 		            <CardItem header>

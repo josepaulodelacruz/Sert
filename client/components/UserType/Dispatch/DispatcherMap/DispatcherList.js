@@ -30,10 +30,10 @@ class DispatcherList extends Component {
                   <Label>Conduction Sticker: {driver.conduction}</Label>
                 </Item>
                 <Item stackedLabel last>
-                  <Label>Operators Name:</Label>
+                  <Label>Operators Name: {driver.operatorName}</Label>
                 </Item>
                 <Item stackedLabel last>
-                  <Label>Operators Contact Number:</Label>
+                  <Label>Operators#: {driver.operatorContactNumber}</Label>
                 </Item>
               </Form>
             <CardItem footer bordered>

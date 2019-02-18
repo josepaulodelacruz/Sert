@@ -15,29 +15,35 @@ class DisplayRequest extends Component {
 
 
 	render(){
+		let id;
 		let requests = this.props.request.map((request) => {
-			if(!request.transactions){
+			
+			if(request.id === id){
 				return false;
 			}else{
-				if(request.sent === false){
+				id = request;
+				if(!request.transactions){
 					return false;
 				}else{
-						if(request.role === 'client'){
-						if(request.approved === false){
-							return(
-							<Card key={request.id} id={request.id}>
-				            <CardItem header bordered>
-				              <Text style={{fontSize: 12}}>{request.first} {request.last}</Text>
-				            </CardItem>
-				                <Transactions dispatch={this.handleDispatch.bind(this, request)} transaction={request.transactions} id={request.id} coords={this.handleSend}/>
-				          </Card>
-							)
+					if(request.sent === false){
+						return false;
+					}else{
+							if(request.role === 'client'){
+							if(request.approved === false){
+								return(
+								<Card key={request.id} id={request.id}>
+					            <CardItem header bordered>
+					              <Text style={{fontSize: 12}}>{request.first} {request.last}</Text>
+					            </CardItem>
+					                <Transactions dispatch={this.handleDispatch.bind(this, request)} transaction={request.transactions} id={request.id} coords={this.handleSend}/>
+					          </Card>
+								)
+							}
 						}
-					}
+					}	
 				}
-				
 			}
-			
+				
 		})
 		return(
 			 <Container>

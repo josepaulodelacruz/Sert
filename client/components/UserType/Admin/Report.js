@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Header, Left, Body, Right, Icon } from 'native-base';
-
+import Reports from './Reports/Reports';
+import firebase from 'react-native-firebase';
 
 class Report extends Component {
+	constructor(){
+		super();
+		this.state = {
+			reports: []
+		}
+	}
 	static navigationOptions = {
       drawerIcon: ({ tintColor }) =>{
         	return(
@@ -11,8 +18,31 @@ class Report extends Component {
         	);
         }   
     }
+
+    componentWillMount(){
+    	let reports = []
+    	firebase.database().ref('Clients/Reports').once('value', (snapshot) => {
+    		snapshot.forEach((child) => {
+    			reports.push({
+    				id: child.key,
+    				contact: child.val().contact,
+    				dRating: child.val().dRating,
+    				destination: child.val().destination,
+    				driver: child.val().driver,
+    				fName: child.val().fName,
+    				lName: child.val().lName,
+    				location: child.val().location,
+    				operatorContactNumber: child.val().operatorContactNumber,
+    				operatorName: child.val().operatorName,
+    				price: child.val().price,
+    				time: child.val().time,
+    			})
+    		})
+    		this.setState({reports: reports})
+    	})
+    }
+
 	render(){
-	
 
 		return(
 			<View style={styles.container}>
@@ -25,9 +55,7 @@ class Report extends Component {
 					</Body>
 					<Right/>
 				</Header>
-				<View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-					<Text>Display Reports</Text>
-				</View>
+				<Reports reports={this.state.reports}/>
 			</View>	
 		)
 	}
