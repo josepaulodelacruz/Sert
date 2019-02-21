@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Text, Body, Right, Left } from "native-base";
 import Transactions from './Transactions';
+import Star from 'react-native-star-view';
 
 class DisplayRequest extends Component {
 
@@ -33,7 +34,13 @@ class DisplayRequest extends Component {
 								return(
 								<Card key={request.id} id={request.id}>
 					            <CardItem header bordered>
-					              <Text style={{fontSize: 12}}>{request.first} {request.last}</Text>
+					            <Left>
+					            	<Text style={{fontSize: 12}}>{request.first} {request.last}</Text>
+					            </Left>
+					            <Body/>
+					            <Right>
+					            	<Star score={request.rating} style={styles.starStyle} />
+					            </Right>  
 					            </CardItem>
 					                <Transactions dispatch={this.handleDispatch.bind(this, request)} transaction={request.transactions} id={request.id} coords={this.handleSend}/>
 					          </Card>
@@ -54,5 +61,18 @@ class DisplayRequest extends Component {
 		)
 	}
 }
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		alignItems: 'center',
+		justifyContent: 'center'
+	},
+	starStyle: {
+      width: 100,
+      height: 20,		
+	}
+})
+
 
 export default DisplayRequest;

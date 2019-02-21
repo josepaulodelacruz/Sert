@@ -16,6 +16,7 @@ class Admin extends Component {
   navigate('Admin');
 }
 
+/*Back button exit method*/
 handleBackButton = () => {
  Alert.alert(
      'Exit App',

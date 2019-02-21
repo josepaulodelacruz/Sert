@@ -20,6 +20,7 @@ export default class JoinTricycleRide extends React.Component {
 	}
 
 	componentWillMount(){
+		/*Displaying the sent driver info to the CLient*/
 		let uid = firebase.auth().currentUser.uid;
 		firebase.database().ref('Clients/' + uid + '/DriverInfo').on('value', (snapshot) => {
 			this.setState({driver: snapshot.val()})
@@ -28,6 +29,7 @@ export default class JoinTricycleRide extends React.Component {
 
 
 	renderDriver(){
+		/*Validation Checking*/
 		if(this.state.driver){
 			return(
 				<Content padder>

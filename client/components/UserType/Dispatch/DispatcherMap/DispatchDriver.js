@@ -16,8 +16,8 @@ class DispatchDriver extends Component {
 	}
 
 	componentWillMount(){
+		/*Retrieving data from the database*/
 		this.setState({ request: this.props.navigation.state.params.transaction})
-
 		let drivers = []
 		firebase.database().ref('Clients/Drivers/').once('value', (snapshot) => {
 			snapshot.forEach((child) => {
@@ -46,7 +46,7 @@ class DispatchDriver extends Component {
                 [
                   {text: 'Cancel', onPress: () => {return null}},
                   {text: 'Confirm', onPress: () => {
-
+                  /*Ongoing Client request*/
 			    	firebase.database().ref('Clients/Ongoing').push({
 			    		idDriver: driver.id,
 			    		idClient: this.props.navigation.state.params.request.id,
@@ -67,9 +67,11 @@ class DispatchDriver extends Component {
 			    		location: this.props.navigation.state.params.transaction.location
 			    	})
                   	
-			    	
+			    	/*Deletion of driver who is currently servicing Client*/
 			    	firebase.database().ref('Clients/Drivers/' + driver.id).remove()
+			    	/*Accepted request and delete the previous requestt*/
 			    	firebase.database().ref('Clients/' + this.props.navigation.state.params.transaction.id + '/Transactions').remove()
+			    	/*Send Driver information sent by the Dispatcher*/
 			    	firebase.database().ref('Clients/' + this.props.navigation.state.params.request.id + '/DriverInfo').set({
 			    			dName: driver.name,
 			    			conduction: driver.conduction,

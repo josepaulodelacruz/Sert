@@ -35,6 +35,7 @@ class Profile extends Component {
 	}
 
 	componentDidMount(){
+		/*Retrieving the currently login user*/
 		let uid = firebase.auth().currentUser.uid;
 		firebase.database().ref('Clients/' + uid ).on('value', snapshot => {
 			this.setState({userInfo: snapshot.val()})
@@ -53,6 +54,7 @@ class Profile extends Component {
                 [
                   {text: 'Cancel', onPress: () => {return null}},
                   {text: 'Confirm', onPress: () => {
+                  	/*Updating the Personal Information of the Client*/
                   	if(!this.state.first && !this.state.last && !this.state.contactNumber && !this.state.locAddress){
                   		alert('Enter all needed information')
                   	}else{this.setState({update: false})

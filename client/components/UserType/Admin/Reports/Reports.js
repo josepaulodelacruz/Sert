@@ -4,6 +4,7 @@ import { Container, Header, Content, Card, CardItem, Body } from "native-base";
 
 class Reports extends Component {
 	render(){
+		/*Displaying all the Reports*/
 		let reports = this.props.reports.map((report) => {
 			return(
 			 <Card key={report.id} id={report.id}>

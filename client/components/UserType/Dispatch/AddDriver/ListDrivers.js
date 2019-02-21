@@ -12,6 +12,7 @@ class ListDrivers extends Component {
 	}
 
 	render(){
+		/*Display all the driver information*/
 		let drivers = this.props.drivers.map((driver) => {
 			console.log(driver);
 			return(

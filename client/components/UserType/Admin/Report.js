@@ -20,6 +20,7 @@ class Report extends Component {
     }
 
     componentWillMount(){
+        /*Retrieving data from the database of Reports*/
     	let reports = []
     	firebase.database().ref('Clients/Reports').once('value', (snapshot) => {
     		snapshot.forEach((child) => {

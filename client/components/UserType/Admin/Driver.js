@@ -22,6 +22,7 @@ class Driver extends Component {
     }
 
     componentDidMount(){
+    	/*Retrieving data from the database*/
     	let userInfo = [];
     	 firebase.database().ref('Clients/').once('value',(snapshot) => {
        		snapshot.forEach((child) => {
@@ -40,11 +41,12 @@ class Driver extends Component {
     }
 
     handleDelete = (id) => {
+    	/*Deletion of the display Data*/
     	let del = this.state.users;
 		let index = del.findIndex(x => x.id === id);
 		del.splice(index, 1);
 		this.setState({users: del});
-		
+		/*Removing data from the database*/
     	firebase.database().ref('Clients/').child('' + id).remove()
     }
 

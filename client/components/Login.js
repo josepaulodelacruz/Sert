@@ -23,6 +23,7 @@ export default class Login extends Component {
   	};
 
   	handleSubmit = () => {
+  		/*Login function, using the firebase authentication*/
   		if(!this.state.firstInput){
   			alert('Enter Username or Email!')
   		}else if(!this.state.passInput){
@@ -79,6 +80,7 @@ export default class Login extends Component {
  				<Text style={styles.textStyle}>Password</Text>
 				<TextInput 
 				placeholder="Password"
+				secureTextEntry={true}
 				onChangeText={(passInput) => this.setState({passInput})}
 				type='password'
  				style={{height: 40, width: 300, backgroundColor: '#f2f2f2', borderColor: 'gray', borderWidth: 2, borderRadius: 20, textAlign: 'center'}}/>

@@ -14,7 +14,6 @@ class ListOngoing extends Component {
 
 	render(){
 		let lists = this.props.ongoing.map((list) => {
-			console.log(list);
 			return(
 				<Card key={list.id} id={list.id}>
 	            <CardItem header bordered>

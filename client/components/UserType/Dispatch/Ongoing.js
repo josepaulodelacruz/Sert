@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Alert, TextInput, TouchableOpacity } from 'react-native';
 import { Header, Left, Body, Right, Icon } from 'native-base';
 import ListOngoing from './Ongoing/ListOngoing';
 import firebase from 'react-native-firebase';
+import Modal from "react-native-modal";
+import DialogInput from 'react-native-dialog-input';
 
 class Ongoing extends Component {
 	constructor(){
 		super();
 		this.state = {
-			ongoing: []
+			ongoing: [],
+			isDialogVisible: false,
+			list: []
 		}
 	}
 	static navigationOptions = {
@@ -21,6 +25,7 @@ class Ongoing extends Component {
 
 	componentWillMount(){
 		let ongoing = []
+		/*Retrieving data from the database*/
 		firebase.database().ref('Clients/Ongoing').once('value', (snapshot) => {
 			snapshot.forEach((child) => {
 			    	ongoing.push({
@@ -57,57 +62,75 @@ class Ongoing extends Component {
 
 	/*Done Service*/
 	handleDone = (list, id) => {
-		console.log(list);
+		this.setState({
+			isDialogVisible: !this.state.isDialogVisible,
+			list: list,
+			id: id
+		})
+		/*Deletion of the display Data*/
+		// let del = this.state.ongoing;
+		// let index = del.findIndex(x => x.id === id)
+		// del.splice(index, 1)
+		// this.setState({ongoing: del})
+		/*Client Reports*/
+		// firebase.database().ref('Clients/' +  list.idClient + '/Reports').push({
+		// 	time: list.time,
+		// 	location: list.location,
+		// 	destination: list.destination,
+		// 	price: list.price,
+		// 	driverName: list.driver,
+		// 	contact: list.contact,
+		// 	OperatorName: list.operatorName,
+		// 	conduction: list.conduction,
+		// 	plate: list.plate,
+		// 	operatorContactNumber: list.operatorContactNumber,
+		// 	id: list.idDriver,
+		// 	rating: list.dRating
+		// })
+		/*Dispatcher Reports*/
+		// firebase.database().ref('Clients/Reports').push({
+		// 	time: list.time,
+		// 	fName: list.fName,
+		// 	lName: list.lName,
+		// 	location: list.location,
+		// 	destination: list.destination,
+		// 	contact: list.contact,
+		// 	driver: list.driver,
+		// 	price: list.price,
+		// 	operatorName: list.operatorName,
+		// 	rating: list.rating,
+		// 	dRating: list.dRating,
+		// 	operatorContactNumber: list.operatorContactNumber, 
+		// })
+		/*Adding again the dispatch drive in the Database*/
+		// firebase.database().ref('Clients/Drivers/').push({
+		// 	name: list.driver,
+		// 	contact: list.contact,
+		// 	address: list.address,
+		// 	plate: list.plate,
+		// 	conduction: list.conduction,
+		// 	operatorName: list.operatorName,
+		// 	operatorContactNumber: list.operatorContactNumber,
+		// 	rating: list.dRating
+		// })
+		/*Deletion of Driver in the Client*/
+		// firebase.database().ref('Clients/' +  list.idClient + '/DriverInfo'  ).remove()
+		/*Deletion of Ongoing in the Dispather*/
+		// firebase.database().ref('Clients/Ongoing/' + id).remove()
+
+	}
+
+	// Send to database
+	sendInput(inputText, list, id){
 		let del = this.state.ongoing;
 		let index = del.findIndex(x => x.id === id)
 		del.splice(index, 1)
 		this.setState({ongoing: del})
-		/*Client Reports*/
-		firebase.database().ref('Clients/' +  list.idClient + '/Reports').push({
-			time: list.time,
-			location: list.location,
-			destination: list.destination,
-			price: list.price,
-			driverName: list.driver,
-			contact: list.contact,
-			OperatorName: list.operatorName,
-			conduction: list.conduction,
-			plate: list.plate,
-			operatorContactNumber: list.operatorContactNumber,
-			id: list.idDriver,
-			rating: list.dRating
-		})
-		/*Dispatcher Reports*/
-		firebase.database().ref('Clients/Reports').push({
-			time: list.time,
-			fName: list.fName,
-			lName: list.lName,
-			location: list.location,
-			destination: list.destination,
-			contact: list.contact,
-			driver: list.driver,
-			price: list.price,
-			operatorName: list.operatorName,
-			rating: list.rating,
-			dRating: list.dRating,
-			operatorContactNumber: list.operatorContactNumber, 
-		})
+		this.setState({isDialogVisible: false})
+	}
 
-		firebase.database().ref('Clients/Drivers/').push({
-			name: list.driver,
-			contact: list.contact,
-			address: list.address,
-			plate: list.plate,
-			conduction: list.conduction,
-			operatorName: list.operatorName,
-			operatorContactNumber: list.operatorContactNumber,
-			rating: list.dRating
-		})
-		/*Deletion of Driver in the Client*/
-		firebase.database().ref('Clients/' +  list.idClient + '/DriverInfo'  ).remove()
-		/*Deletion of Ongoing in the Dispather*/
-		firebase.database().ref('Clients/Ongoing/' + id).remove()
-
+	showDialog(){
+		this.setState({isDialogVisible: false})
 	}
 
 	render(){
@@ -123,6 +146,23 @@ class Ongoing extends Component {
 					<Right/>
 				</Header>
 				<ListOngoing ongoing={this.state.ongoing} details={this.handleDetails.bind(this)} detailsId={this.handleDone.bind(this)}/>
+				{/*<DialogInput isDialogVisible={this.state.isDialogVisible}
+				            title={"Rate"}
+				            message={"Please the Client"}
+				            hintInput ={"Rate 1-5"}
+				            submitInput={ (inputText) => {this.sendInput(inputText, this.state.list, this.state.id)} }
+				            closeDialog={ () => {this.showDialog(false)}}>
+				</DialogInput>*/}
+				<Modal isVisible={this.state.isDialogVisible} >
+		          <View style={styles.modal}>
+		            <Text style={{fontSize: 22}}>Rate</Text>
+		            <Text>Please Rate Client? </Text>
+		            <Text>1 - 5</Text>
+		            <TouchableOpacity style={{position: 'absolute', top: 5, right: 10}} onPress={this.handleDone}>
+  		              <Text style={{fontSize: 24}}>X</Text>
+  		            </TouchableOpacity>
+		          </View>
+		        </Modal>
 			</View>
 		)
 	}
@@ -131,7 +171,15 @@ class Ongoing extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-	}
+	},
+	modal: {
+  	backgroundColor: "white",
+    padding: 22,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 4,
+    borderColor: "rgba(0, 0, 0, 0.1)"
+  },
 })
 
 export default Ongoing;

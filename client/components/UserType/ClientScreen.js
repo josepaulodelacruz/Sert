@@ -11,7 +11,7 @@ import FairMatrix from './Locations/FairMatrix';
 import PropTypes from 'prop-types';
 import Display from 'react-native-display';
 import Request from './ClientTabs/JoinTricycleRide';
-import io from 'socket.io-client/dist/socket.io';
+
 import firebase from 'react-native-firebase';
 Mapbox.setAccessToken('pk.eyJ1Ijoid2hvc2VlcG93bHUiLCJhIjoiY2pxdWI3dWxjMGlyOTQzb2M1bjBmMjhrdSJ9._zfJuW0TJRGYl_JNFG37aw');
 
@@ -43,7 +43,6 @@ export default class ClientScreen extends React.Component {
     	featureCollection: Mapbox.geoUtils.makeFeatureCollection(),
     	directions: {},
     	isModalVisible: false,
-      socket: io('http://192.168.0.14:5000', {jsonp: false}),
 		};
 	}
 
@@ -53,6 +52,8 @@ export default class ClientScreen extends React.Component {
   navigate('ClientScreen');
 }
 
+
+/*Back button handler exit*/
 handleBackButton = () => {
  Alert.alert(
      'Exit App',

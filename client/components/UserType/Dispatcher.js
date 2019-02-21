@@ -109,7 +109,7 @@ export default class Client extends Component {
             </Item>
             <Item floatingLabel last>
               <Label>Contact Number</Label>
-              <Input onChangeText={(number) => this.setState({ContactNumber: number})}/>
+              <Input keyboardType='numeric' maxLength={11} onChangeText={(number) => this.setState({ContactNumber: number})}/>
             </Item>
             <Item floatingLabel last>
               <Label>Tricycle Group</Label>
@@ -142,12 +142,12 @@ export default class Client extends Component {
             </Item>
             <Item floatingLabel last success>
               <Label>Password</Label>
-              <Input onChangeText={(password) => this.setState({password: password})}/>
+              <Input secureTextEntry={true} onChangeText={(password) => this.setState({password: password})}/>
             </Item>
             <Item floatingLabel last>
               <Label>Confirm Password</Label>
-              <Input onChangeText={(conPassword) => this.setState({confirmatoryPassword: conPassword})}/>
-              <Icon style={{color: 'red'}}name={icon}/>
+              <Input secureTextEntry={true} onChangeText={(conPassword) => this.setState({confirmatoryPassword: conPassword})}/>
+              <Icon style={{color: 'red'}} name={icon}/>
             </Item>
             <Item floatingLabel last>
               <Label>E-mail</Label>

@@ -21,6 +21,7 @@ class Messages extends Component {
 	}
 
 	componentWillMount(){
+		/*Retrieving the data from the database of CLient Reports*/
 		let reports = [];
 		let uid = firebase.auth().currentUser.uid;
 		firebase.database().ref('Clients/' + uid + '/Reports').once('value', (snapshot) => {

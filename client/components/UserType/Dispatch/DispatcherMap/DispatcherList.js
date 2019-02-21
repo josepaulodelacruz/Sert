@@ -9,6 +9,7 @@ class DispatcherList extends Component {
 	}
 
 	render(){
+    /*Display all Driver information*/
 		let drivers = this.props.dispatcherList.map((driver) => {
 			return(
 				

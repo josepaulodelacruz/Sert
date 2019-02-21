@@ -23,6 +23,7 @@ class User extends Component {
     }
 
     componentWillMount(){
+    	/*Retrieving database database of Clients*/
     	let userInfo = [];
     	 firebase.database().ref('Clients/').once('value',(snapshot) => {
        		snapshot.forEach((child) => {
@@ -42,11 +43,12 @@ class User extends Component {
 
 
     handleDelete = (id) => {
+    	/*Deletion of the display data*/
     	let del = this.state.users;
 		let index = del.findIndex(x => x.id === id);
 		del.splice(index, 1);
 		this.setState({users: del});
-		
+		/*Removal of the Clients data*/
     	firebase.database().ref('Clients/').child('' + id).remove()
     }
 
