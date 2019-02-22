@@ -39,7 +39,7 @@ class DisplayRequest extends Component {
 					            </Left>
 					            <Body/>
 					            <Right>
-					            	<Star score={request.rating} style={styles.starStyle} />
+					            	<Star score={0} style={styles.starStyle} />
 					            </Right>  
 					            </CardItem>
 					                <Transactions dispatch={this.handleDispatch.bind(this, request)} transaction={request.transactions} id={request.id} coords={this.handleSend}/>

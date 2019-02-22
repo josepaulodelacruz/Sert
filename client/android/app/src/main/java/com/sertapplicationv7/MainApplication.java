@@ -3,19 +3,18 @@ package com.sertapplicationv7;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.agontuk.RNFusedLocation.RNFusedLocationPackage;
 import io.invertase.firebase.RNFirebasePackage;
+import com.showlocationservicesdialogbox.LocationServicesDialogBoxPackage;
+import com.mapbox.rctmgl.RCTMGLPackage;
 import io.invertase.firebase.database.RNFirebaseDatabasePackage;
 import io.invertase.firebase.auth.RNFirebaseAuthPackage;
 import io.invertase.firebase.firestore.RNFirebaseFirestorePackage;
-
-import com.showlocationservicesdialogbox.LocationServicesDialogBoxPackage;
 
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-import com.mapbox.rctmgl.RCTMGLPackage;
-import com.agontuk.RNFusedLocation.RNFusedLocationPackage;
  
 
 import java.util.Arrays;
@@ -33,11 +32,11 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
+            new RNFusedLocationPackage(),
             new RNFirebasePackage(),
-            new RNFirebaseDatabasePackage(),
             new LocationServicesDialogBoxPackage(),
             new RCTMGLPackage(),
-            new RNFusedLocationPackage(),
+            new RNFirebaseDatabasePackage(),
             new RNFirebaseAuthPackage(),
             new RNFirebaseFirestorePackage()
       );
