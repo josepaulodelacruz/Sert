@@ -12,6 +12,7 @@ import Dashboard from './components/UserType/Dispatch/DispatchDashboard';
 import ReqDriver from './components/UserType/Dispatch/ReqDriver';
 import AddDriver from './components/UserType/Dispatch/AddDriver/AddDriver';
 import Ongoing from './components/UserType/Dispatch/Ongoing';
+import UserFeedback from './components/UserType/Dispatch/Ongoing/UserFeedback';
 import UpdateDriver from './components/UserType/Dispatch/AddDriver/UpdateDriver';
 import DispatchDriver from './components/UserType/Dispatch/DispatcherMap/DispatchDriver';
 import DispatcherReports from './components/UserType/Dispatch/DispatcherReports';
@@ -30,6 +31,7 @@ import Logout from './components/UserType/ClientTabs/Logout';
 import Profile from './components/UserType/ClientTabs/Profile';
 import Messages from './components/UserType/ClientTabs/Messages';
 import Request from './components/UserType/ClientTabs/JoinTricycleRide';
+import FeedbackClient from './components/UserType/ClientTabs/Reports/FeedbackClient';
 
 import { Icon } from 'native-base';
 
@@ -127,6 +129,8 @@ const Screens = createStackNavigator({
   DispatchDriver: { screen: DispatchDriver },
   ListReport: { screen: ListReport },
   Details: { screen: Details },
+  UserFeedback: { screen: UserFeedback },
+  FeedbackClient: { screen: FeedbackClient },
   Admin: { screen: Admin,
     screen: createDrawerNavigator({
       Home: { screen: Admin },

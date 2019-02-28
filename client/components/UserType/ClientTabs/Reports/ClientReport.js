@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { Container, Header, Content, Card, CardItem, Body } from "native-base";
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Container, Header, Content, Card, CardItem, Body, Left, Right } from "native-base";
 
 class ClientReport extends Component {
+
+	handleReport = (report, id) => {
+		this.props.feedback(report, id);
+	}
+
 	render(){
 		let reports = this.props.reports.map((report) => {
 			return(
@@ -27,7 +32,16 @@ class ClientReport extends Component {
 		              </Body>
 		            </CardItem>
 		            <CardItem footer bordered>
-		              <Text>Transaction Details</Text>
+		            	<Left>
+		            		<Text>Transaction Details</Text>		
+		            	</Left>
+		            	<Body/>
+		            	<Right>
+		            		{report.report ? false : <TouchableOpacity style={styles.button} onPress={this.handleReport.bind(this, report, report.id)}>
+		            									<Text style={{color: 'white'}}>Report</Text>
+		            								</TouchableOpacity> }
+		            		
+		            	</Right>
 		            </CardItem>
 		          </Card>
 			)
@@ -47,7 +61,16 @@ class ClientReport extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1
-	}
+	},
+	 button: {
+	    flexDirection: 'row',
+	    padding: 8,
+	    justifyContent: 'center',
+	    marginRight: 12,
+	    alignItems: 'center',
+	    backgroundColor: "#00BFFF",
+	    borderRadius: 10,
+	  },
 })
 
 export default ClientReport;

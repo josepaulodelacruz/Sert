@@ -10,10 +10,17 @@ class Reports extends Component {
 
 	render(){
 		let reports = this.props.reports.map((report) => {
-			return(
+			if(this.props.search === null){
+				return(
 				<Card key={report.id} id={report.id}>
 		            <CardItem header bordered>
-		              <Text>Customer: {report.fName} {report.lName}</Text>
+		            <Left>
+		            	<Text>Client: {report.fName} {report.lName}</Text>
+		            </Left>
+		            <Body/>
+		            <Right>
+		            	<Text>{report.time}</Text>
+		            </Right>
 		            </CardItem>
 		            <CardItem >
 		              <Text>Driver: {report.driver}</Text>
@@ -39,7 +46,197 @@ class Reports extends Component {
 		              </Right>
 		            </CardItem>
 		          </Card>
-			)
+				)
+
+			}else if(this.props.search === report.fName || this.props.search === report.lName){
+				return(
+				<Card key={report.id} id={report.id}>
+		            <CardItem header bordered>
+		            <Left>
+		            	<Text>Client: {report.fName} {report.lName}</Text>
+		            </Left>
+		            <Body/>
+		            <Right>
+		            	<Text>{report.time}</Text>
+		            </Right>
+		            </CardItem>
+		            <CardItem >
+		              <Text>Driver: {report.driver}</Text>
+		            </CardItem>
+		            <CardItem>
+		              <Body>
+		                <Text>
+		                  Location: {report.location}
+		                </Text>
+		                <Text>
+		                  Destination: {report.destination}
+		                </Text>
+		              </Body>
+		            </CardItem>
+		            <CardItem footer bordered>
+		              <Left/>
+		              <Right>
+		              	<View style={{flex: 1, flexDirection: 'row'}}>
+		              		<TouchableOpacity style={styles.button} onPress={this.handleDetails.bind(this, report, report.id)}>
+		              			<Text style={{color: 'white'}}>Details</Text>
+			              	</TouchableOpacity>
+			              </View>
+		              </Right>
+		            </CardItem>
+		          </Card>
+				)
+			}else if(this.props.search === report.driver){
+				return(
+				<Card key={report.id} id={report.id}>
+		            <CardItem header bordered>
+		            <Left>
+		            	<Text>Client: {report.fName} {report.lName}</Text>
+		            </Left>
+		            <Body/>
+		            <Right>
+		            	<Text>{report.time}</Text>
+		            </Right>
+		            </CardItem>
+		            <CardItem >
+		              <Text>Driver: {report.driver}</Text>
+		            </CardItem>
+		            <CardItem>
+		              <Body>
+		                <Text>
+		                  Location: {report.location}
+		                </Text>
+		                <Text>
+		                  Destination: {report.destination}
+		                </Text>
+		              </Body>
+		            </CardItem>
+		            <CardItem footer bordered>
+		              <Left/>
+		              <Right>
+		              	<View style={{flex: 1, flexDirection: 'row'}}>
+		              		<TouchableOpacity style={styles.button} onPress={this.handleDetails.bind(this, report, report.id)}>
+		              			<Text style={{color: 'white'}}>Details</Text>
+			              	</TouchableOpacity>
+			              </View>
+		              </Right>
+		            </CardItem>
+		          </Card>
+				)
+			}else if(this.props.search === report.location){
+				return(
+				<Card key={report.id} id={report.id}>
+		            <CardItem header bordered>
+		            <Left>
+		            	<Text>Client: {report.fName} {report.lName}</Text>
+		            </Left>
+		            <Body/>
+		            <Right>
+		            	<Text>{report.time}</Text>
+		            </Right>
+		            </CardItem>
+		            <CardItem >
+		              <Text>Driver: {report.driver}</Text>
+		            </CardItem>
+		            <CardItem>
+		              <Body>
+		                <Text>
+		                  Location: {report.location}
+		                </Text>
+		                <Text>
+		                  Destination: {report.destination}
+		                </Text>
+		              </Body>
+		            </CardItem>
+		            <CardItem footer bordered>
+		              <Left/>
+		              <Right>
+		              	<View style={{flex: 1, flexDirection: 'row'}}>
+		              		<TouchableOpacity style={styles.button} onPress={this.handleDetails.bind(this, report, report.id)}>
+		              			<Text style={{color: 'white'}}>Details</Text>
+			              	</TouchableOpacity>
+			              </View>
+		              </Right>
+		            </CardItem>
+		          </Card>
+				)
+			}else if (this.props.search === report.destination){
+				return(
+				<Card key={report.id} id={report.id}>
+		            <CardItem header bordered>
+		            <Left>
+		            	<Text>Client: {report.fName} {report.lName}</Text>
+		            </Left>
+		            <Body/>
+		            <Right>
+		            	<Text>{report.time}</Text>
+		            </Right>
+		            </CardItem>
+		            <CardItem >
+		              <Text>Driver: {report.driver}</Text>
+		            </CardItem>
+		            <CardItem>
+		              <Body>
+		                <Text>
+		                  Location: {report.location}
+		                </Text>
+		                <Text>
+		                  Destination: {report.destination}
+		                </Text>
+		              </Body>
+		            </CardItem>
+		            <CardItem footer bordered>
+		              <Left/>
+		              <Right>
+		              	<View style={{flex: 1, flexDirection: 'row'}}>
+		              		<TouchableOpacity style={styles.button} onPress={this.handleDetails.bind(this, report, report.id)}>
+		              			<Text style={{color: 'white'}}>Details</Text>
+			              	</TouchableOpacity>
+			              </View>
+		              </Right>
+		            </CardItem>
+		          </Card>
+				)
+			}else if(this.props.search === ''){
+				return(
+				<Card key={report.id} id={report.id}>
+		            <CardItem header bordered>
+		            <Left>
+		            	<Text>Client: {report.fName} {report.lName}</Text>
+		            </Left>
+		            <Body/>
+		            <Right>
+		            	<Text>{report.time}</Text>
+		            </Right>
+		            </CardItem>
+		            <CardItem >
+		              <Text>Driver: {report.driver}</Text>
+		            </CardItem>
+		            <CardItem>
+		              <Body>
+		                <Text>
+		                  Location: {report.location}
+		                </Text>
+		                <Text>
+		                  Destination: {report.destination}
+		                </Text>
+		              </Body>
+		            </CardItem>
+		            <CardItem footer bordered>
+		              <Left/>
+		              <Right>
+		              	<View style={{flex: 1, flexDirection: 'row'}}>
+		              		<TouchableOpacity style={styles.button} onPress={this.handleDetails.bind(this, report, report.id)}>
+		              			<Text style={{color: 'white'}}>Details</Text>
+			              	</TouchableOpacity>
+			              </View>
+		              </Right>
+		            </CardItem>
+		          </Card>
+				)
+			}else {
+				 return false;
+			}
+			
 		})
 		return(
 			<Container>

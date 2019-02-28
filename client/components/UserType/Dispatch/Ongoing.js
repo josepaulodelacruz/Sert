@@ -47,7 +47,8 @@ class Ongoing extends Component {
 			    		operatorName: child.val().operatorName,
 			    		operatorContactNumber: child.val().operatorContactNumber,
 			    		dRating: child.val().dRating,
-			    		rating: child.val().rating
+			    		rating: child.val().rating,
+			    		request: child.val().request
 			    	})
 			    })
 				this.setState({ongoing: ongoing})
@@ -68,67 +69,8 @@ class Ongoing extends Component {
 			list: list,
 			id: id
 		})
-		/*Deletion of the display Data*/
-		// let del = this.state.ongoing;
-		// let index = del.findIndex(x => x.id === id)
-		// del.splice(index, 1)
-		// this.setState({ongoing: del})
-		/*Client Reports*/
-		// firebase.database().ref('Clients/' +  list.idClient + '/Reports').push({
-		// 	time: list.time,
-		// 	location: list.location,
-		// 	destination: list.destination,
-		// 	price: list.price,
-		// 	driverName: list.driver,
-		// 	contact: list.contact,
-		// 	OperatorName: list.operatorName,
-		// 	conduction: list.conduction,
-		// 	plate: list.plate,
-		// 	operatorContactNumber: list.operatorContactNumber,
-		// 	id: list.idDriver,
-		// 	rating: list.dRating
-		// })
-		/*Dispatcher Reports*/
-		// firebase.database().ref('Clients/Reports').push({
-		// 	time: list.time,
-		// 	fName: list.fName,
-		// 	lName: list.lName,
-		// 	location: list.location,
-		// 	destination: list.destination,
-		// 	contact: list.contact,
-		// 	driver: list.driver,
-		// 	price: list.price,
-		// 	operatorName: list.operatorName,
-		// 	rating: list.rating,
-		// 	dRating: list.dRating,
-		// 	operatorContactNumber: list.operatorContactNumber, 
-		// })
-		/*Adding again the dispatch drive in the Database*/
-		// firebase.database().ref('Clients/Drivers/').push({
-		// 	name: list.driver,
-		// 	contact: list.contact,
-		// 	address: list.address,
-		// 	plate: list.plate,
-		// 	conduction: list.conduction,
-		// 	operatorName: list.operatorName,
-		// 	operatorContactNumber: list.operatorContactNumber,
-		// 	rating: list.dRating
-		// })
-		/*Deletion of Driver in the Client*/
-		// firebase.database().ref('Clients/' +  list.idClient + '/DriverInfo'  ).remove()
-		/*Deletion of Ongoing in the Dispather*/
-		// firebase.database().ref('Clients/Ongoing/' + id).remove()
-
+		
 	}
-
-	// Send to database
-	// sendInput(inputText, list, id){
-	// 	let del = this.state.ongoing;
-	// 	let index = del.findIndex(x => x.id === id)
-	// 	del.splice(index, 1)
-	// 	this.setState({ongoing: del})
-	// 	this.setState({isDialogVisible: false})
-	// }
 
 	handleConfirm = (list, id) => {
 		if(!this.state.text){
@@ -145,58 +87,61 @@ class Ongoing extends Component {
 				let userBase = firebase.database().ref('Clients/' + list.idClient )
 				userBase.once('value', (snapshot) => {
 					a = parseInt(snapshot.val().rating);
+					b = parseInt(snapshot.val().request)
 					userBase.update({
-						rating: a + giveRating
+						rating: a + giveRating,
+						request: b + 1
 					})
 				})
 
 				/*Client Reports*/
-				// firebase.database().ref('Clients/' +  list.idClient + '/Reports').push({
-				// 	time: list.time,
-				// 	location: list.location,
-				// 	destination: list.destination,
-				// 	price: list.price,
-				// 	driverName: list.driver,
-				// 	contact: list.contact,
-				// 	OperatorName: list.operatorName,
-				// 	conduction: list.conduction,
-				// 	plate: list.plate,
-				// 	operatorContactNumber: list.operatorContactNumber,
-				// 	id: list.idDriver,
-				// 	rating: list.dRating
-				// })
+				firebase.database().ref('Clients/' +  list.idClient + '/Reports').push({
+					time: list.time,
+					location: list.location,
+					destination: list.destination,
+					price: list.price,
+					driverName: list.driver,
+					contact: list.contact,
+					OperatorName: list.operatorName,
+					conduction: list.conduction,
+					plate: list.plate,
+					operatorContactNumber: list.operatorContactNumber,
+					id: list.idDriver,
+					rating: list.dRating,
+					report: false
+				})
 
 				/*Dispatcher Reports*/
-				// firebase.database().ref('Clients/Reports').push({
-				// 	time: list.time,
-				// 	fName: list.fName,
-				// 	lName: list.lName,
-				// 	location: list.location,
-				// 	destination: list.destination,
-				// 	contact: list.contact,
-				// 	driver: list.driver,
-				// 	price: list.price,
-				// 	operatorName: list.operatorName,
-				// 	rating: list.rating,
-				// 	dRating: list.dRating,
-				// 	operatorContactNumber: list.operatorContactNumber, 
-				// })
+				firebase.database().ref('Clients/Reports').push({
+					time: list.time,
+					fName: list.fName,
+					lName: list.lName,
+					location: list.location,
+					destination: list.destination,
+					contact: list.contact,
+					driver: list.driver,
+					price: list.price,
+					operatorName: list.operatorName,
+					rating: list.rating,
+					dRating: list.dRating,
+					operatorContactNumber: list.operatorContactNumber, 
+				})
 
 				/*Adding again the dispatch drive in the Database*/
-				// firebase.database().ref('Clients/Drivers/').push({
-				// 	name: list.driver,
-				// 	contact: list.contact,
-				// 	address: list.address,
-				// 	plate: list.plate,
-				// 	conduction: list.conduction,
-				// 	operatorName: list.operatorName,
-				// 	operatorContactNumber: list.operatorContactNumber,
-				// 	rating: list.dRating
-				// })
+				firebase.database().ref('Clients/Drivers/').push({
+					name: list.driver,
+					contact: list.contact,
+					address: list.address,
+					plate: list.plate,
+					conduction: list.conduction,
+					operatorName: list.operatorName,
+					operatorContactNumber: list.operatorContactNumber,
+					rating: list.dRating
+				})
 				/*Deletion of Driver in the Client*/
-				// firebase.database().ref('Clients/' +  list.idClient + '/DriverInfo'  ).remove()
+				firebase.database().ref('Clients/' +  list.idClient + '/DriverInfo'  ).remove()
 				/*Deletion of Ongoing in the Dispather*/
-				// firebase.database().ref('Clients/Ongoing/' + id).remove()
+				firebase.database().ref('Clients/Ongoing/' + id).remove()
 
 			}else{
 				return null
@@ -211,6 +156,12 @@ class Ongoing extends Component {
 		this.setState({isDialogVisible: false})
 	}
 
+	handleReport(list, id){
+		this.props.navigation.navigate('UserFeedback', {
+			feed: list
+		})
+	}
+
 	render(){
 		return(
 			<View style={styles.container}>
@@ -223,14 +174,7 @@ class Ongoing extends Component {
 					</Body>
 					<Right/>
 				</Header>
-				<ListOngoing ongoing={this.state.ongoing} details={this.handleDetails.bind(this)} detailsId={this.handleDone.bind(this)}/>
-				{/*<DialogInput isDialogVisible={this.state.isDialogVisible}
-				            title={"Rate"}
-				            message={"Please the Client"}
-				            hintInput ={"Rate 1-5"}
-				            submitInput={ (inputText) => {this.sendInput(inputText, this.state.list, this.state.id)} }
-				            closeDialog={ () => {this.showDialog(false)}}>
-				</DialogInput>*/}
+				<ListOngoing ongoing={this.state.ongoing} feedback={this.handleReport.bind(this)} details={this.handleDetails.bind(this)} detailsId={this.handleDone.bind(this)}/>
 				<Modal isVisible={this.state.isDialogVisible} >
 		          <View style={styles.modal}>
 		            <Text style={{fontSize: 22}}>Rate</Text>

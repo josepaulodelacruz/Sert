@@ -60,6 +60,7 @@ export default class Client extends Component {
                               feedback: "",
                               role: "client",
                               approved: false,
+                              request: 0,
                               Transactions: {
                                   approved: false,
                                   time: "",  
@@ -142,9 +143,9 @@ export default class Client extends Component {
             <Text style={{fontSize: 14}}>Step 2. User creation Information</Text>
           </View>          
           <Form>
-            <Item floatingLabel>
-              <Label>Username</Label>
-              <Input onChangeText={(username) => this.setState({username: username})}/>
+          <Item floatingLabel last>
+              <Label>E-mail</Label>
+              <Input onChangeText={(email) => this.setState({email: email})}/>
             </Item>
             <Item floatingLabel last success>
               <Label>Password</Label>
@@ -154,10 +155,6 @@ export default class Client extends Component {
               <Label>Confirm Password</Label>
               <Input secureTextEntry={true} onChangeText={(conPassword) => this.setState({confirmatoryPassword: conPassword})}/>
               <Icon style={{color: 'red'}} name={icon}/>
-            </Item>
-            <Item floatingLabel last>
-              <Label>E-mail</Label>
-              <Input onChangeText={(email) => this.setState({email: email})}/>
             </Item>
           </Form>
           <TouchableOpacity style={styles.button} onPress={this.handleSubmit.bind(this)}>

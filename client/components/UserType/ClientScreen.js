@@ -43,6 +43,7 @@ export default class ClientScreen extends React.Component {
     	featureCollection: Mapbox.geoUtils.makeFeatureCollection(),
     	directions: {},
     	isModalVisible: false,
+      approved: false
 		};
 	}
 
@@ -116,6 +117,12 @@ componentWillUnmount(){
       (error) => this.setState({ error: error.message }),
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
     );
+
+    let uid = firebase.auth().currentUser.uid
+    firebase.database().ref('Clients/' + uid).on('value', (snapshot) => {
+      this.setState({approved: snapshot.val().approved})
+    })
+
   }
 
 
@@ -260,9 +267,10 @@ componentWillUnmount(){
     }
   }
 
+
   /*Request*/
   handleSubmit = () => {
-    const { address } = this.state;
+       const { address } = this.state;
     if(this.state.kilometer > 2){
           let value = this.state.kilometer - 2;
           let total = value * 7 + 40;
@@ -303,7 +311,7 @@ componentWillUnmount(){
         }
     
     this.setState({ isModalVisible: !this.state.isModalVisible })
-   
+    
   }
 
 

@@ -18,10 +18,6 @@ export default class Login extends Component {
 	}
 
 
-	static navigationOptions = {
-    title: 'Login',
-  	};
-
   	handleSubmit = () => {
   		/*Login function, using the firebase authentication*/
   		if(!this.state.firstInput){
@@ -70,11 +66,12 @@ export default class Login extends Component {
 				<Animated.Image
 		        style={{
 		          width: 100,
-		          height: 100}}
+		          height: 100,
+		      		marginBottom: 30}}
 		          source={require('./Assets/logo.jpg')}/>
-				<Text style={styles.textStyle}>Username/E-mail</Text>
+				<Text style={{textAlign: 'center', fontSize: 22, fontStyle: 'italic', width: 200, marginBottom: 10}}>E-mail</Text>
 				<TextInput 
-				placeholder="Username or E-mail"
+				placeholder="E-mail"
 				onChangeText={(firstInput) => this.setState({firstInput})}
  				style={{height: 40, width: 300, backgroundColor: '#f2f2f2', borderColor: 'gray', borderWidth: 2, borderRadius: 20, textAlign: 'center'}}/>
  				<Text style={styles.textStyle}>Password</Text>
@@ -86,7 +83,6 @@ export default class Login extends Component {
  				style={{height: 40, width: 300, backgroundColor: '#f2f2f2', borderColor: 'gray', borderWidth: 2, borderRadius: 20, textAlign: 'center'}}/>
  				<View style={{flex: 1, margin: 30}}>
  					<Button title="Login" onPress={this.handleSubmit.bind(this)}/>
- 					<Text style={{textAlign: 'center', fontSize: 22, fontStyle: 'italic', marginTop: 10}}>Forgot Password?</Text>
  					<Text style={styles.textStyle}>Don't have an Account? </Text>
  					<TouchableOpacity onPress={() => this.props.navigation.navigate('SignUp')}>
  						<Text style={styles.textStyle}>Sign Up Here</Text>

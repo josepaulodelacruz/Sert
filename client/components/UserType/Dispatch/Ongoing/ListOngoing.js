@@ -12,6 +12,10 @@ class ListOngoing extends Component {
 		this.props.detailsId(list, id);
 	}
 
+	handleReport(list, id){
+		this.props.feedback(list, id);
+	}
+
 	render(){
 		let lists = this.props.ongoing.map((list) => {
 			return(
@@ -33,7 +37,13 @@ class ListOngoing extends Component {
 	              </Body>
 	            </CardItem>
 	            <CardItem footer bordered>
-	              <Left/>
+	              <Left>
+	              	<View style={{flex: 1}}>
+	              		<TouchableOpacity style={styles.report} onPress={this.handleReport.bind(this, list, list.id)}>
+	              			<Text style={{color: 'white'}}>Report</Text>
+	              		</TouchableOpacity>	              		
+	              	</View>
+	              </Left>
 	              <Right>
 	              	<View style={{flex: 1, flexDirection: 'row'}}>
 	              		<TouchableOpacity style={styles.button} onPress={this.handleDetails.bind(this, list, list.id)}>
@@ -71,6 +81,15 @@ const styles = StyleSheet.create({
 	    backgroundColor: "#00BFFF",
 	    borderRadius: 10,
 	  },
+	report: {
+	    flexDirection: 'row',
+	    padding: 8,
+	    justifyContent: 'center',
+	    marginRight: 12,
+	    alignItems: 'center',
+	    backgroundColor: "red",
+	    borderRadius: 10,
+	  },  
 })
 
 export default ListOngoing;

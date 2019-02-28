@@ -69,11 +69,7 @@ export default class JoinTricycleRide extends React.Component {
 			            <CardItem footer bordered>
 			              <Left/>
 			              <Body/>
-			              <Right>
-			              	<TouchableOpacity style={styles.button}>
-			              		<Text style={{color: 'white'}}>Send SMS</Text>
-			              	</TouchableOpacity>
-			              </Right>
+			              <Right/>
 			            </CardItem>
 			          </Card>
 			        </Content>
@@ -95,7 +91,6 @@ export default class JoinTricycleRide extends React.Component {
 	}
 
 	render(){
-		console.log(this.state.driver)
 		return(
 			<View style={styles.container}>
 				<Header style={{backgroundColor: '#3073FA'}}>

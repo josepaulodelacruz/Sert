@@ -40,7 +40,7 @@ class Profile extends Component {
 		firebase.database().ref('Clients/' + uid ).on('value', snapshot => {
 			this.setState({userInfo: snapshot.val()})
 		})
-		console.log(this.state.userInfo)
+		
 	}
 
 	handleUpdate = () => {
@@ -111,19 +111,17 @@ class Profile extends Component {
 					<Body>
 						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Profile</Text>
 					</Body>
-					<Right>
+					<Right> 
 						<TouchableOpacity onPress={this.handleUpdate} style={styles.button}>
 							<Text style={{color: 'white'}}>Update</Text>
 						</TouchableOpacity>
 					</Right>
 				</Header>
 	          <View style={styles.header}></View>
-	          <Image style={styles.avatar} source={{uri: 'https://bootdey.com/img/Content/avatar/avatar6.png'}}/>
 	          <View style={styles.body}>
-	          <StarRating/>
+	          <StarRating rate={this.state.userInfo.rating} request={this.state.userInfo.request}/>
 	          	{user}
 	            {button}
-	            <DataTransaction/>
 	        </View>
 	      </View>
 		</ScrollView>

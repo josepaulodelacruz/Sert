@@ -61,7 +61,7 @@ class DispatchDashboard extends Component {
 		let userInfo = []
 		let request = []
 		let transaction = []	
-		firebase.database().ref('Clients/').once('value', (snapshot) => {
+		firebase.database().ref('Clients/').on('value', (snapshot) => {
 			snapshot.forEach((child) => {
 			    request.push({
 			    	id: child.key,
@@ -72,7 +72,8 @@ class DispatchDashboard extends Component {
 			    	approved: child.val().approved,
 			    	contact: child.val().contactNumber,
 			    	role: child.val().role,
-			    	rating: child.val().rating
+			    	rating: child.val().rating,
+			    	request: child.val().request
 			    })
 			  });
 			this.setState({request: request})

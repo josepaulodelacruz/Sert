@@ -34,7 +34,8 @@ class User extends Component {
 			      contact: child.val().contactNumber,
 			      address: child.val().address,
 			      rating: child.val().rating,
-			      role: child.val().role
+			      role: child.val().role,
+			      approved: child.val().approved
 			    });
 			  });
             this.setState({users: userInfo}); 
@@ -48,8 +49,10 @@ class User extends Component {
 		let index = del.findIndex(x => x.id === id);
 		del.splice(index, 1);
 		this.setState({users: del});
-		/*Removal of the Clients data*/
-    	firebase.database().ref('Clients/').child('' + id).remove()
+		/*Approval of the Clients data*/
+    	firebase.database().ref('Clients/' + id).update({
+    		approved: true
+    	})
     }
 
 

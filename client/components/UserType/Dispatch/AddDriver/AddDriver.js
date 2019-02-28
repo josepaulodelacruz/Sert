@@ -30,6 +30,7 @@ export default class AddDriver extends Component {
           operatorName: this.state.operatorName,
           operatorContactNumber: this.state.operatorContactNumber,
           rating: 0,
+          report: false
         })
         this.props.navigation.navigate('Dashboard')
         
@@ -53,7 +54,7 @@ export default class AddDriver extends Component {
                 </Item>
                 <Item stackedLabel >
                   <Label>Contact:</Label>
-                  <Input onChangeText={(contact) => this.setState({contact: contact})} />
+                  <Input keyboardType='numeric' maxLength={11} onChangeText={(contact) => this.setState({contact: contact})} />
                 </Item>
                 <Item stackedLabel last>
                   <Label>Address:</Label>
@@ -73,7 +74,7 @@ export default class AddDriver extends Component {
                 </Item>
                 <Item stackedLabel last>
                   <Label>Operators Contact Number:</Label>
-                  <Input onChangeText={(operatorContactNumber) => this.setState({operatorContactNumber: operatorContactNumber})}/>
+                  <Input keyboardType='numeric' maxLength={11} onChangeText={(operatorContactNumber) => this.setState({operatorContactNumber: operatorContactNumber})}/>
                 </Item>
               </Form>
             <CardItem footer bordered>

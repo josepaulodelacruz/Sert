@@ -25,8 +25,10 @@ class Messages extends Component {
 		let reports = [];
 		let uid = firebase.auth().currentUser.uid;
 		firebase.database().ref('Clients/' + uid + '/Reports').once('value', (snapshot) => {
+			console.log(snapshot.val())
 			snapshot.forEach((child) => {
 		    	reports.push({
+		    		uid: uid,
 		    		id: child.key,
 		    		time: child.val().time,
 		    		driver: child.val().driverName,
@@ -37,11 +39,19 @@ class Messages extends Component {
 		    		operatorName: child.val().OperatorName,
 		    		operatorContactNumber: child.val().operatorContactNumber,
 		    		plate: child.val().plate,
-		    		conduction: child.val().conduction
+		    		conduction: child.val().conduction,
+		    		report: child.val().report
 		    	})	
 	    	})
 	    	this.setState({reports: reports})
 		})
+	}
+
+	handleReport = (report, id) => {
+		this.props.navigation.navigate('FeedbackClient', {
+			id: id,
+			report: report
+		})	
 	}
 
 	render(){
@@ -56,7 +66,7 @@ class Messages extends Component {
 					</Body>
 					<Right/>
 				</Header>
-				<ClientReport reports={this.state.reports}/>
+				<ClientReport reports={this.state.reports} feedback={this.handleReport.bind(this)}/>
 			</View>
 		)
 	}

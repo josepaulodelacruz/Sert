@@ -33,7 +33,8 @@ class Driver extends Component {
 			      contact: child.val().contactNumber,
 			      Toda: child.val().group,
 			      address: child.val().address,
-			      role: child.val().role
+			      role: child.val().role,
+			      approved: child.val().approved
 			    });
 			  });
             this.setState({users: userInfo}); 

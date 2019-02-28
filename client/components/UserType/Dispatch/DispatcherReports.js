@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { Container, Header, Content, Card, CardItem, Body, Icon, Left, Right } from "native-base";
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Container, Header, Content, Card, CardItem, Body, Icon, Left, Right, Item, Input } from "native-base";
 import firebase from 'react-native-firebase';
 import Reports from './Reports/Reports';
 
@@ -9,7 +9,8 @@ class DispatchReports extends Component {
 		constructor(){
 			super();
 			this.state = {
-				reports: []
+				reports: [],
+				searching: null
 			}
 		}
 
@@ -63,9 +64,14 @@ class DispatchReports extends Component {
 					<Body>
 						<Text style={{fontSize: 18, fontWeight: 'bold', color: '#fff'}}>Reports</Text>
 					</Body>
-					<Right/>
+					<Right>
+						<Item >
+			              <Input onChangeText={(search) => this.setState({searching: search})} style={{color: 'white'}} />
+			                <Icon name="ios-search" style={{color: 'white'}}/>  
+			            </Item >
+					</Right>
 				</Header>
-				<Reports reports={this.state.reports} details={this.handleDetail.bind(this)}/>
+				<Reports search={this.state.searching} reports={this.state.reports} details={this.handleDetail.bind(this)}/>
 			</View>	
 		)
 	}

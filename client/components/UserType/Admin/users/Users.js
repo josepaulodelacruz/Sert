@@ -12,9 +12,10 @@ class Users extends Component {
 
 	render(){
 		let users = this.props.clients.map((user) => {
-			if(user.role === 'client' || user.role === null){
+			if(user.approved === false){
+				if(user.role === 'client' || user.role === null){
 				if(this.props.search === null){
-					return(
+					return(	
 					<Card key={user.id} id={user.id}>
 			            <CardItem header bordered>
 			              <Text>{user.fName} { user.lName}</Text>
@@ -33,7 +34,7 @@ class Users extends Component {
 			              <Body/>
 			              <Right>
 			              	<TouchableOpacity style={styles.button} onPress={this.handleDelete.bind(this, user.id)}>
-			              		<Text style={{color: 'white'}}>Delete</Text>
+			              		<Text style={{color: 'white'}}>Activate</Text>
 			              	</TouchableOpacity>
 			              </Right>
 			            </CardItem>
@@ -59,7 +60,7 @@ class Users extends Component {
 			              <Body/>
 			              <Right>
 			              	<TouchableOpacity style={styles.button} onPress={this.handleDelete.bind(this, user.id)}>
-			              		<Text style={{color: 'white'}}>Delete</Text>
+			              		<Text style={{color: 'white'}}>Activate</Text>
 			              	</TouchableOpacity>
 			              </Right>
 			            </CardItem>
@@ -85,7 +86,7 @@ class Users extends Component {
 			              <Body/>
 			              <Right>
 			              	<TouchableOpacity style={styles.button} onPress={this.handleDelete.bind(this, user.id)}>
-			              		<Text style={{color: 'white'}}>Delete</Text>
+			              		<Text style={{color: 'white'}}>Activate</Text>
 			              	</TouchableOpacity>
 			              </Right>
 			            </CardItem>
@@ -111,16 +112,16 @@ class Users extends Component {
 			              <Body/>
 			              <Right>
 			              	<TouchableOpacity style={styles.button} onPress={this.handleDelete.bind(this, user.id)}>
-			              		<Text style={{color: 'white'}}>Delete</Text>
+			              		<Text style={{color: 'white'}}>Activate</Text>
 			              	</TouchableOpacity>
 			              </Right>
 			            </CardItem>
 			          </Card>
 						)
 					}
-				
-			}else{
-				return false;
+				}else{
+					return false;
+				}	
 			}
 		})
 		return(
